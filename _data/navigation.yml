@@ -1,5 +1,9 @@
 # main links
 main:
+  - title: "Projects"
+    url: _pages/projects
+  - title: "Google Scholar"
+    url: https://scholar.google.de/citations?user=sBm3vkcAAAAJ
   - title: "About"
     url: _pages/about
   - title: "Contact"
