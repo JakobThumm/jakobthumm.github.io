@@ -6,8 +6,8 @@ main:
     url: https://scholar.google.de/citations?user=sBm3vkcAAAAJ
   - title: "About"
     url: _pages/about
-  - title: "Contact"
-    url: _pages/contact
+  - title: "Contact me"
+    url: mailto:jakob.thumm@tum.de
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"

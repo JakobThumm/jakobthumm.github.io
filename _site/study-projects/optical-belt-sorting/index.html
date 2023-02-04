@@ -10,7 +10,7 @@
     <meta charset="utf-8">
 
 <!-- begin _includes/seo.html --><title>Optical Belt Sorting - Jakob Thumm</title>
-<meta name="description" content="">
+<meta name="description" content="Optical sorters are a game-changer in various industrial sectors like civil engineering, recycling, and agriculture. Unlike other sorters, optical sorters can sort based on visual properties alone, meaning almost any material type can be sorted without damage from water or heat. The standard layout of an optical sorter includes a transport unit (usually a conveyor belt), a line scan camera, and a separation mechanism. The line scan camera detects and classifies the particles, and the separation mechanism then separates the unwanted particles with short bursts of high-pressure air.">
 
 
   <meta name="author" content="Jakob Thumm">
@@ -26,9 +26,11 @@
 <meta property="og:url" content="http://localhost:4000/study-projects/optical-belt-sorting/">
 
 
-  <meta property="og:description" content="">
+  <meta property="og:description" content="Optical sorters are a game-changer in various industrial sectors like civil engineering, recycling, and agriculture. Unlike other sorters, optical sorters can sort based on visual properties alone, meaning almost any material type can be sorted without damage from water or heat. The standard layout of an optical sorter includes a transport unit (usually a conveyor belt), a line scan camera, and a separation mechanism. The line scan camera detects and classifies the particles, and the separation mechanism then separates the unwanted particles with short bursts of high-pressure air.">
 
 
+
+  <meta property="og:image" content="http://localhost:4000/assets/img/optical_partical_tracking.png">
 
 
 
@@ -96,7 +98,7 @@
 
   </head>
 
-  <body class="layout--single">
+  <body class="layout--single wide">
     <nav class="skip-links">
   <ul>
     <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
@@ -125,7 +127,7 @@
             </li><li class="masthead__menu-item">
               <a href="/_pages/about">About</a>
             </li><li class="masthead__menu-item">
-              <a href="/_pages/contact">Contact</a>
+              <a href="mailto:jakob.thumm@tum.de">Contact me</a>
             </li></ul>
         
         <button class="greedy-nav__toggle hidden" type="button">
@@ -272,7 +274,7 @@
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="Optical Belt Sorting">
-    <meta itemprop="description" content="">
+    <meta itemprop="description" content="Optical sorters are a game-changer in various industrial sectors like civil engineering, recycling, and agriculture. Unlike other sorters, optical sorters can sort based on visual properties alone, meaning almost any material type can be sorted without damage from water or heat. The standard layout of an optical sorter includes a transport unit (usually a conveyor belt), a line scan camera, and a separation mechanism. The line scan camera detects and classifies the particles, and the separation mechanism then separates the unwanted particles with short bursts of high-pressure air.">
     <meta itemprop="datePublished" content="2023-02-01T00:00:00+01:00">
     
 
@@ -297,7 +299,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          less than 1 minute read
+          1 minute read
         
       </span>
     
@@ -309,7 +311,19 @@
 
       <section class="page__content e-content" itemprop="text">
         
-        
+        <p>Optical sorters are a game-changer in various industrial sectors like civil engineering, recycling, and agriculture. Unlike other sorters, optical sorters can sort based on visual properties alone, meaning almost any material type can be sorted without damage from water or heat. The standard layout of an optical sorter includes a transport unit (usually a conveyor belt), a line scan camera, and a separation mechanism. The line scan camera detects and classifies the particles, and the separation mechanism then separates the unwanted particles with short bursts of high-pressure air.</p>
+
+<p><img src="http://localhost:4000//assets/img/optical_belt_sorter.png" alt="image-right" width="430" class="align-right" /></p>
+
+<p>But what if we told you that this setup can be improved? In our previous research, we replaced the line scan camera with an area scan camera and implemented a predictive tracking approach. By tracking the particles with a Kalman filter, we were able to derive motion information and make separation predictions based on linear motion models. However, we found that this approach had its limitations - manual fine-tuning was required, and it didn’t always work for particles with nonlinear motion behavior.</p>
+
+<p>Enter our latest development: a mixture of experts (ME) concept. This innovative solution takes the best of both worlds - it combines the accuracy of neural networks (NNs) and the interpretability of physical motion models. We present two new NN experts for precise particle-specific predictions - a multilayer perceptron (MLP) and a long short-term memory (LSTM) - which we trained specifically for each particle type. However, NNs can lack generalization in new scenarios. So, our ME approach uses a gating network to weigh the predictions of different experts and produce a weighted sum of their predictions. This approach is unique because it combines physical motion models with pre-trained NNs, leading to a high level of accuracy and generalization.</p>
+
+<p>Our ME approach overcomes the limitations of previous methods. It increases sorting accuracy for a given particle type, it combines motion models and NNs to achieve high accuracy, and it leads to high accuracy in new, previously untrained cases. With its combination of high accuracy, interpretability, and validity, our ME approach is the first of its kind and opens up new possibilities for optical sorting technology.
+For more information, see our Transactions on Industrial Informatics journal article:</p>
+<ul>
+  <li>Mixture of Experts of Neural Networks and Kalman Filters for Optical Belt Sorting [<a href="https://ieeexplore.ieee.org/document/9543590">IEEExplore</a>] [<a href="https://isas.iar.kit.edu/pdf/TII21_Thumm.pdf">PDF</a>]</li>
+</ul>
 
         
       </section>
@@ -356,7 +370,7 @@
       
   <nav class="pagination">
     
-      <a href="/internships/mbrdna/" class="pagination--pager" title="Mercedes-Benz Research and Development North America, Sunnyvale, CA
+      <a href="/internships/mbrdna/" class="pagination--pager" title="Mercedes-Benz R&amp;D North America
 ">Previous</a>
     
     
@@ -384,7 +398,7 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-        <img src="/assets/img/human_robot_high_five.png" alt="">
+        <img src="/assets/img/road_condition.png" alt="">
       </div>
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
@@ -407,15 +421,14 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          less than 1 minute read
+          1 minute read
         
       </span>
     
   </p>
 
 
-    <p class="archive__item-excerpt" itemprop="description">
-</p>
+    <p class="archive__item-excerpt" itemprop="description">Road maintenance is a crucial aspect of ensuring safe and efficient transportation. In Germany alone, over 10 billion Euros were spent on road maintenance pr...</p>
   </article>
 </div>
 
@@ -428,12 +441,12 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-        <img src="/assets/img/human_robot_high_five.png" alt="">
+        <img src="/assets/img/mbrdna.png" alt="">
       </div>
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/internships/mbrdna/" rel="permalink">Mercedes-Benz Research and Development North America, Sunnyvale, CA
+        <a href="/internships/mbrdna/" rel="permalink">Mercedes-Benz R&amp;D North America
 </a>
       
     </h2>
@@ -451,15 +464,14 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          less than 1 minute read
+          1 minute read
         
       </span>
     
   </p>
 
 
-    <p class="archive__item-excerpt" itemprop="description">
-</p>
+    <p class="archive__item-excerpt" itemprop="description">During my 6-month internship at Mercedes Benz Research and Development North America, I had the opportunity to work with a talented team of experts in the au...</p>
   </article>
 </div>
 
@@ -472,7 +484,7 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-        <img src="/assets/img/human_robot_high_five.png" alt="">
+        <img src="/assets/img/handover_small.png" alt="">
       </div>
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
@@ -495,15 +507,14 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          less than 1 minute read
+          1 minute read
         
       </span>
     
   </p>
 
 
-    <p class="archive__item-excerpt" itemprop="description">
-</p>
+    <p class="archive__item-excerpt" itemprop="description">The field of collaborative robotics is rapidly growing and has the potential to change the way we live our day-to-day lives. From easing the work of factory ...</p>
   </article>
 </div>
 
@@ -516,7 +527,7 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-        <img src="/assets/img/human_robot_high_five.png" alt="">
+        <img src="/assets/img/hri.png" alt="">
       </div>
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
@@ -539,21 +550,14 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          less than 1 minute read
+          1 minute read
         
       </span>
     
   </p>
 
 
-    <p class="archive__item-excerpt" itemprop="description">
-
-
-
-    
-  
-
-</p>
+    <p class="archive__item-excerpt" itemprop="description">In recent years, researchers have made great progress in solving complex manipulation tasks using deep reinforcement learning (RL). RL has been used to contr...</p>
   </article>
 </div>
 
