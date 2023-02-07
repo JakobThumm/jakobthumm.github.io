@@ -13,6 +13,7 @@ classes: wide
 header:
   teaser: "/assets/img/hri.png"
 ---
+{% include video id="IUAeZGau28E" provider="youtube" %}
 In recent years, researchers have made great progress in solving complex manipulation tasks using deep reinforcement learning (RL). RL has been used to control robotic arms, play table tennis, and even stack boxes. However, a significant challenge in using RL in human working environments is to guarantee the safety of surrounding humans, who have unpredictable movement and many degrees of freedom.
 
 To address this challenge, we propose a new concept called a "safety shield" for RL. Our safety shield concept is based on speed and separation monitoring (SSM), which guarantees human safety at all times. The safety shield combines a low-frequency RL agent with a high-frequency formal verification, ensuring that the robot stops before any collision with a human could occur.
