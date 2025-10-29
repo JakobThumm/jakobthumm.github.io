@@ -6,12 +6,12 @@ var store = [{
         "teaser": "/assets/img/hri.png"
       },{
         "title": "Safety shield for human-robot collaboration",
-        "excerpt":"In recent years, researchers have made great progress in solving complex manipulation tasks using deep reinforcement learning (RL). RL has been used to control robotic arms, play table tennis, and even stack boxes. However, a significant challenge in using RL in human working environments is to guarantee the safety of...","categories": ["safe-rl"],
+        "excerpt":"We cannot directly deploy embodied AI agents in human environments, as they may exhibit unforeseen and erratic behavior under OOD conditions. We solve this problem with our SARA shield that provides formal safety verification for autonomous robots in human environments. Our safety shield uses set-based reachability analysis to verify if...","categories": ["safe-rl"],
         "tags": [],
         "url": "/safe-rl/safety-shield/",
         "teaser": "/assets/img/hri.png"
       },{
-        "title": "Human-robot-gym",
+        "title": "Human-robot gym",
         "excerpt":"The field of collaborative robotics is rapidly growing and has the potential to change the way we live our day-to-day lives. From easing the work of factory workers, construction workers, and people with disabilities, to improving household tasks, the possibilities are endless. However, in order to achieve this, robots must...","categories": ["safe-rl"],
         "tags": [],
         "url": "/safe-rl/human-robot-gym/",
@@ -34,4 +34,16 @@ var store = [{
         "tags": [],
         "url": "/study-projects/road-condition-monitoring/",
         "teaser": "/assets/img/road_condition.png"
+      },{
+        "title": "Provably Safe RL",
+        "excerpt":"We have to guarantee the safety of AI agents in deployment as they can show dangerous behavior in unseen situations. As reinforcement learning (RL) agents learn by exploring the world, they are especially susceptible to returning unsafe actions. In this line of work, we investigate how to best incorporate formal...","categories": ["safe-rl"],
+        "tags": [],
+        "url": "/safe-rl/provably-safe-rl/",
+        "teaser": "/assets/img/provably_safe_rl_structure.png"
+      },{
+        "title": "Text2Interaction",
+        "excerpt":"Baseline Text2Interaction Different users have varying preferences. This naturally applies to robotics as well! Adjusting robot behavior to human preferences can require intensive human feedback, which prevents a quick adaptation to new users and changing circumstances. To integrate new user preferences in a zero-shot manner, we propose Text2Interaction. We use...","categories": ["personalized-ai"],
+        "tags": [],
+        "url": "/personalized-ai/text2interaction/",
+        "teaser": "/assets/img/hri.png"
       }]

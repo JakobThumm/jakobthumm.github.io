@@ -5,10 +5,10 @@ categories:
 values:
     layout: single
     author_profile: true
-    read_time: true
-    comments: true
-    share: true
-    related: true
+    read_time: false
+    comments: false
+    share: false
+    related: false
 classes: wide
 header:
   teaser: "/assets/img/hri.png"
@@ -31,4 +31,4 @@ The safety reduction does not come with any loss of reward performance.
 Our real-world evaluations on a six degree-of-freedom manipulator showed strong improvements in the behavior of the safe RL agent when using our proposed projection method, as you can see in the video on top.
 
 For more a detailed description of our proposed methods, see our pre-print:
- - Reducing Safety Interventions in Provably Safe Reinforcement Learning [[Arxiv](https://arxiv.org/abs/2303.03339)]
+ - IROS 2023: Reducing Safety Interventions in Provably Safe Reinforcement Learning [[IEEExplore](https://ieeexplore.ieee.org/document/10342464), [Arxiv](https://arxiv.org/abs/2303.03339)]

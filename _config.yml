@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-email: jakob.thumm@tum.de
+email: thumm@stanford.edu
 github_username:  JakobThumm
 
 # Build settings
@@ -63,7 +63,7 @@ description              : "This website contains research papers, blog posts,
   more about the science of robotics and how robots interact 
   with humans."
 url                      : "https://jakobthumm.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : "/" # the subpath of your site, e.g. "/blog"
+baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : "/assets/img/human_robot_high_five.png" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "/favicon.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
@@ -148,12 +148,9 @@ author:
   name             : "Jakob Thumm"
   avatar           : "/assets/img/me.png"
   bio              : "Teaching robots how to safely work with humans."
-  location         : "Munich, Germany"
-  email            : "jakob.thumm@tum.de"
+  location         : "San Francisco, CA, USA"
+  email            : "thumm@stanford.edu"
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:jakob.thumm@tum.de"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/jakobthumm/"
@@ -166,7 +163,7 @@ footer:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:jakob.thumm@tum.de"
+      url: "mailto:thumm@stanford.edu"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/jakobthumm/"
@@ -309,7 +306,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
-      comments: # true
-      share: true
-      related: true
+      read_time: false
+      comments: false
+      share: false
+      related: false

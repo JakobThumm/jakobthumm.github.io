@@ -1,6 +1,7 @@
 ---
 title: "Jakob Thumm"
 layout: single
+author_profile: true
 header:
   overlay_color: "#000"
   overlay_filter: "0.2"
@@ -9,21 +10,23 @@ header:
 excerpt: "Teaching robots to safely work with humans."
 classes: wide
 ---
-![image-left]({{ site.url }}{{ site.baseurl }}/assets/img/me_small.png){: .align-left}
-I'm a Ph.D. student of Robotics at the [Technical University of Munich (TUM)](https://www.tum.de/) with the [Cyber-Physical Systems Group](https://www.ce.cit.tum.de/air/home/). 
-My passion for technology and its potential to positively impact people's lives drives me to research and develop solutions for safe human-robot interactions.
-I am fascinated by the potential of reinforcement learning as a powerful tool for robots to gain experience about the world and learn from it, and especially interested in exploring how we can ensure safety for these reinforcement learning agents in human-robot environments.
+I'm a postdoctoral scholar at Stanford University in the [Autonomous Systems Lab](https://stanfordasl.github.io/) under supervision of [Marco Pavone](https://profiles.stanford.edu/marco-pavone).
+Prior to joining Stanford, I earned my Ph.D. in Computer Engineering from the Technical University of Munich, where I was supervised by [Matthias Althoff](https://www.ce.cit.tum.de/en/cps/members/prof-dr-ing-matthias-althoff/).
 
----
+My research enables robots to work together with humans in a safe, efficient, and enjoyable manner. 
+These robots will support human workers in sectors such as manufacturing, health care, and geriatric care to fulfill tedious, strenuous, and dangerous tasks.
+Realizing this potential requires deploying autonomous robots in environments traditionally designed for humans, which poses critical challenges:
 
-I have set out a range of research questions that I am determined to explore in my Ph.D. studies, including:
- - We let the robots out of their cages, what now?
- - How can we ensure safety for reinforcement learning agents (and other AI-agents) in human-robot environments?
- - How do we design our safety methods so that they interfere with the agent as little as possible while still being provably safe?
- - Can we teach a robot to dynamically react to human behavior, e.g., evade the human?
- - What is needed to create a robot that humans like to work with?
- - What could be fun ways to teach reinforcement learning to robotics students?
+ - **Embodied AI**: How can we teach robots to perform complex tasks with and around humans?
+ - **Safe AI**: How can we certifiably verify the safety of autonomous agents?
+ - **Personalized AI**: How can we rapidly adapt autonomous behavior to best support individual users?
 
-I believe that by answering these questions, we can create a future where robots and humans can work together seamlessly and efficiently.
+![image-center]({{ site.url }}{{ site.baseurl }}/assets/img/general_overview_figure.png){: width="900" .align-center }
 
- ---
+To answer these questions, I develop methods that combine the rigor of formal techniques, such as set-based reachability analysis, with the flexibility of learning-based approaches for creating generalized robot policies.
+Concretely, I developed a [safety shield for provably safe collaboration]({% link _posts/2023-01-29-safety-shield.md %}), enabling close contact and high-performance interaction.
+In the area of safe reinforcement learning (RL), I formulated the [theoretical framework for integrating formal safety guarantees into RL training]({% link _posts/2025-10-28-provably-safe-rl.md %}), showing that safety guarantees can substantially improve the policy performance.
+Furthermore, I introduced a [method for preference alignment from a single user instruction]({% link _posts/2025-10-29-text2interaction.md %}), enabling a personalized robot behavior without extensive user feedback.
+Across these works, my methods have been successfully deployed on multiple robot platforms in international collaborations with academic and industrial partners.
+My vision is to deploy autonomous robots to support humans in everyday tasks including industrial applications, household, and geriatric care.
+

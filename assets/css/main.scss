@@ -5,5 +5,25 @@ search: false
 
 @charset "utf-8";
 
+/* Custom font size override */
+$doc-font-size: 15;
+
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+/* Override hardcoded font sizes */
+html {
+  font-size: 15px !important;
+
+  @media (min-width: 768px) {
+    font-size: 16px !important;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 17px !important;
+  }
+
+  @media (min-width: 1280px) {
+    font-size: 18px !important;
+  }
+}

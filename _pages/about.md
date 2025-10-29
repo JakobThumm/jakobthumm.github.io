@@ -2,10 +2,11 @@
 layout: single
 title: About me
 ---
-I was born in Freiburg, Germany and always had a passion for understanding how machines work. This led me to pursue a degree in Mechatronics at the Karlsruher Institute of Technology where I gained valuable experience in machine learning through various student assistant positions.
+I'm a postdoctoral scholar at Stanford University in the [Autonomous Systems Lab](https://stanfordasl.github.io/) under supervision of [Marco Pavone](https://profiles.stanford.edu/marco-pavone).
+Prior to joining Stanford, I earned my Ph.D. in Computer Engineering from the Technical University of Munich, where I was supervised by [Matthias Althoff](https://www.ce.cit.tum.de/en/cps/members/prof-dr-ing-matthias-althoff/).
 
-My interest in making machines think smarter led me to specialize in safe human-robot collaboration for my graduate studies at the Technical University of Munich. I am currently a student at the Informatics department where I work in the Cyber-Physical-Systems group under the guidance of Matthias Althoff.
+My research enables robots to work together with humans in a safe, efficient, and enjoyable manner. 
+These robots will support human workers in sectors such as manufacturing, health care, and geriatric care to fulfill tedious, strenuous, and dangerous tasks.
+To achieve this, I develop safe, embodied, and personalized AI agents that are specialized for human environments.
 
-Throughout my academic journey, I have consistently challenged myself to learn new things and apply my knowledge in practical ways. I am always eager to work on projects that have the potential to make a positive impact on society.
-
-Explore my [current and past projects]({% link _pages/projects.md %}) to see my work in action.
+Outside the lab, I am a passionate runner and volunteer at [Sutro Stewards](https://www.sutrostewards.org/), where I maintain hiking trails in the heart of San Francisco. 

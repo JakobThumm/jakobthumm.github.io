@@ -6,16 +6,30 @@ header:
   overlay_filter: "0.2"
   overlay_image: /assets/img/desert_1.png
   caption: "Mojave Desert, California"
-excerpt: "Past and Present Projects"
+excerpt: "Projects"
 classes: wide
 feature_row:
-  - image_path: /assets/img/hri.png
+  - image_path: /assets/img/sara_shield_demo.gif
     alt: "Safety shield"
     title: "Safety Shield"
     excerpt: "Learn how we guarantee the safety of humans working together with robots:"
     btn_label: "Click here!"
     btn_class: "btn--primary"
     url: "/safe-rl/safety-shield/"
+  - image_path: /assets/img/provably_safe_rl_structure_small.png
+    alt: "Provably Safe RL"
+    title: "Provably Safe RL"
+    excerpt: "Provable safety for RL agents:"
+    btn_label: "Click here!"
+    btn_class: "btn--primary"
+    url: "/safe-rl/provably-safe-rl/"
+  - image_path: /assets/img/E2_JakobHandleUpwards2.gif
+    alt: "Text2Interaction"
+    title: "Text2Interaction"
+    excerpt: "Aligning foundation models with human preferences:"
+    btn_label: "Click here!"
+    btn_class: "btn--primary"
+    url: "/personalized-ai/text2interaction/"
   - image_path: /assets/img/reducing_failsafe_robot.png
     alt: "Reducing interventions"
     title: "Reducing Interventions"

@@ -123,7 +123,7 @@
             </li><li class="masthead__menu-item">
               <a href="/_pages/about">About</a>
             </li><li class="masthead__menu-item">
-              <a href="mailto:jakob.thumm@tum.de">Contact me</a>
+              <a href="mailto:thumm@stanford.edu">Contact me</a>
             </li></ul>
         
         <button class="greedy-nav__toggle hidden" type="button">
@@ -183,6 +183,122 @@
 
 <div id="main" role="main">
   
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+    <div class="author__avatar">
+      <a href="http://localhost:4000/">
+        <img src="/assets/img/me.png" alt="Jakob Thumm" itemprop="image" class="u-photo">
+      </a>
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="http://localhost:4000/" itemprop="url">Jakob Thumm</a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p>Teaching robots how to safely work with humans.</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">San Francisco, CA, USA</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="https://www.linkedin.com/in/jakobthumm/" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">LinkedIn</span></a></li>
+          
+        
+          
+            <li><a href="https://github.com/JakobThumm" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+      
+
+      
+
+      
+        <li>
+          <a href="mailto:thumm@stanford.edu" rel="me" class="u-email">
+            <meta itemprop="email" content="thumm@stanford.edu" />
+            <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span>
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
 
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
@@ -196,26 +312,28 @@
 
       <section class="page__content e-content" itemprop="text">
         
-        <p><img src="http://localhost:4000//assets/img/me_small.png" alt="image-left" class="align-left" />
-I’m a Ph.D. student of Robotics at the <a href="https://www.tum.de/">Technical University of Munich (TUM)</a> with the <a href="https://www.ce.cit.tum.de/air/home/">Cyber-Physical Systems Group</a>. 
-My passion for technology and its potential to positively impact people’s lives drives me to research and develop solutions for safe human-robot interactions.
-I am fascinated by the potential of reinforcement learning as a powerful tool for robots to gain experience about the world and learn from it, and especially interested in exploring how we can ensure safety for these reinforcement learning agents in human-robot environments.</p>
+        <p>I’m a postdoctoral scholar at Stanford University in the <a href="https://stanfordasl.github.io/">Autonomous Systems Lab</a> under supervision of <a href="https://profiles.stanford.edu/marco-pavone">Marco Pavone</a>.
+Prior to joining Stanford, I earned my Ph.D. in Computer Engineering from the Technical University of Munich, where I was supervised by <a href="https://www.ce.cit.tum.de/en/cps/members/prof-dr-ing-matthias-althoff/">Matthias Althoff</a>.</p>
 
-<hr />
+<p>My research enables robots to work together with humans in a safe, efficient, and enjoyable manner. 
+These robots will support human workers in sectors such as manufacturing, health care, and geriatric care to fulfill tedious, strenuous, and dangerous tasks.
+Realizing this potential requires deploying autonomous robots in environments traditionally designed for humans, which poses critical challenges:</p>
 
-<p>I have set out a range of research questions that I am determined to explore in my Ph.D. studies, including:</p>
 <ul>
-  <li>We let the robots out of their cages, what now?</li>
-  <li>How can we ensure safety for reinforcement learning agents (and other AI-agents) in human-robot environments?</li>
-  <li>How do we design our safety methods so that they interfere with the agent as little as possible while still being provably safe?</li>
-  <li>Can we teach a robot to dynamically react to human behavior, e.g., evade the human?</li>
-  <li>What is needed to create a robot that humans like to work with?</li>
-  <li>What could be fun ways to teach reinforcement learning to robotics students?</li>
+  <li><strong>Embodied AI</strong>: How can we teach robots to perform complex tasks with and around humans?</li>
+  <li><strong>Safe AI</strong>: How can we certifiably verify the safety of autonomous agents?</li>
+  <li><strong>Personalized AI</strong>: How can we rapidly adapt autonomous behavior to best support individual users?</li>
 </ul>
 
-<p>I believe that by answering these questions, we can create a future where robots and humans can work together seamlessly and efficiently.</p>
+<p><img src="http://localhost:4000/assets/img/general_overview_figure.png" alt="image-center" width="900" class="align-center" /></p>
 
-<hr />
+<p>To answer these questions, I develop methods that combine the rigor of formal techniques, such as set-based reachability analysis, with the flexibility of learning-based approaches for creating generalized robot policies.
+Concretely, I developed a <a href="/safe-rl/safety-shield/">safety shield for provably safe collaboration</a>, enabling close contact and high-performance interaction.
+In the area of safe reinforcement learning (RL), I formulated the <a href="/safe-rl/provably-safe-rl/">theoretical framework for integrating formal safety guarantees into RL training</a>, showing that safety guarantees can substantially improve the policy performance.
+Furthermore, I introduced a <a href="/personalized-ai/text2interaction/">method for preference alignment from a single user instruction</a>, enabling a personalized robot behavior without extensive user feedback.
+Across these works, my methods have been successfully deployed on multiple robot platforms in international collaborations with academic and industrial partners.
+My vision is to deploy autonomous robots to support humans in everyday tasks including industrial applications, household, and geriatric care.</p>
+
 
         
       </section>
@@ -259,7 +377,7 @@ I am fascinated by the potential of reinforcement learning as a powerful tool fo
     
       
         
-          <li><a href="mailto:jakob.thumm@tum.de" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email</a></li>
+          <li><a href="mailto:thumm@stanford.edu" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email</a></li>
         
       
         
@@ -278,7 +396,7 @@ I am fascinated by the potential of reinforcement learning as a powerful tool fo
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; 2023 Jakob Thumm. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2025 Jakob Thumm. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>
