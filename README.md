@@ -7,6 +7,8 @@
 bundle install
 bundle exec jekyll serve
 ```
+Will display at `http://127.0.0.1:4000/`.
+Run `git add *`, `git commit`, and `git push` for online update.
 # Useful stuff
 Link to one of your own posts:
 ```

@@ -146,7 +146,7 @@ analytics:
 # Site Author
 author:
   name             : "Jakob Thumm"
-  avatar           : "/assets/img/me.png"
+  avatar           : "/assets/img/JakobThumm_square.png"
   bio              : "Teaching robots how to safely work with humans."
   location         : "San Francisco, CA, USA"
   email            : "thumm@stanford.edu"

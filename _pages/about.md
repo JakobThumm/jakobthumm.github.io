@@ -1,7 +1,9 @@
 ---
 layout: single
 title: About me
+classes: wide
 ---
+![image-left]({{ site.url }}{{ site.baseurl }}/assets/img/JakobThumm.png){: width="300" .align-left }
 I'm a postdoctoral scholar at Stanford University in the [Autonomous Systems Lab](https://stanfordasl.github.io/) under supervision of [Marco Pavone](https://profiles.stanford.edu/marco-pavone).
 Prior to joining Stanford, I earned my Ph.D. in Computer Engineering from the Technical University of Munich, where I was supervised by [Matthias Althoff](https://www.ce.cit.tum.de/en/cps/members/prof-dr-ing-matthias-althoff/).
 
