@@ -1,4 +1,216 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-10-29T15:35:56-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jakob Thumm</title><subtitle>This website contains research papers, blog posts, and other resources related to my research topics. It is a great resource for anyone interested in learning more about the science of robotics and how robots interact with humans.</subtitle><author><name>Jakob Thumm</name><email>thumm@stanford.edu</email></author><entry><title type="html">Text2Interaction</title><link href="http://localhost:4000/personalized-ai/text2interaction/" rel="alternate" type="text/html" title="Text2Interaction" /><published>2025-10-29T00:00:00-07:00</published><updated>2025-10-29T00:00:00-07:00</updated><id>http://localhost:4000/personalized-ai/text2interaction</id><content type="html" xml:base="http://localhost:4000/personalized-ai/text2interaction/">&lt;table&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2026-03-13T13:18:49-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jakob Thumm</title><subtitle>This website contains research papers, blog posts, and other resources related to my research topics. It is a great resource for anyone interested in learning more about the science of robotics and how robots interact with humans.</subtitle><author><name>Jakob Thumm</name><email>thumm@stanford.edu</email></author><entry><title type="html">Effective Bibliography Management with Zotero</title><link href="http://localhost:4000/other/bibliography-management/" rel="alternate" type="text/html" title="Effective Bibliography Management with Zotero" /><published>2026-03-10T00:00:00-07:00</published><updated>2026-03-10T00:00:00-07:00</updated><id>http://localhost:4000/other/bibliography-management</id><content type="html" xml:base="http://localhost:4000/other/bibliography-management/">&lt;h1 id=&quot;motivation&quot;&gt;Motivation&lt;/h1&gt;
+&lt;p&gt;Throughout my Ph.D. I built a highly flexible, automated bibliography management pipeline.
+I was driven by three factors:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;I love automating things. I would rather spend 5 hours automating a manual task than spend one hour doing repetitive work.&lt;/li&gt;
+  &lt;li&gt;I’m interested in way too many different research directions, so I needed a way to structure papers of many different fields. My goal: be able to find that one cool paper after 3 years of reading it.&lt;/li&gt;
+  &lt;li&gt;My PI was obsessed with high quality bibliographies in papers and it kind of caught on with me.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;I thought having some form of bibliography management was standard, but a short poll revealed that quite a few people don’t use a bibliography management tool yet:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/img/bib_manage/survey.png&quot; alt=&quot;image-center&quot; width=&quot;700&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;With my favorite answer being “I use google chrome”:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/img/bib_manage/chrome.png&quot; alt=&quot;image-center&quot; width=&quot;900&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Therefore, I want to give you an overview of how I structure my bibliography management in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Zotero&lt;/code&gt;.
+For each component that I use, I will try to give my reasoning of how it makes my life easier and you can decide for yourself if this component is worthwhile for you. 
+All components of my setup are independent of each other, so pick your poison!&lt;/p&gt;
+
+&lt;p&gt;Note: I’m working in Linux Ubuntu, but most of these elements should run on Mac or Windows as well.&lt;/p&gt;
+
+&lt;h1 id=&quot;setup-overview&quot;&gt;Setup Overview&lt;/h1&gt;
+&lt;p&gt;My general setup consists of the following elements:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.zotero.org/download/&quot;&gt;Zotero&lt;/a&gt;: the core bibliography management software. Here you save and categorize your papers and later export them to a .bib file.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.zotero.org/download/connectors&quot;&gt;Zotero Connector&lt;/a&gt;: save papers directly from the website to Zotero.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://retorque.re/zotero-better-bibtex/&quot;&gt;Better BibTex For Zotero&lt;/a&gt;: unify your citation keys and improve the file export.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/wileyyugioh/zotmoov?tab=readme-ov-file&quot;&gt;ZotMoov&lt;/a&gt;: Automatically organize your pdf files on your computer in the same folder structure as your Zotero library and rename the files.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://gitlab.lrz.de/tum-cps/bibliography-cleaner&quot;&gt;Bibliography Cleaner&lt;/a&gt;: Clean your exported .bib file to make your bibliography look cleaner in your paper.
+The usage of the entire system is best explained in an example workflow.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;example-usage-of-the-entire-setup&quot;&gt;Example Usage of the Entire Setup&lt;/h1&gt;
+&lt;h2 id=&quot;create-a-folder-structure&quot;&gt;Create a Folder Structure&lt;/h2&gt;
+&lt;p&gt;Let’s start by opening &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Zotero&lt;/code&gt; and creating a new collection by right-clicking on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;My Library&lt;/code&gt; -&amp;gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;New Collection&lt;/code&gt;. I called it “Example”.
+Now we can create ourselves a folder structure within that collection. 
+For this, I right-click on the new collection, e.g., “Example”, and select &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;New Subcollection&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/img/bib_manage/create_folder_structure.png&quot; alt=&quot;image-center&quot; width=&quot;950&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Proceed with creating an initial structure for your work.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/img/bib_manage/select_folder.png&quot; alt=&quot;image-center&quot; width=&quot;400&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;add-papers-to-zotero&quot;&gt;Add Papers to Zotero&lt;/h2&gt;
+&lt;p&gt;If we want to add papers, we first need to make sure we find the correct version.&lt;/p&gt;
+
+&lt;h3 id=&quot;find-the-correct-version-of-the-paper&quot;&gt;Find the Correct Version of the Paper&lt;/h3&gt;
+&lt;p&gt;We start with our typical paper search in google scholar. Let’s say, we found the following paper:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/img/bib_manage/scholar_paper_explain.png&quot; alt=&quot;image-center&quot; width=&quot;800&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This paper was already published at the NeurIPS conference, but google scholar still links to the Arxiv version. 
+A common mistake is simply to cite the Arxiv version. This is very frowned upon by the reviewers and might negatively impact your chance of publication!&lt;/p&gt;
+
+&lt;p&gt;Therefore, we instead click on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;All (some number) Verions&lt;/code&gt; and select the website of the original publisher. This is most often quite easy to figure out, e.g., IEEExplore, Nature, Science, etc. In the case of the big AI conferences, we will look for the openreview link.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/img/bib_manage/scholar_multiple_versions.png&quot; alt=&quot;image-center&quot; width=&quot;600&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This will bring us to the publisher website, in our example:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/img/bib_manage/openreview_page.png&quot; alt=&quot;image-center&quot; width=&quot;800&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;add-the-paper-to-zotero&quot;&gt;Add the Paper to Zotero&lt;/h3&gt;
+&lt;p&gt;There are two alternative ways to add this work to Zotero 1. Manually, and 2. Automatically with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Zotero Connector&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h4 id=&quot;1-manually-adding-papers&quot;&gt;1. Manually Adding Papers&lt;/h4&gt;
+&lt;p&gt;On the publisher website, search for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Download Citation&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Bibtex&lt;/code&gt; to download the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;reference.bib&lt;/code&gt; file. Also, download the PDF file.
+In &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Zotero&lt;/code&gt; select the sub-collection you would like to save this paper in. Then, go to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;File&lt;/code&gt; -&amp;gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Import&lt;/code&gt; and import the downloaded bibtex file. 
+You can right-click on the new item and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Add Attachment&lt;/code&gt; -&amp;gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;File&lt;/code&gt; to add the downloaded PDF.&lt;/p&gt;
+
+&lt;p&gt;This process is of course way too manual for me. Let’s look at how to automate this.&lt;/p&gt;
+
+&lt;h4 id=&quot;2-automatically-using-zotero-connector&quot;&gt;2. Automatically using Zotero Connector&lt;/h4&gt;
+&lt;p&gt;Open &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Zotero&lt;/code&gt; and select the sub-collection you would like to save this paper in, e.g.:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/img/bib_manage/select_folder.png&quot; alt=&quot;image-center&quot; width=&quot;400&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Now, go to your browser window with the publisher website open and click on the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Zotero Connector&lt;/code&gt; extension. The paper reference and PDF will be automatically downloaded and added to your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Zotero&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/img/bib_manage/save_to_zotero.png&quot; alt=&quot;image-center&quot; width=&quot;400&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;inspect-your-paper-in-zotero&quot;&gt;Inspect your Paper in Zotero&lt;/h3&gt;
+&lt;p&gt;You can now see all the properties of this reference in the right panel of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Zotero&lt;/code&gt; if you click on this paper.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/img/bib_manage/paper1.png&quot; alt=&quot;image-center&quot; width=&quot;950&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You can view the PDF by double clicking on the little red PDF symbol in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Zotero&lt;/code&gt;. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Zotero&lt;/code&gt; actually has an amazing PDF viewer with multiple highlight colors and other features built-in. Therefore, I mostly read my papers in here.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/img/bib_manage/view_pdf_in_zotero.png&quot; alt=&quot;image-center&quot; width=&quot;950&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;fix-mistakes-in-zotero&quot;&gt;Fix Mistakes in Zotero&lt;/h3&gt;
+&lt;p&gt;Sometimes, the downloaded reference is incorrect. 
+In this example, a NeurIPS paper (which is a conference) was labelled as a journal article. We can easily correct any wrong entries in the right panel.&lt;/p&gt;
+
+&lt;p&gt;Change from journal:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/img/bib_manage/change_from_journal.png&quot; alt=&quot;image-center&quot; width=&quot;700&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;to conference:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/img/bib_manage/change_to_conference.png&quot; alt=&quot;image-center&quot; width=&quot;700&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;export-your-papers-to-bibtex&quot;&gt;Export your Papers to Bibtex&lt;/h2&gt;
+&lt;p&gt;To cite your papers in Latex, you will need a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.bib&lt;/code&gt; file that includes all your references.
+To create this file, right-click on your collection, e.g., &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Example&lt;/code&gt;, and select &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Export Collection&lt;/code&gt;.
+After accepting the default export configurations, you will get a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.bib&lt;/code&gt; file like this:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;@inproceedings{bonnaire2025why,
+  title = {Why Diffusion Models Don&apos;t Memorize: The Role of Implicit Dynamical Regularization in Training},
+  shorttitle = {Why Diffusion Models Don&apos;t Memorize},
+  booktitle = {The Thirty-Ninth Annual Conference on Neural Information Processing Systems},
+  author = {Bonnaire, Tony and Urfin, Rapha{\&quot;e}l and Biroli, Giulio and Mezard, Marc},
+  year = 2025,
+  month = oct,
+  url = {https://openreview.net/forum?id=BSZqpqgqM0},
+  urldate = {2026-03-11},
+}
+
+@inproceedings{NEURIPS2022_5e6cec2a,
+  title = {Diffusion Models as Plug-and-Play Priors},
+  booktitle = {Advances in Neural Information Processing Systems},
+  author = {Graikos, Alexandros and Malkin, Nikolay and Jojic, Nebojsa and Samaras, Dimitris},
+  year = 2022,
+  month = dec,
+  volume = {35},
+  pages = {14715--14728},
+  url = {https://proceedings.neurips.cc/paper_files/paper/2022/hash/5e6cec2a9520708381fe520246018e8b-Abstract-Conference.html},
+  urldate = {2026-03-11},
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Note that the automatic citation keys &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;NEURIPS2022_5e6cec2a&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bonnaire2025why&lt;/code&gt; do not follow a universal pattern as they are given by the publisher.
+To fix this, we will use the &lt;a href=&quot;https://retorque.re/zotero-better-bibtex/&quot;&gt;Better BibTex&lt;/a&gt; extension for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Zotero&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;setting-up-better-bibtex&quot;&gt;Setting up Better BibTex&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;Follow the installation instructions on the &lt;a href=&quot;https://retorque.re/zotero-better-bibtex/&quot;&gt;Better BibTex Website&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Change your desired citation key style by going in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Zotero&lt;/code&gt; in the top bar to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Edit&lt;/code&gt; -&amp;gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Settings&lt;/code&gt; -&amp;gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Better BibTex&lt;/code&gt; and customize your citation key. I am using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;auth.lower + &quot;_&quot; + year + &quot;_&quot; + shorttitle(2, 2)&lt;/code&gt;, which would give me &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;graikos_2022_DiffusionModels&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bonnaire_2025_WhyDiffusion&lt;/code&gt; instead of the previous &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;NEURIPS2022_5e6cec2a&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bonnaire2025why&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Export your library again and enjoy your unified citation keys.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: some venues add their citation key to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Extras&lt;/code&gt; field of the bibtex. This will override Better BibTex 😡. To fix that, you have to delete the extras field in the right panel of Zotero for these papers.&lt;/p&gt;
+
+&lt;h2 id=&quot;clean-up-your-messy-bib-file&quot;&gt;Clean up Your Messy Bib File&lt;/h2&gt;
+&lt;p&gt;Let’s use the exported bib file, e.g., &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bib_manager_example.bib&lt;/code&gt;, in a dummy &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.tex&lt;/code&gt; document:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{cite}
+
+\begin{document}
+
+\title{Bibliography Test}
+\author{Jakob Thumm}
+\maketitle
+
+\section{Introduction}
+
+We cite a couple of papers \cite{bonnaire_2025_WhyDiffusion, graikos_2022_DiffusionModels, gyevnar_2025_AISafety}.
+
+\bibliographystyle{plain}
+\bibliography{bib_manager_example}
+
+\end{document}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This will result in a good bibliography, but there are a couple of things that can be improved.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/img/bib_manage/unclean_bibliography.png&quot; alt=&quot;image-center&quot; width=&quot;950&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Common points for improvements are:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Too much information:
+    &lt;ul&gt;
+      &lt;li&gt;place of the conference&lt;/li&gt;
+      &lt;li&gt;names of editors&lt;/li&gt;
+      &lt;li&gt;month of publication&lt;/li&gt;
+      &lt;li&gt;year stated multiple times&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Inconsistent conference proceeding titles. Conferences change the name of their proceeding in the bibtex almost yearly. Additionally, the proceeding title often includes unnecessary information like the number of the conference.&lt;/li&gt;
+  &lt;li&gt;Zotero removes the capitalization from titles as it is often wrong. We need to re-capitalize common terms like “AI”.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;To fix these points, we wrote an automatic &lt;a href=&quot;https://gitlab.lrz.de/tum-cps/bibliography-cleaner&quot;&gt;Bibliography Cleaner&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p&gt;After installing, we can simply run the cleaner with:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;python bibliography_cleaner/run.py \
+   -in [PATH_TO_FILE]/bib_manager_example.bib -out [PATH_TO_FILE]/bib_manager_example_cleaned.bib\
+   -c bibliography_cleaner/bib_configs/default.yml --overwrite\
+   --proceedings_abbreviations bibliography_cleaner/bib_configs/proceedings.yml\
+   --forbidden_characters bibliography_cleaner/bib_configs/special_tex_characters.yml\
+   --special_letters bibliography_cleaner/bib_configs/special_letters.yml\
+   --capitalization bibliography_cleaner/bib_configs/capitalization.yml
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The outcome is a clean and consistent bibliography that all reviewers will love.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/img/bib_manage/clean_bibliography.png&quot; alt=&quot;image-center&quot; width=&quot;950&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;find-your-pdf-files&quot;&gt;Find your PDF Files&lt;/h2&gt;
+
+&lt;p&gt;After some extensive research, you might want to share PDF files with students or colleagues.
+By default, Zotero saves all PDF files in one folder without any structure.
+Additionally, the PDFs downloaded from the publisher sites do not follow any naming convention, so you will have to figure out which paper &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;LGAFI2026_396.pdf&lt;/code&gt; is.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/wileyyugioh/zotmoov?tab=readme-ov-file&quot;&gt;ZotMoov&lt;/a&gt; improves that by automatically recreating the folder structure that you have in Zotero in your file system and renames the papers in a meaningful way.
+The outcome is something like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/img/bib_manage/pdfs_in_folder.png&quot; alt=&quot;image-center&quot; width=&quot;950&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;</content><author><name>Jakob Thumm</name><email>thumm@stanford.edu</email></author><category term="other" /><summary type="html">Motivation Throughout my Ph.D. I built a highly flexible, automated bibliography management pipeline. I was driven by three factors: I love automating things. I would rather spend 5 hours automating a manual task than spend one hour doing repetitive work. I’m interested in way too many different research directions, so I needed a way to structure papers of many different fields. My goal: be able to find that one cool paper after 3 years of reading it. My PI was obsessed with high quality bibliographies in papers and it kind of caught on with me.</summary></entry><entry><title type="html">Text2Interaction</title><link href="http://localhost:4000/personalized-ai/text2interaction/" rel="alternate" type="text/html" title="Text2Interaction" /><published>2025-10-29T00:00:00-07:00</published><updated>2025-10-29T00:00:00-07:00</updated><id>http://localhost:4000/personalized-ai/text2interaction</id><content type="html" xml:base="http://localhost:4000/personalized-ai/text2interaction/">&lt;table&gt;
   &lt;thead&gt;
     &lt;tr&gt;
       &lt;th style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;http://localhost:4000/assets/img/B1_JakobBaseline1.gif&quot; alt=&quot;Baseline&quot; /&gt;&lt;/th&gt;

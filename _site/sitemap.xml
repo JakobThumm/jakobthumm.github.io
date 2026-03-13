@@ -33,6 +33,10 @@
 <lastmod>2025-10-29T00:00:00-07:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/other/bibliography-management/</loc>
+<lastmod>2026-03-10T00:00:00-07:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/404/</loc>
 </url>
 <url>
@@ -40,6 +44,9 @@
 </url>
 <url>
 <loc>http://localhost:4000/about/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/_pages/blog-posts/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/_pages/contact/</loc>

@@ -46,4 +46,10 @@ var store = [{
         "tags": [],
         "url": "/personalized-ai/text2interaction/",
         "teaser": "/assets/img/hri.png"
+      },{
+        "title": "Effective Bibliography Management with Zotero",
+        "excerpt":"Motivation Throughout my Ph.D. I built a highly flexible, automated bibliography management pipeline. I was driven by three factors: I love automating things. I would rather spend 5 hours automating a manual task than spend one hour doing repetitive work. I’m interested in way too many different research directions, so...","categories": ["other"],
+        "tags": [],
+        "url": "/other/bibliography-management/",
+        "teaser": "/assets/img/hri.png"
       }]

@@ -1,0 +1,614 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Effective Bibliography Management with Zotero - Jakob Thumm</title>
+<meta name="description" content="Motivation Throughout my Ph.D. I built a highly flexible, automated bibliography management pipeline. I was driven by three factors:    I love automating things. I would rather spend 5 hours automating a manual task than spend one hour doing repetitive work.   I’m interested in way too many different research directions, so I needed a way to structure papers of many different fields. My goal: be able to find that one cool paper after 3 years of reading it.   My PI was obsessed with high quality bibliographies in papers and it kind of caught on with me.">
+
+
+  <meta name="author" content="Jakob Thumm">
+  
+  <meta property="article:author" content="Jakob Thumm">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Jakob Thumm">
+<meta property="og:title" content="Effective Bibliography Management with Zotero">
+<meta property="og:url" content="http://localhost:4000/other/bibliography-management/">
+
+
+  <meta property="og:description" content="Motivation Throughout my Ph.D. I built a highly flexible, automated bibliography management pipeline. I was driven by three factors:    I love automating things. I would rather spend 5 hours automating a manual task than spend one hour doing repetitive work.   I’m interested in way too many different research directions, so I needed a way to structure papers of many different fields. My goal: be able to find that one cool paper after 3 years of reading it.   My PI was obsessed with high quality bibliographies in papers and it kind of caught on with me.">
+
+
+
+  <meta property="og:image" content="http://localhost:4000/assets/img/hri.png">
+
+
+
+
+
+  <meta property="article:published_time" content="2026-03-10T00:00:00-07:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/other/bibliography-management/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Jakob Thumm",
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Jakob Thumm Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single wide">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/favicon.png" alt="Jakob Thumm"></a>
+        
+        <a class="site-title" href="/">
+          Jakob Thumm
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/_pages/projects">Projects</a>
+            </li><li class="masthead__menu-item">
+              <a href="/_pages/blog-posts">Blog Posts</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://scholar.google.de/citations?user=sBm3vkcAAAAJ">Google Scholar</a>
+            </li><li class="masthead__menu-item">
+              <a href="/_pages/about">About</a>
+            </li><li class="masthead__menu-item">
+              <a href="mailto:thumm@stanford.edu">Contact me</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+    <div class="author__avatar">
+      <a href="http://localhost:4000/">
+        <img src="/assets/img/JakobThumm_square.png" alt="Jakob Thumm" itemprop="image" class="u-photo">
+      </a>
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="http://localhost:4000/" itemprop="url">Jakob Thumm</a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p>Teaching robots how to safely work with humans.</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">San Francisco, CA, USA</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="https://www.linkedin.com/in/jakobthumm/" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">LinkedIn</span></a></li>
+          
+        
+          
+            <li><a href="https://github.com/JakobThumm" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+      
+
+      
+
+      
+        <li>
+          <a href="mailto:thumm@stanford.edu" rel="me" class="u-email">
+            <meta itemprop="email" content="thumm@stanford.edu" />
+            <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span>
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Effective Bibliography Management with Zotero">
+    <meta itemprop="description" content="MotivationThroughout my Ph.D. I built a highly flexible, automated bibliography management pipeline.I was driven by three factors:  I love automating things. I would rather spend 5 hours automating a manual task than spend one hour doing repetitive work.  I’m interested in way too many different research directions, so I needed a way to structure papers of many different fields. My goal: be able to find that one cool paper after 3 years of reading it.  My PI was obsessed with high quality bibliographies in papers and it kind of caught on with me.">
+    <meta itemprop="datePublished" content="2026-03-10T00:00:00-07:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="http://localhost:4000/other/bibliography-management/" class="u-url" itemprop="url">Effective Bibliography Management with Zotero
+</a>
+          </h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+        <h1 id="motivation">Motivation</h1>
+<p>Throughout my Ph.D. I built a highly flexible, automated bibliography management pipeline.
+I was driven by three factors:</p>
+<ol>
+  <li>I love automating things. I would rather spend 5 hours automating a manual task than spend one hour doing repetitive work.</li>
+  <li>I’m interested in way too many different research directions, so I needed a way to structure papers of many different fields. My goal: be able to find that one cool paper after 3 years of reading it.</li>
+  <li>My PI was obsessed with high quality bibliographies in papers and it kind of caught on with me.</li>
+</ol>
+
+<p>I thought having some form of bibliography management was standard, but a short poll revealed that quite a few people don’t use a bibliography management tool yet:</p>
+
+<p><img src="http://localhost:4000/assets/img/bib_manage/survey.png" alt="image-center" width="700" class="align-center" /></p>
+
+<p>With my favorite answer being “I use google chrome”:</p>
+
+<p><img src="http://localhost:4000/assets/img/bib_manage/chrome.png" alt="image-center" width="900" class="align-center" /></p>
+
+<p>Therefore, I want to give you an overview of how I structure my bibliography management in <code class="language-plaintext highlighter-rouge">Zotero</code>.
+For each component that I use, I will try to give my reasoning of how it makes my life easier and you can decide for yourself if this component is worthwhile for you. 
+All components of my setup are independent of each other, so pick your poison!</p>
+
+<p>Note: I’m working in Linux Ubuntu, but most of these elements should run on Mac or Windows as well.</p>
+
+<h1 id="setup-overview">Setup Overview</h1>
+<p>My general setup consists of the following elements:</p>
+<ul>
+  <li><a href="https://www.zotero.org/download/">Zotero</a>: the core bibliography management software. Here you save and categorize your papers and later export them to a .bib file.</li>
+  <li><a href="https://www.zotero.org/download/connectors">Zotero Connector</a>: save papers directly from the website to Zotero.</li>
+  <li><a href="https://retorque.re/zotero-better-bibtex/">Better BibTex For Zotero</a>: unify your citation keys and improve the file export.</li>
+  <li><a href="https://github.com/wileyyugioh/zotmoov?tab=readme-ov-file">ZotMoov</a>: Automatically organize your pdf files on your computer in the same folder structure as your Zotero library and rename the files.</li>
+  <li><a href="https://gitlab.lrz.de/tum-cps/bibliography-cleaner">Bibliography Cleaner</a>: Clean your exported .bib file to make your bibliography look cleaner in your paper.
+The usage of the entire system is best explained in an example workflow.</li>
+</ul>
+
+<h1 id="example-usage-of-the-entire-setup">Example Usage of the Entire Setup</h1>
+<h2 id="create-a-folder-structure">Create a Folder Structure</h2>
+<p>Let’s start by opening <code class="language-plaintext highlighter-rouge">Zotero</code> and creating a new collection by right-clicking on <code class="language-plaintext highlighter-rouge">My Library</code> -&gt; <code class="language-plaintext highlighter-rouge">New Collection</code>. I called it “Example”.
+Now we can create ourselves a folder structure within that collection. 
+For this, I right-click on the new collection, e.g., “Example”, and select <code class="language-plaintext highlighter-rouge">New Subcollection</code>.</p>
+
+<p><img src="http://localhost:4000/assets/img/bib_manage/create_folder_structure.png" alt="image-center" width="950" class="align-center" /></p>
+
+<p>Proceed with creating an initial structure for your work.</p>
+
+<p><img src="http://localhost:4000/assets/img/bib_manage/select_folder.png" alt="image-center" width="400" class="align-center" /></p>
+
+<h2 id="add-papers-to-zotero">Add Papers to Zotero</h2>
+<p>If we want to add papers, we first need to make sure we find the correct version.</p>
+
+<h3 id="find-the-correct-version-of-the-paper">Find the Correct Version of the Paper</h3>
+<p>We start with our typical paper search in google scholar. Let’s say, we found the following paper:</p>
+
+<p><img src="http://localhost:4000/assets/img/bib_manage/scholar_paper_explain.png" alt="image-center" width="800" class="align-center" /></p>
+
+<p>This paper was already published at the NeurIPS conference, but google scholar still links to the Arxiv version. 
+A common mistake is simply to cite the Arxiv version. This is very frowned upon by the reviewers and might negatively impact your chance of publication!</p>
+
+<p>Therefore, we instead click on <code class="language-plaintext highlighter-rouge">All (some number) Verions</code> and select the website of the original publisher. This is most often quite easy to figure out, e.g., IEEExplore, Nature, Science, etc. In the case of the big AI conferences, we will look for the openreview link.</p>
+
+<p><img src="http://localhost:4000/assets/img/bib_manage/scholar_multiple_versions.png" alt="image-center" width="600" class="align-center" /></p>
+
+<p>This will bring us to the publisher website, in our example:</p>
+
+<p><img src="http://localhost:4000/assets/img/bib_manage/openreview_page.png" alt="image-center" width="800" class="align-center" /></p>
+
+<h3 id="add-the-paper-to-zotero">Add the Paper to Zotero</h3>
+<p>There are two alternative ways to add this work to Zotero 1. Manually, and 2. Automatically with <code class="language-plaintext highlighter-rouge">Zotero Connector</code>.</p>
+
+<h4 id="1-manually-adding-papers">1. Manually Adding Papers</h4>
+<p>On the publisher website, search for <code class="language-plaintext highlighter-rouge">Download Citation</code> or <code class="language-plaintext highlighter-rouge">Bibtex</code> to download the <code class="language-plaintext highlighter-rouge">reference.bib</code> file. Also, download the PDF file.
+In <code class="language-plaintext highlighter-rouge">Zotero</code> select the sub-collection you would like to save this paper in. Then, go to <code class="language-plaintext highlighter-rouge">File</code> -&gt; <code class="language-plaintext highlighter-rouge">Import</code> and import the downloaded bibtex file. 
+You can right-click on the new item and <code class="language-plaintext highlighter-rouge">Add Attachment</code> -&gt; <code class="language-plaintext highlighter-rouge">File</code> to add the downloaded PDF.</p>
+
+<p>This process is of course way too manual for me. Let’s look at how to automate this.</p>
+
+<h4 id="2-automatically-using-zotero-connector">2. Automatically using Zotero Connector</h4>
+<p>Open <code class="language-plaintext highlighter-rouge">Zotero</code> and select the sub-collection you would like to save this paper in, e.g.:</p>
+
+<p><img src="http://localhost:4000/assets/img/bib_manage/select_folder.png" alt="image-center" width="400" class="align-center" /></p>
+
+<p>Now, go to your browser window with the publisher website open and click on the <code class="language-plaintext highlighter-rouge">Zotero Connector</code> extension. The paper reference and PDF will be automatically downloaded and added to your <code class="language-plaintext highlighter-rouge">Zotero</code>.</p>
+
+<p><img src="http://localhost:4000/assets/img/bib_manage/save_to_zotero.png" alt="image-center" width="400" class="align-center" /></p>
+
+<h3 id="inspect-your-paper-in-zotero">Inspect your Paper in Zotero</h3>
+<p>You can now see all the properties of this reference in the right panel of <code class="language-plaintext highlighter-rouge">Zotero</code> if you click on this paper.</p>
+
+<p><img src="http://localhost:4000/assets/img/bib_manage/paper1.png" alt="image-center" width="950" class="align-center" /></p>
+
+<p>You can view the PDF by double clicking on the little red PDF symbol in <code class="language-plaintext highlighter-rouge">Zotero</code>. <code class="language-plaintext highlighter-rouge">Zotero</code> actually has an amazing PDF viewer with multiple highlight colors and other features built-in. Therefore, I mostly read my papers in here.</p>
+
+<p><img src="http://localhost:4000/assets/img/bib_manage/view_pdf_in_zotero.png" alt="image-center" width="950" class="align-center" /></p>
+
+<h3 id="fix-mistakes-in-zotero">Fix Mistakes in Zotero</h3>
+<p>Sometimes, the downloaded reference is incorrect. 
+In this example, a NeurIPS paper (which is a conference) was labelled as a journal article. We can easily correct any wrong entries in the right panel.</p>
+
+<p>Change from journal:</p>
+
+<p><img src="http://localhost:4000/assets/img/bib_manage/change_from_journal.png" alt="image-center" width="700" class="align-center" /></p>
+
+<p>to conference:</p>
+
+<p><img src="http://localhost:4000/assets/img/bib_manage/change_to_conference.png" alt="image-center" width="700" class="align-center" /></p>
+
+<h2 id="export-your-papers-to-bibtex">Export your Papers to Bibtex</h2>
+<p>To cite your papers in Latex, you will need a <code class="language-plaintext highlighter-rouge">.bib</code> file that includes all your references.
+To create this file, right-click on your collection, e.g., <code class="language-plaintext highlighter-rouge">Example</code>, and select <code class="language-plaintext highlighter-rouge">Export Collection</code>.
+After accepting the default export configurations, you will get a <code class="language-plaintext highlighter-rouge">.bib</code> file like this:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@inproceedings{bonnaire2025why,
+  title = {Why Diffusion Models Don't Memorize: The Role of Implicit Dynamical Regularization in Training},
+  shorttitle = {Why Diffusion Models Don't Memorize},
+  booktitle = {The Thirty-Ninth Annual Conference on Neural Information Processing Systems},
+  author = {Bonnaire, Tony and Urfin, Rapha{\"e}l and Biroli, Giulio and Mezard, Marc},
+  year = 2025,
+  month = oct,
+  url = {https://openreview.net/forum?id=BSZqpqgqM0},
+  urldate = {2026-03-11},
+}
+
+@inproceedings{NEURIPS2022_5e6cec2a,
+  title = {Diffusion Models as Plug-and-Play Priors},
+  booktitle = {Advances in Neural Information Processing Systems},
+  author = {Graikos, Alexandros and Malkin, Nikolay and Jojic, Nebojsa and Samaras, Dimitris},
+  year = 2022,
+  month = dec,
+  volume = {35},
+  pages = {14715--14728},
+  url = {https://proceedings.neurips.cc/paper_files/paper/2022/hash/5e6cec2a9520708381fe520246018e8b-Abstract-Conference.html},
+  urldate = {2026-03-11},
+}
+</code></pre></div></div>
+
+<p>Note that the automatic citation keys <code class="language-plaintext highlighter-rouge">NEURIPS2022_5e6cec2a</code> and <code class="language-plaintext highlighter-rouge">bonnaire2025why</code> do not follow a universal pattern as they are given by the publisher.
+To fix this, we will use the <a href="https://retorque.re/zotero-better-bibtex/">Better BibTex</a> extension for <code class="language-plaintext highlighter-rouge">Zotero</code>.</p>
+
+<h3 id="setting-up-better-bibtex">Setting up Better BibTex</h3>
+<ol>
+  <li>Follow the installation instructions on the <a href="https://retorque.re/zotero-better-bibtex/">Better BibTex Website</a>.</li>
+  <li>Change your desired citation key style by going in <code class="language-plaintext highlighter-rouge">Zotero</code> in the top bar to <code class="language-plaintext highlighter-rouge">Edit</code> -&gt; <code class="language-plaintext highlighter-rouge">Settings</code> -&gt; <code class="language-plaintext highlighter-rouge">Better BibTex</code> and customize your citation key. I am using <code class="language-plaintext highlighter-rouge">auth.lower + "_" + year + "_" + shorttitle(2, 2)</code>, which would give me <code class="language-plaintext highlighter-rouge">graikos_2022_DiffusionModels</code> and <code class="language-plaintext highlighter-rouge">bonnaire_2025_WhyDiffusion</code> instead of the previous <code class="language-plaintext highlighter-rouge">NEURIPS2022_5e6cec2a</code> and <code class="language-plaintext highlighter-rouge">bonnaire2025why</code>.</li>
+  <li>Export your library again and enjoy your unified citation keys.</li>
+</ol>
+
+<p><strong>Note</strong>: some venues add their citation key to <code class="language-plaintext highlighter-rouge">Extras</code> field of the bibtex. This will override Better BibTex 😡. To fix that, you have to delete the extras field in the right panel of Zotero for these papers.</p>
+
+<h2 id="clean-up-your-messy-bib-file">Clean up Your Messy Bib File</h2>
+<p>Let’s use the exported bib file, e.g., <code class="language-plaintext highlighter-rouge">bib_manager_example.bib</code>, in a dummy <code class="language-plaintext highlighter-rouge">.tex</code> document:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{cite}
+
+\begin{document}
+
+\title{Bibliography Test}
+\author{Jakob Thumm}
+\maketitle
+
+\section{Introduction}
+
+We cite a couple of papers \cite{bonnaire_2025_WhyDiffusion, graikos_2022_DiffusionModels, gyevnar_2025_AISafety}.
+
+\bibliographystyle{plain}
+\bibliography{bib_manager_example}
+
+\end{document}
+</code></pre></div></div>
+
+<p>This will result in a good bibliography, but there are a couple of things that can be improved.</p>
+
+<p><img src="http://localhost:4000/assets/img/bib_manage/unclean_bibliography.png" alt="image-center" width="950" class="align-center" /></p>
+
+<p>Common points for improvements are:</p>
+<ul>
+  <li>Too much information:
+    <ul>
+      <li>place of the conference</li>
+      <li>names of editors</li>
+      <li>month of publication</li>
+      <li>year stated multiple times</li>
+    </ul>
+  </li>
+  <li>Inconsistent conference proceeding titles. Conferences change the name of their proceeding in the bibtex almost yearly. Additionally, the proceeding title often includes unnecessary information like the number of the conference.</li>
+  <li>Zotero removes the capitalization from titles as it is often wrong. We need to re-capitalize common terms like “AI”.</li>
+</ul>
+
+<p>To fix these points, we wrote an automatic <a href="https://gitlab.lrz.de/tum-cps/bibliography-cleaner">Bibliography Cleaner</a>!</p>
+
+<p>After installing, we can simply run the cleaner with:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python bibliography_cleaner/run.py \
+   -in [PATH_TO_FILE]/bib_manager_example.bib -out [PATH_TO_FILE]/bib_manager_example_cleaned.bib\
+   -c bibliography_cleaner/bib_configs/default.yml --overwrite\
+   --proceedings_abbreviations bibliography_cleaner/bib_configs/proceedings.yml\
+   --forbidden_characters bibliography_cleaner/bib_configs/special_tex_characters.yml\
+   --special_letters bibliography_cleaner/bib_configs/special_letters.yml\
+   --capitalization bibliography_cleaner/bib_configs/capitalization.yml
+</code></pre></div></div>
+
+<p>The outcome is a clean and consistent bibliography that all reviewers will love.</p>
+
+<p><img src="http://localhost:4000/assets/img/bib_manage/clean_bibliography.png" alt="image-center" width="950" class="align-center" /></p>
+
+<h2 id="find-your-pdf-files">Find your PDF Files</h2>
+
+<p>After some extensive research, you might want to share PDF files with students or colleagues.
+By default, Zotero saves all PDF files in one folder without any structure.
+Additionally, the PDFs downloaded from the publisher sites do not follow any naming convention, so you will have to figure out which paper <code class="language-plaintext highlighter-rouge">LGAFI2026_396.pdf</code> is.</p>
+
+<p><a href="https://github.com/wileyyugioh/zotmoov?tab=readme-ov-file">ZotMoov</a> improves that by automatically recreating the folder structure that you have in Zotero in your file system and renames the papers in a meaningful way.
+The outcome is something like this:</p>
+
+<p><img src="http://localhost:4000/assets/img/bib_manage/pdfs_in_folder.png" alt="image-center" width="950" class="align-center" /></p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/#other" class="page__taxonomy-item p-category" rel="tag">other</a>
+    
+    </span>
+  </p>
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2026-03-10T00:00:00-07:00">March 10, 2026</time></p>
+
+      </footer>
+
+      
+
+      
+  <nav class="pagination">
+    
+      <a href="/personalized-ai/text2interaction/" class="pagination--pager" title="Text2Interaction
+">Previous</a>
+    
+    
+      <a href="#" class="pagination--pager disabled">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="mailto:thumm@stanford.edu" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email</a></li>
+        
+      
+        
+          <li><a href="https://www.linkedin.com/in/jakobthumm/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+        
+      
+        
+          <li><a href="https://github.com/JakobThumm" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2026 Jakob Thumm. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
