@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Blog — Jakob Thumm</title>
+<meta name="description" content="Postdoctoral Scholar at Stanford University. Teaching robots to safely work with humans.">
+<link rel="icon" href="/favicon.ico">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Manrope:wght@200..800&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries,typography"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          "primary":                    "#680006",
+          "primary-container":          "#8c1515",
+          "on-primary":                 "#ffffff",
+          "on-primary-container":       "#ff998e",
+          "on-primary-fixed-variant":   "#8d1515",
+          "primary-fixed":              "#ffdad6",
+          "primary-fixed-dim":          "#ffb4ab",
+          "on-primary-fixed":           "#410002",
+          "secondary":                  "#904a43",
+          "secondary-container":        "#fea49a",
+          "on-secondary":               "#ffffff",
+          "on-secondary-container":     "#793731",
+          "tertiary":                   "#003257",
+          "tertiary-container":         "#00497b",
+          "on-tertiary":                "#ffffff",
+          "on-tertiary-container":      "#86b9f1",
+          "surface":                    "#f9f9fe",
+          "surface-container-lowest":   "#ffffff",
+          "surface-container-low":      "#f3f3f8",
+          "surface-container":          "#ededf2",
+          "surface-container-high":     "#e7e8ed",
+          "surface-container-highest":  "#e2e2e7",
+          "surface-variant":            "#e2e2e7",
+          "surface-tint":               "#ae2f2a",
+          "on-surface":                 "#191c1f",
+          "on-surface-variant":         "#59413e",
+          "outline":                    "#8d706d",
+          "outline-variant":            "#e0bfbb",
+          "background":                 "#f9f9fe",
+          "on-background":              "#191c1f",
+          "error":                      "#ba1a1a",
+          "inverse-surface":            "#2e3034",
+          "inverse-primary":            "#ffb4ab",
+        },
+        fontFamily: {
+          "headline": ["Newsreader", "serif"],
+          "body":     ["Manrope", "sans-serif"],
+          "label":    ["Space Grotesk", "sans-serif"],
+        },
+        borderRadius: {
+          "DEFAULT": "0.125rem",
+          "lg":      "0.25rem",
+          "xl":      "0.5rem",
+          "full":    "0.75rem",
+        },
+        typography: (theme) => ({
+          DEFAULT: {
+            css: {
+              color: theme("colors.on-surface"),
+              fontFamily: theme("fontFamily.body").join(", "),
+              "h1,h2,h3,h4,h5,h6": {
+                fontFamily: theme("fontFamily.headline").join(", "),
+                color: theme("colors.on-surface"),
+                fontWeight: "400",
+              },
+              a: {
+                color: theme("colors.primary-container"),
+                "&:hover": { color: theme("colors.primary") },
+              },
+              blockquote: {
+                borderLeftColor: theme("colors.primary-container"),
+                fontFamily: theme("fontFamily.headline").join(", "),
+                fontStyle: "italic",
+              },
+              code: {
+                fontFamily: theme("fontFamily.label").join(", "),
+                backgroundColor: theme("colors.surface-container"),
+                padding: "0.1em 0.3em",
+                borderRadius: "0.25rem",
+                fontWeight: "400",
+                color: theme("colors.on-surface"),
+              },
+              "pre code": { backgroundColor: "transparent", padding: "0", color: "#e2e2e7" },
+              pre: { backgroundColor: "#1e1e2e", color: "#e2e2e7" },
+            },
+          },
+        }),
+      },
+    },
+  }
+</script>
+<style>
+  .material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  }
+</style>
+
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed">
+  <nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md shadow-sm">
+  <div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+    <a href="/" class="font-headline italic text-xl font-bold text-primary-container hover:text-primary transition-colors">
+      Jakob Thumm
+    </a>
+    <div class="hidden md:flex items-center gap-8 font-headline text-lg">
+      <a href="/" class="pb-1 no-underline transition-colors text-on-surface-variant hover:text-primary-container">Home</a>
+      <a href="/research/" class="pb-1 no-underline transition-colors text-on-surface-variant hover:text-primary-container">Research</a>
+      <a href="/publications/" class="pb-1 no-underline transition-colors text-on-surface-variant hover:text-primary-container">Publications</a>
+      <a href="/blog/" class="pb-1 no-underline transition-colors text-primary-container border-b-2 border-primary-container">Blog</a>
+    </div>
+    <a href="mailto:thumm@stanford.edu"
+       class="bg-primary-container text-on-primary px-6 py-2 rounded-lg font-label text-sm uppercase tracking-wider hover:opacity-90 transition-all active:scale-95">
+      Contact
+    </a>
+  </div>
+</nav>
+
+  
+<main class="pt-32 pb-24 px-8 max-w-7xl mx-auto">
+
+  <header class="mb-20">
+    <h1 class="font-headline text-6xl md:text-7xl font-light tracking-tight text-on-surface mb-6">
+      The Robotics <span class="italic text-primary">Logbook</span>
+    </h1>
+    <div class="max-w-2xl font-body text-lg text-on-surface-variant leading-relaxed">
+      Guides, projects, and opinions on the future of collaborative intelligence.
+    </div>
+  </header>
+
+  <div class="space-y-1">
+    
+    
+    <div class="group py-12 px-4 hover:bg-surface-container-lowest transition-all duration-500 flex flex-col md:flex-row gap-8 items-start border-b border-outline-variant/20">
+      <div class="font-label text-outline text-sm w-40 shrink-0 pt-2">MAR 10, 2026</div>
+      <div class="flex-grow">
+        <h2 class="font-headline text-3xl font-medium mb-3 group-hover:text-primary transition-colors tracking-tight">
+          <a href="/posts/bibliography-management/">Effective Bibliography Management with Zotero</a>
+        </h2>
+        <p class="font-body text-on-surface-variant leading-relaxed max-w-3xl">Motivation
+Throughout my Ph.D. I built a highly flexible, automated bibliography management pipeline.
+I was driven by three factors:
+
+I love automating things. I would rather spend 5 hours automating ...</p>
+        
+        <div class="mt-6 flex gap-3 flex-wrap">
+          
+          <span class="font-label text-xs bg-surface-container px-3 py-1 rounded">#other</span>
+          
+        </div>
+        
+      </div>
+      <div class="hidden md:block opacity-0 group-hover:opacity-100 transition-opacity pt-2">
+        <span class="material-symbols-outlined text-primary text-4xl">north_east</span>
+      </div>
+    </div>
+    
+    <div class="group py-12 px-4 hover:bg-surface-container-lowest transition-all duration-500 flex flex-col md:flex-row gap-8 items-start border-b border-outline-variant/20">
+      <div class="font-label text-outline text-sm w-40 shrink-0 pt-2">OCT 30, 2025</div>
+      <div class="flex-grow">
+        <h2 class="font-headline text-3xl font-medium mb-3 group-hover:text-primary transition-colors tracking-tight">
+          <a href="/posts/safety-shield/">Safety shield for human-robot collaboration</a>
+        </h2>
+        <p class="font-body text-on-surface-variant leading-relaxed max-w-3xl">
+We cannot directly deploy embodied AI agents in human environments, as they may exhibit unforeseen and erratic behavior under OOD conditions.
+We solve this problem with our SARA shield that provides ...</p>
+        
+        <div class="mt-6 flex gap-3 flex-wrap">
+          
+          <span class="font-label text-xs bg-surface-container px-3 py-1 rounded">#safe-rl</span>
+          
+        </div>
+        
+      </div>
+      <div class="hidden md:block opacity-0 group-hover:opacity-100 transition-opacity pt-2">
+        <span class="material-symbols-outlined text-primary text-4xl">north_east</span>
+      </div>
+    </div>
+    
+    <div class="group py-12 px-4 hover:bg-surface-container-lowest transition-all duration-500 flex flex-col md:flex-row gap-8 items-start border-b border-outline-variant/20">
+      <div class="font-label text-outline text-sm w-40 shrink-0 pt-2">OCT 29, 2025</div>
+      <div class="flex-grow">
+        <h2 class="font-headline text-3xl font-medium mb-3 group-hover:text-primary transition-colors tracking-tight">
+          <a href="/posts/text2interaction/">Including User Preferences in Embodied AI</a>
+        </h2>
+        <p class="font-body text-on-surface-variant leading-relaxed max-w-3xl">
+
+
+
+
+
+
+
+
+Baseline
+Text2Interaction
+
+
+
+Different users have varying preferences. This naturally applies to robotics as well!
+Adjusting robot behavior to human preferences can require intensive human fe...</p>
+        
+        <div class="mt-6 flex gap-3 flex-wrap">
+          
+          <span class="font-label text-xs bg-surface-container px-3 py-1 rounded">#personalized-ai</span>
+          
+        </div>
+        
+      </div>
+      <div class="hidden md:block opacity-0 group-hover:opacity-100 transition-opacity pt-2">
+        <span class="material-symbols-outlined text-primary text-4xl">north_east</span>
+      </div>
+    </div>
+    
+    <div class="group py-12 px-4 hover:bg-surface-container-lowest transition-all duration-500 flex flex-col md:flex-row gap-8 items-start border-b border-outline-variant/20">
+      <div class="font-label text-outline text-sm w-40 shrink-0 pt-2">OCT 27, 2025</div>
+      <div class="flex-grow">
+        <h2 class="font-headline text-3xl font-medium mb-3 group-hover:text-primary transition-colors tracking-tight">
+          <a href="/posts/provably-safe-rl/">Provably Safe RL</a>
+        </h2>
+        <p class="font-body text-on-surface-variant leading-relaxed max-w-3xl">
+We have to guarantee the safety of AI agents in deployment as they can show dangerous behavior in unseen situations.
+As reinforcement learning (RL) agents learn by exploring the world, they are espec...</p>
+        
+        <div class="mt-6 flex gap-3 flex-wrap">
+          
+          <span class="font-label text-xs bg-surface-container px-3 py-1 rounded">#safe-rl</span>
+          
+        </div>
+        
+      </div>
+      <div class="hidden md:block opacity-0 group-hover:opacity-100 transition-opacity pt-2">
+        <span class="material-symbols-outlined text-primary text-4xl">north_east</span>
+      </div>
+    </div>
+    
+    <div class="group py-12 px-4 hover:bg-surface-container-lowest transition-all duration-500 flex flex-col md:flex-row gap-8 items-start border-b border-outline-variant/20">
+      <div class="font-label text-outline text-sm w-40 shrink-0 pt-2">OCT 26, 2025</div>
+      <div class="flex-grow">
+        <h2 class="font-headline text-3xl font-medium mb-3 group-hover:text-primary transition-colors tracking-tight">
+          <a href="/posts/human-robot-gym/">Human-robot gym</a>
+        </h2>
+        <p class="font-body text-on-surface-variant leading-relaxed max-w-3xl">The field of collaborative robotics is rapidly growing and has the potential to change the way we live our day-to-day lives. From easing the work of factory workers, construction workers, and people w...</p>
+        
+        <div class="mt-6 flex gap-3 flex-wrap">
+          
+          <span class="font-label text-xs bg-surface-container px-3 py-1 rounded">#safe-rl</span>
+          
+        </div>
+        
+      </div>
+      <div class="hidden md:block opacity-0 group-hover:opacity-100 transition-opacity pt-2">
+        <span class="material-symbols-outlined text-primary text-4xl">north_east</span>
+      </div>
+    </div>
+    
+    <div class="group py-12 px-4 hover:bg-surface-container-lowest transition-all duration-500 flex flex-col md:flex-row gap-8 items-start border-b border-outline-variant/20">
+      <div class="font-label text-outline text-sm w-40 shrink-0 pt-2">OCT 25, 2025</div>
+      <div class="flex-grow">
+        <h2 class="font-headline text-3xl font-medium mb-3 group-hover:text-primary transition-colors tracking-tight">
+          <a href="/posts/reducing-failsafe/">Reducing Safety Interventions in Provably Safe Reinforcement Learning</a>
+        </h2>
+        <p class="font-body text-on-surface-variant leading-relaxed max-w-3xl">
+In our previous work, we showed how a [safety shield](/posts/safety-shield/) can ensure the safety of RL agents in general robotic tasks.
+When trained in simulation, the RL agent learns to evade the ...</p>
+        
+        <div class="mt-6 flex gap-3 flex-wrap">
+          
+          <span class="font-label text-xs bg-surface-container px-3 py-1 rounded">#safe-rl</span>
+          
+        </div>
+        
+      </div>
+      <div class="hidden md:block opacity-0 group-hover:opacity-100 transition-opacity pt-2">
+        <span class="material-symbols-outlined text-primary text-4xl">north_east</span>
+      </div>
+    </div>
+    
+    <div class="group py-12 px-4 hover:bg-surface-container-lowest transition-all duration-500 flex flex-col md:flex-row gap-8 items-start border-b border-outline-variant/20">
+      <div class="font-label text-outline text-sm w-40 shrink-0 pt-2">MAR 01, 2023</div>
+      <div class="flex-grow">
+        <h2 class="font-headline text-3xl font-medium mb-3 group-hover:text-primary transition-colors tracking-tight">
+          <a href="/posts/mbrdna/">Mercedes-Benz R&D North America</a>
+        </h2>
+        <p class="font-body text-on-surface-variant leading-relaxed max-w-3xl">During my 6-month internship at Mercedes Benz Research and Development North America, I had the opportunity to work with a talented team of experts in the autonomous driving department. As part of the...</p>
+        
+        <div class="mt-6 flex gap-3 flex-wrap">
+          
+          <span class="font-label text-xs bg-surface-container px-3 py-1 rounded">#internships</span>
+          
+        </div>
+        
+      </div>
+      <div class="hidden md:block opacity-0 group-hover:opacity-100 transition-opacity pt-2">
+        <span class="material-symbols-outlined text-primary text-4xl">north_east</span>
+      </div>
+    </div>
+    
+    <div class="group py-12 px-4 hover:bg-surface-container-lowest transition-all duration-500 flex flex-col md:flex-row gap-8 items-start border-b border-outline-variant/20">
+      <div class="font-label text-outline text-sm w-40 shrink-0 pt-2">FEB 01, 2023</div>
+      <div class="flex-grow">
+        <h2 class="font-headline text-3xl font-medium mb-3 group-hover:text-primary transition-colors tracking-tight">
+          <a href="/posts/road-condition-monitoring/">Road Condition Monitoring</a>
+        </h2>
+        <p class="font-body text-on-surface-variant leading-relaxed max-w-3xl">Road maintenance is a crucial aspect of ensuring safe and efficient transportation. In Germany alone, over 10 billion Euros were spent on road maintenance projects in 2015, as reported by the German F...</p>
+        
+        <div class="mt-6 flex gap-3 flex-wrap">
+          
+          <span class="font-label text-xs bg-surface-container px-3 py-1 rounded">#study-projects</span>
+          
+        </div>
+        
+      </div>
+      <div class="hidden md:block opacity-0 group-hover:opacity-100 transition-opacity pt-2">
+        <span class="material-symbols-outlined text-primary text-4xl">north_east</span>
+      </div>
+    </div>
+    
+    <div class="group py-12 px-4 hover:bg-surface-container-lowest transition-all duration-500 flex flex-col md:flex-row gap-8 items-start border-b border-outline-variant/20">
+      <div class="font-label text-outline text-sm w-40 shrink-0 pt-2">FEB 01, 2023</div>
+      <div class="flex-grow">
+        <h2 class="font-headline text-3xl font-medium mb-3 group-hover:text-primary transition-colors tracking-tight">
+          <a href="/posts/optical-belt-sorting/">Optical Belt Sorting</a>
+        </h2>
+        <p class="font-body text-on-surface-variant leading-relaxed max-w-3xl">Optical sorters are a game-changer in various industrial sectors like civil engineering, recycling, and agriculture. Unlike other sorters, optical sorters can sort based on visual properties alone, me...</p>
+        
+        <div class="mt-6 flex gap-3 flex-wrap">
+          
+          <span class="font-label text-xs bg-surface-container px-3 py-1 rounded">#study-projects</span>
+          
+        </div>
+        
+      </div>
+      <div class="hidden md:block opacity-0 group-hover:opacity-100 transition-opacity pt-2">
+        <span class="material-symbols-outlined text-primary text-4xl">north_east</span>
+      </div>
+    </div>
+    
+  </div>
+
+</main>
+
+  <footer class="bg-slate-50 w-full py-12 px-8 border-t border-outline-variant/40">
+  <div class="flex flex-col md:flex-row justify-between items-start gap-8 max-w-7xl mx-auto">
+    <div class="flex flex-col gap-4">
+      <div class="font-headline italic text-lg font-bold text-primary-container">Jakob Thumm</div>
+      <p class="font-body text-sm text-slate-500 max-w-xs leading-relaxed">
+        Postdoctoral Scholar at Stanford University.<br/>Teaching robots to safely work with humans.
+      </p>
+      <p class="font-body text-xs text-slate-400">© 2026 Jakob Thumm. All Rights Reserved.</p>
+    </div>
+    <div class="grid grid-cols-2 gap-x-16 gap-y-4">
+      <div class="flex flex-col gap-3">
+        <p class="font-label text-xs font-bold uppercase tracking-widest text-outline">Links</p>
+        <a href="https://scholar.google.de/citations?user=sBm3vkcAAAAJ" class="font-body text-sm text-slate-500 hover:text-primary-container transition-colors">Google Scholar</a>
+        <a href="https://github.com/JakobThumm" class="font-body text-sm text-slate-500 hover:text-primary-container transition-colors">GitHub</a>
+      </div>
+      <div class="flex flex-col gap-3">
+        <p class="font-label text-xs font-bold uppercase tracking-widest text-outline">Connect</p>
+        <a href="https://www.linkedin.com/in/jakobthumm/" class="font-body text-sm text-slate-500 hover:text-primary-container transition-colors">LinkedIn</a>
+        <a href="mailto:thumm@stanford.edu" class="font-body text-sm text-slate-500 hover:text-primary-container italic transition-colors">thumm@stanford.edu</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

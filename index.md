@@ -1,7 +1,6 @@
 ---
 title: "Jakob Thumm"
-layout: single
-author_profile: true
+layout: home
 header:
   overlay_color: "#000"
   overlay_filter: "0.2"
@@ -21,12 +20,12 @@ Realizing this potential requires deploying autonomous robots in environments tr
  - **Safe AI**: How can we certifiably verify the safety of autonomous agents?
  - **Personalized AI**: How can we rapidly adapt autonomous behavior to best support individual users?
 
-![image-center]({{ site.url }}{{ site.baseurl }}/assets/img/general_overview_figure.png){: width="900" .align-center }
+<img src="/assets/img/general_overview_figure.png" alt="Research overview" style="max-width:900px;width:100%;display:block;margin:2rem auto;"/>
 
 To answer these questions, I develop methods that combine the rigor of formal techniques, such as set-based reachability analysis, with the flexibility of learning-based approaches for creating generalized robot policies.
-Concretely, I developed a [safety shield for provably safe collaboration]({% link _posts/2023-01-29-safety-shield.md %}), enabling close contact and high-performance interaction.
-In the area of safe reinforcement learning (RL), I formulated the [theoretical framework for integrating formal safety guarantees into RL training]({% link _posts/2025-10-28-provably-safe-rl.md %}), showing that safety guarantees can substantially improve the policy performance.
-Furthermore, I introduced a [method for preference alignment from a single user instruction]({% link _posts/2025-10-29-text2interaction.md %}), enabling a personalized robot behavior without extensive user feedback.
+Concretely, I developed a [safety shield for provably safe collaboration](/posts/safety-shield/), enabling close contact and high-performance interaction.
+In the area of safe reinforcement learning (RL), I formulated the [theoretical framework for integrating formal safety guarantees into RL training](/posts/provably-safe-rl/), showing that safety guarantees can substantially improve the policy performance.
+Furthermore, I introduced a [method for preference alignment from a single user instruction](/posts/text2interaction/), enabling a personalized robot behavior without extensive user feedback.
 Across these works, my methods have been successfully deployed on multiple robot platforms in international collaborations with academic and industrial partners.
 My vision is to deploy autonomous robots to support humans in everyday tasks including industrial applications, household, and geriatric care.
 

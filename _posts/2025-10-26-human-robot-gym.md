@@ -1,0 +1,22 @@
+---
+title: "Human-robot gym"
+categories: 
+  - safe-rl
+values:
+    layout: single
+    author_profile: true
+classes: wide
+---
+The field of collaborative robotics is rapidly growing and has the potential to change the way we live our day-to-day lives. From easing the work of factory workers, construction workers, and people with disabilities, to improving household tasks, the possibilities are endless. However, in order to achieve this, robots must be able to work in collaboration with humans in a dynamic and flexible way.
+
+Reinforcement learning (RL) has been showing great promise in solving challenging manipulation tasks on robots, and recent advancements in safe RL have made it feasible to apply deep learning-based controllers in safety-critical environments. 
+To promote the development of safe, assistive RL agents, we are introducing a new benchmark suite called [human-robot gym]((https://github.com/TUMcps/human-robot-gym)).
+This platform is designed to train and evaluate learning-based policies in environments where humans exhibit diverse and complex behaviors. 
+The agents learn to complete various tasks of varying difficulty levels, including reaching, pick-and-place, robot-human handover, object inspection, and collaborative construction tasks.
+
+<img src="/assets/img/hrgym.png" alt="image-center" style="max-width:600px;width:100%;display:block;margin:2rem auto;"/>
+
+To guarantee a natural human behavior, we recorded a large set of custom human animations for each task using a high-precision motion capture system. Additionally, to jump-start the development of safe collaborative RL methods, human-robot gym comes pre-implemented with our [safety-shield](/posts/safety-shield/), which guarantees human safety using reachability analysis.
+
+Publications:
+ - ICRA 2024: Human-Robot Gym: Benchmarking Reinforcement Learning in Human-Robot Collaboration [[IEEExplore](https://ieeexplore.ieee.org/document/10610705), [Arxiv](https://arxiv.org/pdf/2310.06208), [Github](https://github.com/TUMcps/human-robot gym)]

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Jakob Thumm — Jakob Thumm</title>
+<meta name="description" content="Postdoctoral Scholar at Stanford University. Teaching robots to safely work with humans.">
+<link rel="icon" href="/favicon.ico">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Manrope:wght@200..800&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries,typography"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          "primary":                    "#680006",
+          "primary-container":          "#8c1515",
+          "on-primary":                 "#ffffff",
+          "on-primary-container":       "#ff998e",
+          "on-primary-fixed-variant":   "#8d1515",
+          "primary-fixed":              "#ffdad6",
+          "primary-fixed-dim":          "#ffb4ab",
+          "on-primary-fixed":           "#410002",
+          "secondary":                  "#904a43",
+          "secondary-container":        "#fea49a",
+          "on-secondary":               "#ffffff",
+          "on-secondary-container":     "#793731",
+          "tertiary":                   "#003257",
+          "tertiary-container":         "#00497b",
+          "on-tertiary":                "#ffffff",
+          "on-tertiary-container":      "#86b9f1",
+          "surface":                    "#f9f9fe",
+          "surface-container-lowest":   "#ffffff",
+          "surface-container-low":      "#f3f3f8",
+          "surface-container":          "#ededf2",
+          "surface-container-high":     "#e7e8ed",
+          "surface-container-highest":  "#e2e2e7",
+          "surface-variant":            "#e2e2e7",
+          "surface-tint":               "#ae2f2a",
+          "on-surface":                 "#191c1f",
+          "on-surface-variant":         "#59413e",
+          "outline":                    "#8d706d",
+          "outline-variant":            "#e0bfbb",
+          "background":                 "#f9f9fe",
+          "on-background":              "#191c1f",
+          "error":                      "#ba1a1a",
+          "inverse-surface":            "#2e3034",
+          "inverse-primary":            "#ffb4ab",
+        },
+        fontFamily: {
+          "headline": ["Newsreader", "serif"],
+          "body":     ["Manrope", "sans-serif"],
+          "label":    ["Space Grotesk", "sans-serif"],
+        },
+        borderRadius: {
+          "DEFAULT": "0.125rem",
+          "lg":      "0.25rem",
+          "xl":      "0.5rem",
+          "full":    "0.75rem",
+        },
+        typography: (theme) => ({
+          DEFAULT: {
+            css: {
+              color: theme("colors.on-surface"),
+              fontFamily: theme("fontFamily.body").join(", "),
+              "h1,h2,h3,h4,h5,h6": {
+                fontFamily: theme("fontFamily.headline").join(", "),
+                color: theme("colors.on-surface"),
+                fontWeight: "400",
+              },
+              a: {
+                color: theme("colors.primary-container"),
+                "&:hover": { color: theme("colors.primary") },
+              },
+              blockquote: {
+                borderLeftColor: theme("colors.primary-container"),
+                fontFamily: theme("fontFamily.headline").join(", "),
+                fontStyle: "italic",
+              },
+              code: {
+                fontFamily: theme("fontFamily.label").join(", "),
+                backgroundColor: theme("colors.surface-container"),
+                padding: "0.1em 0.3em",
+                borderRadius: "0.25rem",
+                fontWeight: "400",
+                color: theme("colors.on-surface"),
+              },
+              "pre code": { backgroundColor: "transparent", padding: "0", color: "#e2e2e7" },
+              pre: { backgroundColor: "#1e1e2e", color: "#e2e2e7" },
+            },
+          },
+        }),
+      },
+    },
+  }
+</script>
+<style>
+  .material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  }
+</style>
+
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed">
+  <nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md shadow-sm">
+  <div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+    <a href="/" class="font-headline italic text-xl font-bold text-primary-container hover:text-primary transition-colors">
+      Jakob Thumm
+    </a>
+    <div class="hidden md:flex items-center gap-8 font-headline text-lg">
+      <a href="/" class="pb-1 no-underline transition-colors text-primary-container border-b-2 border-primary-container">Home</a>
+      <a href="/research/" class="pb-1 no-underline transition-colors text-on-surface-variant hover:text-primary-container">Research</a>
+      <a href="/publications/" class="pb-1 no-underline transition-colors text-on-surface-variant hover:text-primary-container">Publications</a>
+      <a href="/blog/" class="pb-1 no-underline transition-colors text-on-surface-variant hover:text-primary-container">Blog</a>
+    </div>
+    <a href="mailto:thumm@stanford.edu"
+       class="bg-primary-container text-on-primary px-6 py-2 rounded-lg font-label text-sm uppercase tracking-wider hover:opacity-90 transition-all active:scale-95">
+      Contact
+    </a>
+  </div>
+</nav>
+
+  
+<main class="pt-24 pb-20">
+
+  <!-- Hero Section -->
+  <section class="max-w-7xl mx-auto px-8 pt-12 md:pt-24 grid md:grid-cols-12 gap-12 items-end">
+    <div class="md:col-span-7 lg:col-span-8 pb-8">
+      <h1 class="font-headline text-6xl md:text-8xl font-bold tracking-tight text-on-surface mb-8">
+        Jakob Thumm,&nbsp;<span class="italic font-light">Ph.D.</span>
+      </h1>
+      <p class="font-headline text-2xl md:text-3xl leading-relaxed text-on-surface-variant max-w-3xl">
+        Teaching robots to safely work with humans.
+      </p>
+    </div>
+    <div class="md:col-span-5 lg:col-span-4 relative">
+      <div class="aspect-[4/5] overflow-hidden rounded-xl bg-surface-container-high">
+        <img alt="Jakob Thumm"
+             class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+             src="/assets/img/JakobThumm_square.png"/>
+      </div>
+      <div class="absolute -bottom-4 -left-4 w-24 h-24 border-l-2 border-b-2 border-primary-container z-[-1]"></div>
+    </div>
+  </section>
+
+  <!-- Bio/Content Section -->
+  <section class="max-w-7xl mx-auto px-8 py-32">
+    <div class="flex flex-col gap-12">
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 border-b border-outline-variant/30 pb-6">
+        <h2 class="font-label text-xs uppercase tracking-[0.2em] text-primary-container font-bold">Biography</h2>
+        <div class="flex items-center gap-8">
+          <button onclick="switchBio('web')" id="tab-web"
+                  class="bio-tab bio-tab-active font-headline text-lg uppercase tracking-wider pb-1">Web</button>
+          <button onclick="switchBio('speaker')" id="tab-speaker"
+                  class="bio-tab bio-tab-inactive font-headline text-lg uppercase tracking-wider pb-1">Speaker</button>
+          <button onclick="switchBio('short')" id="tab-short"
+                  class="bio-tab bio-tab-inactive font-headline text-lg uppercase tracking-wider pb-1">Short</button>
+        </div>
+      </div>
+      <div class="bg-surface-container-lowest p-10 md:p-16 rounded-xl">
+        <div id="bio-web" class="prose prose-lg max-w-none font-headline">
+          <p>I'm a postdoctoral scholar at Stanford University in the <a href="https://stanfordasl.github.io/">Autonomous Systems Lab</a> under supervision of <a href="https://profiles.stanford.edu/marco-pavone">Marco Pavone</a>.
+Prior to joining Stanford, I earned my Ph.D. in Computer Engineering from the Technical University of Munich with highest distinction, where I was supervised by <a href="https://www.ce.cit.tum.de/en/cps/members/prof-dr-ing-matthias-althoff/">Matthias Althoff</a>.</p>
+<p>My research enables robots to work together with humans in a safe, efficient, and enjoyable manner.
+These robots will support human workers in sectors such as manufacturing, health care, and geriatric care to fulfill tedious, strenuous, and dangerous tasks.
+Realizing this potential requires deploying autonomous robots in environments traditionally designed for humans, which poses critical challenges:</p>
+<ul>
+<li><strong>Embodied AI</strong>: How can we teach robots to perform complex tasks with and around humans?</li>
+<li><strong>Safe AI</strong>: How can we certifiably verify the safety of autonomous agents?</li>
+<li><strong>Personalized AI</strong>: How can we rapidly adapt autonomous behavior to best support individual users?</li>
+</ul>
+<img src="/assets/img/general_overview_figure.png" alt="Research overview" style="max-width:900px;width:100%;display:block;margin:2rem auto;"/>
+<p>To answer these questions, I develop methods that combine the rigor of formal techniques, such as set-based reachability analysis, with the flexibility of learning-based approaches for creating generalized robot policies.
+Concretely, I developed a <a href="/posts/safety-shield/">safety shield for provably safe collaboration</a>, enabling close contact and high-performance interaction.
+In the area of safe reinforcement learning (RL), I formulated the <a href="/posts/provably-safe-rl/">theoretical framework for integrating formal safety guarantees into RL training</a>, showing that safety guarantees can substantially improve the policy performance.
+Furthermore, I introduced a <a href="/posts/text2interaction/">method for preference alignment from a single user instruction</a>, enabling a personalized robot behavior without extensive user feedback.
+Across these works, my methods have been successfully deployed on multiple robot platforms in international collaborations with academic and industrial partners.
+My vision is to deploy autonomous robots to support humans in everyday tasks including industrial applications, household, and geriatric care.</p>
+
+        </div>
+        <div id="bio-speaker" class="hidden font-headline text-xl md:text-2xl leading-relaxed text-on-surface-variant italic">
+          Speaker bio placeholder — a concise version suitable for conference introductions.
+        </div>
+        <div id="bio-short" class="hidden font-headline text-xl md:text-2xl leading-relaxed text-on-surface-variant italic">
+          Short bio placeholder — 2–3 sentences for paper author profiles.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    .bio-tab-active  { color: #680006; border-bottom: 2px solid #680006; }
+    .bio-tab-inactive { color: #59413e99; border-bottom: 2px solid transparent; }
+    .bio-tab-inactive:hover { color: #680006; }
+  </style>
+  <script>
+    function switchBio(tab) {
+      ['web', 'speaker', 'short'].forEach(function(t) {
+        document.getElementById('bio-' + t).classList.add('hidden');
+        var btn = document.getElementById('tab-' + t);
+        btn.classList.remove('bio-tab-active');
+        btn.classList.add('bio-tab-inactive');
+      });
+      document.getElementById('bio-' + tab).classList.remove('hidden');
+      var active = document.getElementById('tab-' + tab);
+      active.classList.remove('bio-tab-inactive');
+      active.classList.add('bio-tab-active');
+    }
+  </script>
+
+  <!-- Recent Posts -->
+  <section class="max-w-7xl mx-auto px-8 pb-32">
+    <div class="flex items-baseline justify-between mb-12 border-b border-outline-variant/30 pb-6">
+      <h2 class="font-headline text-3xl font-light">Recent Posts</h2>
+      <a href="/blog/" class="font-label text-sm text-outline uppercase tracking-widest hover:text-primary-container transition-colors">All Posts →</a>
+    </div>
+    <div class="space-y-1">
+      
+      <div class="group py-10 px-4 hover:bg-surface-container-lowest transition-all duration-500 flex flex-col md:flex-row gap-8 items-start border-b border-outline-variant/20">
+        <div class="font-label text-outline text-sm w-40 shrink-0 pt-1">FEB 01, 2023</div>
+        <div class="flex-grow">
+          <h3 class="font-headline text-2xl font-medium mb-2 group-hover:text-primary transition-colors">
+            <a href="/posts/optical-belt-sorting/">Optical Belt Sorting</a>
+          </h3>
+          <p class="font-body text-on-surface-variant leading-relaxed">Optical sorters are a game-changer in various industrial sectors like civil engineering, recycling, and agriculture. Unlike other sorters, optical sorters can sort based on visual ...</p>
+        </div>
+        <div class="hidden md:block opacity-0 group-hover:opacity-100 transition-opacity pt-1">
+          <span class="material-symbols-outlined text-primary text-3xl">north_east</span>
+        </div>
+      </div>
+      
+      <div class="group py-10 px-4 hover:bg-surface-container-lowest transition-all duration-500 flex flex-col md:flex-row gap-8 items-start border-b border-outline-variant/20">
+        <div class="font-label text-outline text-sm w-40 shrink-0 pt-1">FEB 01, 2023</div>
+        <div class="flex-grow">
+          <h3 class="font-headline text-2xl font-medium mb-2 group-hover:text-primary transition-colors">
+            <a href="/posts/road-condition-monitoring/">Road Condition Monitoring</a>
+          </h3>
+          <p class="font-body text-on-surface-variant leading-relaxed">Road maintenance is a crucial aspect of ensuring safe and efficient transportation. In Germany alone, over 10 billion Euros were spent on road maintenance projects in 2015, as repo...</p>
+        </div>
+        <div class="hidden md:block opacity-0 group-hover:opacity-100 transition-opacity pt-1">
+          <span class="material-symbols-outlined text-primary text-3xl">north_east</span>
+        </div>
+      </div>
+      
+      <div class="group py-10 px-4 hover:bg-surface-container-lowest transition-all duration-500 flex flex-col md:flex-row gap-8 items-start border-b border-outline-variant/20">
+        <div class="font-label text-outline text-sm w-40 shrink-0 pt-1">MAR 01, 2023</div>
+        <div class="flex-grow">
+          <h3 class="font-headline text-2xl font-medium mb-2 group-hover:text-primary transition-colors">
+            <a href="/posts/mbrdna/">Mercedes-Benz R&D North America</a>
+          </h3>
+          <p class="font-body text-on-surface-variant leading-relaxed">During my 6-month internship at Mercedes Benz Research and Development North America, I had the opportunity to work with a talented team of experts in the autonomous driving depart...</p>
+        </div>
+        <div class="hidden md:block opacity-0 group-hover:opacity-100 transition-opacity pt-1">
+          <span class="material-symbols-outlined text-primary text-3xl">north_east</span>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+</main>
+
+  <footer class="bg-slate-50 w-full py-12 px-8 border-t border-outline-variant/40">
+  <div class="flex flex-col md:flex-row justify-between items-start gap-8 max-w-7xl mx-auto">
+    <div class="flex flex-col gap-4">
+      <div class="font-headline italic text-lg font-bold text-primary-container">Jakob Thumm</div>
+      <p class="font-body text-sm text-slate-500 max-w-xs leading-relaxed">
+        Postdoctoral Scholar at Stanford University.<br/>Teaching robots to safely work with humans.
+      </p>
+      <p class="font-body text-xs text-slate-400">© 2026 Jakob Thumm. All Rights Reserved.</p>
+    </div>
+    <div class="grid grid-cols-2 gap-x-16 gap-y-4">
+      <div class="flex flex-col gap-3">
+        <p class="font-label text-xs font-bold uppercase tracking-widest text-outline">Links</p>
+        <a href="https://scholar.google.de/citations?user=sBm3vkcAAAAJ" class="font-body text-sm text-slate-500 hover:text-primary-container transition-colors">Google Scholar</a>
+        <a href="https://github.com/JakobThumm" class="font-body text-sm text-slate-500 hover:text-primary-container transition-colors">GitHub</a>
+      </div>
+      <div class="flex flex-col gap-3">
+        <p class="font-label text-xs font-bold uppercase tracking-widest text-outline">Connect</p>
+        <a href="https://www.linkedin.com/in/jakobthumm/" class="font-body text-sm text-slate-500 hover:text-primary-container transition-colors">LinkedIn</a>
+        <a href="mailto:thumm@stanford.edu" class="font-body text-sm text-slate-500 hover:text-primary-container italic transition-colors">thumm@stanford.edu</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

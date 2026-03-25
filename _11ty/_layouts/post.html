@@ -1,0 +1,36 @@
+---
+layout: base
+---
+
+<main class="pt-32 pb-24 px-8 max-w-4xl mx-auto">
+
+  <header class="mb-16">
+    {% if categories %}
+    <div class="flex gap-2 mb-6 flex-wrap">
+      {% for cat in categories %}
+      <span class="font-label text-xs bg-surface-container px-3 py-1 rounded uppercase tracking-wider text-on-surface-variant">#{{ cat }}</span>
+      {% endfor %}
+    </div>
+    {% endif %}
+    <h1 class="font-headline text-5xl md:text-6xl font-light tracking-tight text-on-surface mb-6 leading-tight">
+      {{ title }}
+    </h1>
+    <p class="font-label text-sm text-outline uppercase tracking-widest">{{ page.date | dateDisplay }}</p>
+  </header>
+
+
+  {% if header.teaser %}
+  <div class="mb-16 overflow-hidden rounded-xl bg-surface-container aspect-[16/9]">
+    <img src="{{ header.teaser }}" alt="{{ title }}" class="w-full h-full object-cover"/>
+  </div>
+  {% endif %}
+
+  <article class="prose prose-lg max-w-none">
+    {{ content }}
+  </article>
+
+  <div class="mt-20 pt-8 border-t border-outline-variant/30">
+    <a href="javascript:history.back()" class="font-label text-sm uppercase tracking-widest text-outline hover:text-primary-container transition-colors">← Back</a>
+  </div>
+
+</main>

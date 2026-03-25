@@ -1,0 +1,41 @@
+---
+layout: base
+---
+
+<main class="pt-32 pb-24 px-8 max-w-7xl mx-auto">
+
+  <header class="mb-20">
+    <h1 class="font-headline text-6xl md:text-7xl font-light tracking-tight text-on-surface mb-6">
+      The Robotics <span class="italic text-primary">Logbook</span>
+    </h1>
+    <div class="max-w-2xl font-body text-lg text-on-surface-variant leading-relaxed">
+      Guides, projects, and opinions on the future of collaborative intelligence.
+    </div>
+  </header>
+
+  <div class="space-y-1">
+    {% assign sorted_posts = collections.post | reverse %}
+    {% for post in sorted_posts %}
+    <div class="group py-12 px-4 hover:bg-surface-container-lowest transition-all duration-500 flex flex-col md:flex-row gap-8 items-start border-b border-outline-variant/20">
+      <div class="font-label text-outline text-sm w-40 shrink-0 pt-2">{{ post.date | dateDisplay }}</div>
+      <div class="flex-grow">
+        <h2 class="font-headline text-3xl font-medium mb-3 group-hover:text-primary transition-colors tracking-tight">
+          <a href="{{ post.url }}">{{ post.data.title }}</a>
+        </h2>
+        <p class="font-body text-on-surface-variant leading-relaxed max-w-3xl">{{ post.content | truncate: 200 }}</p>
+        {% if post.data.categories %}
+        <div class="mt-6 flex gap-3 flex-wrap">
+          {% for cat in post.data.categories %}
+          <span class="font-label text-xs bg-surface-container px-3 py-1 rounded">#{{ cat }}</span>
+          {% endfor %}
+        </div>
+        {% endif %}
+      </div>
+      <div class="hidden md:block opacity-0 group-hover:opacity-100 transition-opacity pt-2">
+        <span class="material-symbols-outlined text-primary text-4xl">north_east</span>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+</main>

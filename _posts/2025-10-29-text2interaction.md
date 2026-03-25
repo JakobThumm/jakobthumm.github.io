@@ -1,5 +1,5 @@
 ---
-title: "Text2Interaction"
+title: "Including User Preferences in Embodied AI"
 categories: 
   - personalized-ai
 values:
@@ -10,10 +10,8 @@ values:
     share: false
     related: false
 classes: wide
-header:
-  teaser: "/assets/img/hri.png"
 ---
-| ![Baseline]({{ site.url }}{{ site.baseurl }}/assets/img/B1_JakobBaseline1.gif) | ![Text2Interaction]({{ site.url }}{{ site.baseurl }}/assets/img/E2_JakobHandleUpwards2.gif) |
+| <img src="/assets/img/B1_JakobBaseline1.gif" alt="Baseline" style="max-width:100%;width:100%;display:block;margin:2rem auto;"/> | <img src="/assets/img/E2_JakobHandleUpwards2.gif" alt="Text2Interaction" style="max-width:100%;width:100%;display:block;margin:2rem auto;"/> |
 |:--:|:--:|
 | **Baseline** | **Text2Interaction** |
 
@@ -28,4 +26,4 @@ In our real-world user study, we found that 83% of users think that it integrate
 Publications:
  - CoRL 2024: Text2Interaction: Establishing Safe and Preferable Human-Robot Interaction [[Website](https://sites.google.com/view/text2interaction), [OpenReview](https://openreview.net/forum?id=s0VNSnPeoA), [Arxiv](https://arxiv.org/abs/2408.06105), [Github](https://github.com/JakobThumm/text2interaction)]
 
- {% include video id="LNfVw9ZtAtI" provider="youtube" %}
+ <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;margin:2rem 0;"><iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://www.youtube.com/embed/LNfVw9ZtAtI" frameborder="0" allowfullscreen></iframe></div>

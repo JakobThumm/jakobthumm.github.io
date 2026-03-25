@@ -10,12 +10,10 @@ values:
     share: false
     related: false
 classes: wide
-header:
-  teaser: "/assets/img/optical_partical_tracking.png"
 ---
 Optical sorters are a game-changer in various industrial sectors like civil engineering, recycling, and agriculture. Unlike other sorters, optical sorters can sort based on visual properties alone, meaning almost any material type can be sorted without damage from water or heat. The standard layout of an optical sorter includes a transport unit (usually a conveyor belt), a line scan camera, and a separation mechanism. The line scan camera detects and classifies the particles, and the separation mechanism then separates the unwanted particles with short bursts of high-pressure air.
 
-![image-right]({{ site.url }}{{ site.baseurl }}/assets/img/optical_belt_sorter.png){: width="430" .align-right }
+<img src="/assets/img/optical_belt_sorter.png" alt="image-right" style="max-width:430px;width:100%;float:right;margin:0 0 1rem 2rem;"/>
 
 But what if we told you that this setup can be improved? In our previous research, we replaced the line scan camera with an area scan camera and implemented a predictive tracking approach. By tracking the particles with a Kalman filter, we were able to derive motion information and make separation predictions based on linear motion models. However, we found that this approach had its limitations - manual fine-tuning was required, and it didn't always work for particles with nonlinear motion behavior.
 

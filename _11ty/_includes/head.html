@@ -1,0 +1,99 @@
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>{% if title %}{{ title }} — {% endif %}Jakob Thumm</title>
+<meta name="description" content="{{ description | default: 'Postdoctoral Scholar at Stanford University. Teaching robots to safely work with humans.' }}">
+<link rel="icon" href="/favicon.ico">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Manrope:wght@200..800&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries,typography"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          "primary":                    "#680006",
+          "primary-container":          "#8c1515",
+          "on-primary":                 "#ffffff",
+          "on-primary-container":       "#ff998e",
+          "on-primary-fixed-variant":   "#8d1515",
+          "primary-fixed":              "#ffdad6",
+          "primary-fixed-dim":          "#ffb4ab",
+          "on-primary-fixed":           "#410002",
+          "secondary":                  "#904a43",
+          "secondary-container":        "#fea49a",
+          "on-secondary":               "#ffffff",
+          "on-secondary-container":     "#793731",
+          "tertiary":                   "#003257",
+          "tertiary-container":         "#00497b",
+          "on-tertiary":                "#ffffff",
+          "on-tertiary-container":      "#86b9f1",
+          "surface":                    "#f9f9fe",
+          "surface-container-lowest":   "#ffffff",
+          "surface-container-low":      "#f3f3f8",
+          "surface-container":          "#ededf2",
+          "surface-container-high":     "#e7e8ed",
+          "surface-container-highest":  "#e2e2e7",
+          "surface-variant":            "#e2e2e7",
+          "surface-tint":               "#ae2f2a",
+          "on-surface":                 "#191c1f",
+          "on-surface-variant":         "#59413e",
+          "outline":                    "#8d706d",
+          "outline-variant":            "#e0bfbb",
+          "background":                 "#f9f9fe",
+          "on-background":              "#191c1f",
+          "error":                      "#ba1a1a",
+          "inverse-surface":            "#2e3034",
+          "inverse-primary":            "#ffb4ab",
+        },
+        fontFamily: {
+          "headline": ["Newsreader", "serif"],
+          "body":     ["Manrope", "sans-serif"],
+          "label":    ["Space Grotesk", "sans-serif"],
+        },
+        borderRadius: {
+          "DEFAULT": "0.125rem",
+          "lg":      "0.25rem",
+          "xl":      "0.5rem",
+          "full":    "0.75rem",
+        },
+        typography: (theme) => ({
+          DEFAULT: {
+            css: {
+              color: theme("colors.on-surface"),
+              fontFamily: theme("fontFamily.body").join(", "),
+              "h1,h2,h3,h4,h5,h6": {
+                fontFamily: theme("fontFamily.headline").join(", "),
+                color: theme("colors.on-surface"),
+                fontWeight: "400",
+              },
+              a: {
+                color: theme("colors.primary-container"),
+                "&:hover": { color: theme("colors.primary") },
+              },
+              blockquote: {
+                borderLeftColor: theme("colors.primary-container"),
+                fontFamily: theme("fontFamily.headline").join(", "),
+                fontStyle: "italic",
+              },
+              code: {
+                fontFamily: theme("fontFamily.label").join(", "),
+                backgroundColor: theme("colors.surface-container"),
+                padding: "0.1em 0.3em",
+                borderRadius: "0.25rem",
+                fontWeight: "400",
+                color: theme("colors.on-surface"),
+              },
+              "pre code": { backgroundColor: "transparent", padding: "0", color: "#e2e2e7" },
+              pre: { backgroundColor: "#1e1e2e", color: "#e2e2e7" },
+            },
+          },
+        }),
+      },
+    },
+  }
+</script>
+<style>
+  .material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  }
+</style>

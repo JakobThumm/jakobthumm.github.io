@@ -1,0 +1,17 @@
+<nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md shadow-sm">
+  <div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+    <a href="/" class="font-headline italic text-xl font-bold text-primary-container hover:text-primary transition-colors">
+      Jakob Thumm
+    </a>
+    <div class="hidden md:flex items-center gap-8 font-headline text-lg">
+      <a href="/" class="pb-1 no-underline transition-colors {% if page.url == '/' %}text-primary-container border-b-2 border-primary-container{% else %}text-on-surface-variant hover:text-primary-container{% endif %}">Home</a>
+      <a href="/research/" class="pb-1 no-underline transition-colors {% if page.url contains '/research/' %}text-primary-container border-b-2 border-primary-container{% else %}text-on-surface-variant hover:text-primary-container{% endif %}">Research</a>
+      <a href="/publications/" class="pb-1 no-underline transition-colors {% if page.url contains '/publications/' %}text-primary-container border-b-2 border-primary-container{% else %}text-on-surface-variant hover:text-primary-container{% endif %}">Publications</a>
+      <a href="/blog/" class="pb-1 no-underline transition-colors {% if page.url contains '/blog/' %}text-primary-container border-b-2 border-primary-container{% else %}text-on-surface-variant hover:text-primary-container{% endif %}">Blog</a>
+    </div>
+    <a href="mailto:thumm@stanford.edu"
+       class="bg-primary-container text-on-primary px-6 py-2 rounded-lg font-label text-sm uppercase tracking-wider hover:opacity-90 transition-all active:scale-95">
+      Contact
+    </a>
+  </div>
+</nav>

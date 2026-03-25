@@ -12,13 +12,13 @@ Run `git add *`, `git commit`, and `git push` for online update.
 # Useful stuff
 Link to one of your own posts:
 ```
-[Link text]({% link _posts/2023-01-29-safety-shield.md %})
+[Link text](/posts/safety-shield/)
 ```
 Link to a youtube video:
 ```
-{% include video id="ldvWMJVBLa0" provider="youtube" %}
+<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;margin:2rem 0;"><iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://www.youtube.com/embed/ldvWMJVBLa0" frameborder="0" allowfullscreen></iframe></div>
 ```
 Insert an image and limit its size:
 ```
-![image-right]({{ site.url }}{{ site.baseurl }}/assets/img/optical_belt_sorter.png){: width="430" .align-right }
+<img src="/assets/img/optical_belt_sorter.png" alt="image-right" style="max-width:430px;width:100%;float:right;margin:0 0 1rem 2rem;"/>
 ```

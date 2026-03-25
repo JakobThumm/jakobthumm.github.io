@@ -10,8 +10,6 @@ values:
     share: false
     related: false
 classes: wide
-header:
-  teaser: "/assets/img/hri.png"
 ---
 
 # Motivation
@@ -23,11 +21,11 @@ I was driven by three factors:
 
 I thought having some form of bibliography management was standard, but a short poll revealed that quite a few people don't use a bibliography management tool yet:
 
-![image-center]({{ site.url }}{{ site.baseurl }}/assets/img/bib_manage/survey.png){: width="700" .align-center }
+<img src="/assets/img/bib_manage/survey.png" alt="image-center" style="max-width:700px;width:100%;display:block;margin:2rem auto;"/>
 
 With my favorite answer being "I use google chrome":
 
-![image-center]({{ site.url }}{{ site.baseurl }}/assets/img/bib_manage/chrome.png){: width="900" .align-center }
+<img src="/assets/img/bib_manage/chrome.png" alt="image-center" style="max-width:900px;width:100%;display:block;margin:2rem auto;"/>
 
 Therefore, I want to give you an overview of how I structure my bibliography management in `Zotero`.
 For each component that I use, I will try to give my reasoning of how it makes my life easier and you can decide for yourself if this component is worthwhile for you. 
@@ -50,11 +48,11 @@ Let's start by opening `Zotero` and creating a new collection by right-clicking 
 Now we can create ourselves a folder structure within that collection. 
 For this, I right-click on the new collection, e.g., "Example", and select `New Subcollection`. 
 
-![image-center]({{ site.url }}{{ site.baseurl }}/assets/img/bib_manage/create_folder_structure.png){: width="950" .align-center }
+<img src="/assets/img/bib_manage/create_folder_structure.png" alt="image-center" style="max-width:950px;width:100%;display:block;margin:2rem auto;"/>
 
 Proceed with creating an initial structure for your work.
 
-![image-center]({{ site.url }}{{ site.baseurl }}/assets/img/bib_manage/select_folder.png){: width="400" .align-center }
+<img src="/assets/img/bib_manage/select_folder.png" alt="image-center" style="max-width:400px;width:100%;display:block;margin:2rem auto;"/>
 
 ## Add Papers to Zotero
 If we want to add papers, we first need to make sure we find the correct version.
@@ -62,18 +60,18 @@ If we want to add papers, we first need to make sure we find the correct version
 ### Find the Correct Version of the Paper
 We start with our typical paper search in google scholar. Let's say, we found the following paper:
 
-![image-center]({{ site.url }}{{ site.baseurl }}/assets/img/bib_manage/scholar_paper_explain.png){: width="800" .align-center }
+<img src="/assets/img/bib_manage/scholar_paper_explain.png" alt="image-center" style="max-width:800px;width:100%;display:block;margin:2rem auto;"/>
 
 This paper was already published at the NeurIPS conference, but google scholar still links to the Arxiv version. 
 A common mistake is simply to cite the Arxiv version. This is very frowned upon by the reviewers and might negatively impact your chance of publication!
 
 Therefore, we instead click on `All (some number) Verions` and select the website of the original publisher. This is most often quite easy to figure out, e.g., IEEExplore, Nature, Science, etc. In the case of the big AI conferences, we will look for the openreview link.
 
-![image-center]({{ site.url }}{{ site.baseurl }}/assets/img/bib_manage/scholar_multiple_versions.png){: width="600" .align-center }
+<img src="/assets/img/bib_manage/scholar_multiple_versions.png" alt="image-center" style="max-width:600px;width:100%;display:block;margin:2rem auto;"/>
 
 This will bring us to the publisher website, in our example:
 
-![image-center]({{ site.url }}{{ site.baseurl }}/assets/img/bib_manage/openreview_page.png){: width="800" .align-center }
+<img src="/assets/img/bib_manage/openreview_page.png" alt="image-center" style="max-width:800px;width:100%;display:block;margin:2rem auto;"/>
 
 ### Add the Paper to Zotero
 There are two alternative ways to add this work to Zotero 1. Manually, and 2. Automatically with `Zotero Connector`.
@@ -88,20 +86,20 @@ This process is of course way too manual for me. Let's look at how to automate t
 #### 2. Automatically using Zotero Connector
 Open `Zotero` and select the sub-collection you would like to save this paper in, e.g.:
 
-![image-center]({{ site.url }}{{ site.baseurl }}/assets/img/bib_manage/select_folder.png){: width="400" .align-center }
+<img src="/assets/img/bib_manage/select_folder.png" alt="image-center" style="max-width:400px;width:100%;display:block;margin:2rem auto;"/>
 
 Now, go to your browser window with the publisher website open and click on the `Zotero Connector` extension. The paper reference and PDF will be automatically downloaded and added to your `Zotero`.
 
-![image-center]({{ site.url }}{{ site.baseurl }}/assets/img/bib_manage/save_to_zotero.png){: width="400" .align-center }
+<img src="/assets/img/bib_manage/save_to_zotero.png" alt="image-center" style="max-width:400px;width:100%;display:block;margin:2rem auto;"/>
 
 ### Inspect your Paper in Zotero
 You can now see all the properties of this reference in the right panel of `Zotero` if you click on this paper.
 
-![image-center]({{ site.url }}{{ site.baseurl }}/assets/img/bib_manage/paper1.png){: width="950" .align-center }
+<img src="/assets/img/bib_manage/paper1.png" alt="image-center" style="max-width:950px;width:100%;display:block;margin:2rem auto;"/>
 
 You can view the PDF by double clicking on the little red PDF symbol in `Zotero`. `Zotero` actually has an amazing PDF viewer with multiple highlight colors and other features built-in. Therefore, I mostly read my papers in here.
 
-![image-center]({{ site.url }}{{ site.baseurl }}/assets/img/bib_manage/view_pdf_in_zotero.png){: width="950" .align-center }
+<img src="/assets/img/bib_manage/view_pdf_in_zotero.png" alt="image-center" style="max-width:950px;width:100%;display:block;margin:2rem auto;"/>
 
 ### Fix Mistakes in Zotero
 Sometimes, the downloaded reference is incorrect. 
@@ -109,11 +107,11 @@ In this example, a NeurIPS paper (which is a conference) was labelled as a journ
 
 Change from journal:
 
-![image-center]({{ site.url }}{{ site.baseurl }}/assets/img/bib_manage/change_from_journal.png){: width="700" .align-center }
+<img src="/assets/img/bib_manage/change_from_journal.png" alt="image-center" style="max-width:700px;width:100%;display:block;margin:2rem auto;"/>
 
 to conference:
 
-![image-center]({{ site.url }}{{ site.baseurl }}/assets/img/bib_manage/change_to_conference.png){: width="700" .align-center }
+<img src="/assets/img/bib_manage/change_to_conference.png" alt="image-center" style="max-width:700px;width:100%;display:block;margin:2rem auto;"/>
 
 ## Export your Papers to Bibtex
 To cite your papers in Latex, you will need a `.bib` file that includes all your references.
@@ -181,7 +179,7 @@ We cite a couple of papers \cite{bonnaire_2025_WhyDiffusion, graikos_2022_Diffus
 
 This will result in a good bibliography, but there are a couple of things that can be improved. 
 
-![image-center]({{ site.url }}{{ site.baseurl }}/assets/img/bib_manage/unclean_bibliography.png){: width="950" .align-center }
+<img src="/assets/img/bib_manage/unclean_bibliography.png" alt="image-center" style="max-width:950px;width:100%;display:block;margin:2rem auto;"/>
 
 Common points for improvements are:
  - Too much information: 
@@ -207,7 +205,7 @@ python bibliography_cleaner/run.py \
 
 The outcome is a clean and consistent bibliography that all reviewers will love.
 
-![image-center]({{ site.url }}{{ site.baseurl }}/assets/img/bib_manage/clean_bibliography.png){: width="950" .align-center }
+<img src="/assets/img/bib_manage/clean_bibliography.png" alt="image-center" style="max-width:950px;width:100%;display:block;margin:2rem auto;"/>
 
 ## Find your PDF Files 
 
@@ -218,4 +216,4 @@ Additionally, the PDFs downloaded from the publisher sites do not follow any nam
 [ZotMoov](https://github.com/wileyyugioh/zotmoov?tab=readme-ov-file) improves that by automatically recreating the folder structure that you have in Zotero in your file system and renames the papers in a meaningful way.
 The outcome is something like this:
 
-![image-center]({{ site.url }}{{ site.baseurl }}/assets/img/bib_manage/pdfs_in_folder.png){: width="950" .align-center }
+<img src="/assets/img/bib_manage/pdfs_in_folder.png" alt="image-center" style="max-width:950px;width:100%;display:block;margin:2rem auto;"/>
