@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Research — Jakob Thumm</title>
+<title>Research Vision: Personalized AI — Jakob Thumm</title>
 <meta name="description" content="Postdoctoral Scholar at Stanford University. Teaching robots to safely work with humans.">
 <link rel="icon" href="/favicon.ico">
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Manrope:wght@200..800&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet"/>
@@ -110,7 +110,7 @@
     </a>
     <div class="hidden md:flex items-center gap-8 font-headline text-lg">
       <a href="/" class="pb-1 no-underline transition-colors text-on-surface-variant hover:text-primary-container">Home</a>
-      <a href="/research/" class="pb-1 no-underline transition-colors text-primary-container border-b-2 border-primary-container">Research</a>
+      <a href="/research/" class="pb-1 no-underline transition-colors text-on-surface-variant hover:text-primary-container">Research</a>
       <a href="/publications/" class="pb-1 no-underline transition-colors text-on-surface-variant hover:text-primary-container">Publications</a>
       <a href="/blog/" class="pb-1 no-underline transition-colors text-on-surface-variant hover:text-primary-container">Blog</a>
     </div>
@@ -122,78 +122,41 @@
 </nav>
 
   
-<main class="pt-32 pb-24 px-8 max-w-7xl mx-auto">
+<main class="pt-32 pb-24 px-8 max-w-4xl mx-auto">
 
   <header class="mb-16">
-    <h1 class="font-headline text-5xl md:text-7xl font-light text-on-surface tracking-tight mb-8">
-      <span class="italic text-primary">Human-Centered</span> Autonomy
+    
+    <div class="flex gap-2 mb-6 flex-wrap">
+      
+      <span class="font-label text-xs bg-surface-container px-3 py-1 rounded uppercase tracking-wider text-on-surface-variant">#research</span>
+      
+    </div>
+    
+    <h1 class="font-headline text-5xl md:text-6xl font-light tracking-tight text-on-surface mb-6 leading-tight">
+      Research Vision: Personalized AI
     </h1>
-    <p class="font-body text-xl text-on-surface-variant leading-relaxed max-w-2xl">
-      [Research summary placeholder — to be filled in.]
-    </p>
+    <p class="font-label text-sm text-outline uppercase tracking-widest">JAN 01, 2026</p>
   </header>
 
-  <div class="space-y-32">
 
-    <!-- Embodied AI -->
-    <div class="flex flex-col md:flex-row gap-12 items-center">
-      <div class="w-full md:w-1/2 overflow-hidden rounded-xl">
-        <img src="/assets/img/embodiedAI.png" alt="Embodied AI" class="w-full h-72 object-cover"/>
-      </div>
-      <div class="w-full md:w-1/2">
-        <h2 class="font-headline text-4xl font-light text-on-surface tracking-tight mb-2">Embodied AI</h2>
-        <p class="font-headline italic text-xl text-primary mb-4">How can we teach robots to perform complex tasks with and around humans?</p>
-        <p class="font-body text-on-surface-variant leading-relaxed mb-4">
-          [Placeholder: one sentence summarizing efforts in embodied AI.]
-        </p>
-        <div class="font-body text-on-surface-variant leading-relaxed flex items-center gap-2 flex-wrap">
-          <a href="/posts/embodied-ai/" class="text-primary no-underline hover:opacity-70 transition-opacity">Research Vision</a>
-          <span>/</span>
-          <a href="/posts/provably-safe-rl/" class="text-primary no-underline hover:opacity-70 transition-opacity">Provably Safe RL</a>
-          <span>/</span>
-          <a href="/posts/human-robot-gym/" class="text-primary no-underline hover:opacity-70 transition-opacity">Human-Robot Gym</a>
-        </div>
-      </div>
-    </div>
+  
 
-    <!-- Safe AI -->
-    <div class="flex flex-col md:flex-row-reverse gap-12 items-center">
-      <div class="w-full md:w-1/2 overflow-hidden rounded-xl">
-        <img src="/assets/img/hri_dark.png" alt="Safe AI" class="w-full h-72 object-cover"/>
-      </div>
-      <div class="w-full md:w-1/2">
-        <h2 class="font-headline text-4xl font-light text-on-surface tracking-tight mb-2">Safe AI</h2>
-        <p class="font-headline italic text-xl text-primary mb-4">How can we certifiably verify the safety of autonomous agents?</p>
-        <p class="font-body text-on-surface-variant leading-relaxed mb-4">
-          [Placeholder: one sentence summarizing efforts in safe AI.]
-        </p>
-        <div class="font-body text-on-surface-variant leading-relaxed flex items-center gap-2 flex-wrap">
-          <a href="/posts/safe-ai/" class="text-primary no-underline hover:opacity-70 transition-opacity">Research Vision</a>
-          <span>/</span>
-          <a href="/posts/safety-shield/" class="text-primary no-underline hover:opacity-70 transition-opacity">Safety Shield</a>
-        </div>
-      </div>
-    </div>
+  <article class="prose prose-lg max-w-none">
+    <h2>Motivation</h2>
+<p>The acceptance of autonomous robots increases significantly when user biases, preferences, and ideas are taken into account by personalized robots. Recent approaches that aim to incorporate user preferences into the robot's plan require a large number of user queries to build a dataset of desired behavior, which is a time-intensive process. Instead, future robots should adapt to user preferences from single instructions, build a mental model of user preferences over time, and react to subtle social cues.</p>
+<h2>Prior Work</h2>
+<p>In my recent work, I propose the Text2Interaction framework to integrate user preferences into task and motion planning, as well as robot control, from a single language instruction. To achieve this, I formalize the problem of preference alignment as maximizing the combined probability of satisfying the preferences of the user and solving the task. I then search for the optimal sequence of pre-defined adaptable skills to perform the task in a preferred manner. This theoretical formulation led to more preferable robot plans without sacrificing task success rate, and users found it engaging to interact with our robot. Furthermore, I designed our recent safety shield for close contact interactions to be fully adaptable to personal safety and comfort preferences.</p>
+<h2>Research Vision</h2>
+<p>To align learning-based models with user preferences, my research group will develop methods that enable rapid adaptation of robot behavior to new users and situations, facilitate diverse communication, and establish continuous personalization.</p>
+<p>To achieve preference alignment of foundation models for robotics, I will explore preference-clustering techniques in the embedding space and few-shot learning approaches for vision-language-action models. For more intuitive, inclusive, and natural human-robot communication, I will investigate how insights from human-to-human collaboration can be transferred to robots, enabling them to recognize and respond to subtle social cues such as gestures and facial expressions. I will further study how tasks can be fairly distributed between a fleet of robots and human workers to maximize efficiency and minimize mental and physical strain.</p>
+<h2>Path to Deployment</h2>
+<p>I will evaluate the developed methods through real-world user studies, which have provided me with valuable insights in the past. In this context, I am organizing a study that involves visitors of the Stanford Robotics Center to observe how robots adapt to diverse users in real settings. Insights from these studies will guide the implementation of preference alignment techniques in everyday assistive scenarios.</p>
+<p>Over time, I aim to apply these methods to create highly personalized and socially responsive robots that become trusted companions and caregivers, supporting people throughout all stages of life. By continuously studying the user acceptance and satisfaction of our robots, I aim to ensure that autonomous systems remain genuinely beneficial to the people they serve.</p>
 
-    <!-- Personalized AI -->
-    <div class="flex flex-col md:flex-row gap-12 items-center">
-      <div class="w-full md:w-1/2 overflow-hidden rounded-xl">
-        <img src="/assets/img/personalizedAI.png" alt="Personalized AI" class="w-full h-72 object-cover"/>
-      </div>
-      <div class="w-full md:w-1/2">
-        <h2 class="font-headline text-4xl font-light text-on-surface tracking-tight mb-2">Personalized AI</h2>
-        <p class="font-headline italic text-xl text-primary mb-4">How can we rapidly adapt autonomous behavior to best support individual users?</p>
-        <p class="font-body text-on-surface-variant leading-relaxed mb-4">
-          [Placeholder: one sentence summarizing efforts in personalized AI.]
-        </p>
-        <div class="font-body text-on-surface-variant leading-relaxed flex items-center gap-2 flex-wrap">
-          <a href="/posts/personalized-ai/" class="text-primary no-underline hover:opacity-70 transition-opacity">Research Vision</a>
-          <span>/</span>
-          <a href="/posts/text2interaction/" class="text-primary no-underline hover:opacity-70 transition-opacity">Text2Interaction</a>
-        </div>
-      </div>
-    </div>
+  </article>
 
+  <div class="mt-20 pt-8 border-t border-outline-variant/30">
+    <a href="javascript:history.back()" class="font-label text-sm uppercase tracking-widest text-outline hover:text-primary-container transition-colors">← Back</a>
   </div>
 
 </main>

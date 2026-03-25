@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Research — Jakob Thumm</title>
+<title>Research Vision: Embodied AI — Jakob Thumm</title>
 <meta name="description" content="Postdoctoral Scholar at Stanford University. Teaching robots to safely work with humans.">
 <link rel="icon" href="/favicon.ico">
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Manrope:wght@200..800&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet"/>
@@ -110,7 +110,7 @@
     </a>
     <div class="hidden md:flex items-center gap-8 font-headline text-lg">
       <a href="/" class="pb-1 no-underline transition-colors text-on-surface-variant hover:text-primary-container">Home</a>
-      <a href="/research/" class="pb-1 no-underline transition-colors text-primary-container border-b-2 border-primary-container">Research</a>
+      <a href="/research/" class="pb-1 no-underline transition-colors text-on-surface-variant hover:text-primary-container">Research</a>
       <a href="/publications/" class="pb-1 no-underline transition-colors text-on-surface-variant hover:text-primary-container">Publications</a>
       <a href="/blog/" class="pb-1 no-underline transition-colors text-on-surface-variant hover:text-primary-container">Blog</a>
     </div>
@@ -122,78 +122,42 @@
 </nav>
 
   
-<main class="pt-32 pb-24 px-8 max-w-7xl mx-auto">
+<main class="pt-32 pb-24 px-8 max-w-4xl mx-auto">
 
   <header class="mb-16">
-    <h1 class="font-headline text-5xl md:text-7xl font-light text-on-surface tracking-tight mb-8">
-      <span class="italic text-primary">Human-Centered</span> Autonomy
+    
+    <div class="flex gap-2 mb-6 flex-wrap">
+      
+      <span class="font-label text-xs bg-surface-container px-3 py-1 rounded uppercase tracking-wider text-on-surface-variant">#research</span>
+      
+    </div>
+    
+    <h1 class="font-headline text-5xl md:text-6xl font-light tracking-tight text-on-surface mb-6 leading-tight">
+      Research Vision: Embodied AI
     </h1>
-    <p class="font-body text-xl text-on-surface-variant leading-relaxed max-w-2xl">
-      [Research summary placeholder — to be filled in.]
-    </p>
+    <p class="font-label text-sm text-outline uppercase tracking-widest">JAN 01, 2026</p>
   </header>
 
-  <div class="space-y-32">
 
-    <!-- Embodied AI -->
-    <div class="flex flex-col md:flex-row gap-12 items-center">
-      <div class="w-full md:w-1/2 overflow-hidden rounded-xl">
-        <img src="/assets/img/embodiedAI.png" alt="Embodied AI" class="w-full h-72 object-cover"/>
-      </div>
-      <div class="w-full md:w-1/2">
-        <h2 class="font-headline text-4xl font-light text-on-surface tracking-tight mb-2">Embodied AI</h2>
-        <p class="font-headline italic text-xl text-primary mb-4">How can we teach robots to perform complex tasks with and around humans?</p>
-        <p class="font-body text-on-surface-variant leading-relaxed mb-4">
-          [Placeholder: one sentence summarizing efforts in embodied AI.]
-        </p>
-        <div class="font-body text-on-surface-variant leading-relaxed flex items-center gap-2 flex-wrap">
-          <a href="/posts/embodied-ai/" class="text-primary no-underline hover:opacity-70 transition-opacity">Research Vision</a>
-          <span>/</span>
-          <a href="/posts/provably-safe-rl/" class="text-primary no-underline hover:opacity-70 transition-opacity">Provably Safe RL</a>
-          <span>/</span>
-          <a href="/posts/human-robot-gym/" class="text-primary no-underline hover:opacity-70 transition-opacity">Human-Robot Gym</a>
-        </div>
-      </div>
-    </div>
+  
 
-    <!-- Safe AI -->
-    <div class="flex flex-col md:flex-row-reverse gap-12 items-center">
-      <div class="w-full md:w-1/2 overflow-hidden rounded-xl">
-        <img src="/assets/img/hri_dark.png" alt="Safe AI" class="w-full h-72 object-cover"/>
-      </div>
-      <div class="w-full md:w-1/2">
-        <h2 class="font-headline text-4xl font-light text-on-surface tracking-tight mb-2">Safe AI</h2>
-        <p class="font-headline italic text-xl text-primary mb-4">How can we certifiably verify the safety of autonomous agents?</p>
-        <p class="font-body text-on-surface-variant leading-relaxed mb-4">
-          [Placeholder: one sentence summarizing efforts in safe AI.]
-        </p>
-        <div class="font-body text-on-surface-variant leading-relaxed flex items-center gap-2 flex-wrap">
-          <a href="/posts/safe-ai/" class="text-primary no-underline hover:opacity-70 transition-opacity">Research Vision</a>
-          <span>/</span>
-          <a href="/posts/safety-shield/" class="text-primary no-underline hover:opacity-70 transition-opacity">Safety Shield</a>
-        </div>
-      </div>
-    </div>
+  <article class="prose prose-lg max-w-none">
+    <h2>Motivation</h2>
+<p>For robots to be effective partners in human environments, they must autonomously perform challenging manipulation tasks such as retrieving, sorting, assembling, and handing over objects. Recently, vision-language-action (VLA) models have demonstrated strong manipulation performance in structured settings but still struggle to adapt to dynamic human motion and generalize across diverse tasks. Current approaches to improving generalization rely on repeatedly patching policy failures through new human demonstrations — a costly and unsustainable strategy. Moreover, existing methods often overlook the impact of strict safety constraints on the training efficiency of autonomous policies.</p>
+<h2>Prior Work</h2>
+<p>My prior work focuses on enabling AI policies to learn effectively in human environments. Specifically, I developed a benchmark for autonomous human-robot collaboration that exposes policies to the specific challenges of interacting safely with a human partner. Our recent work showcases that diffusion-based policies can learn adaptable skills for human-robot collaboration, such as dynamic handovers, collaborative sorting, or human feeding. Throughout my research on provably safe reinforcement learning, I demonstrated that integrating safety guarantees into RL training can significantly improve performance, increasing the success rate of agents in human environments by 50–80%.</p>
+<h2>Research Vision</h2>
+<p>My future research group will develop theoretical methods to enhance policy performance and generalization in safety-critical, dynamic, and collaborative settings involving human interaction.</p>
+<p>Concretely, to achieve a more structured approach for policy generalization, I will develop explainable AI methods to determine which input features cause a model to underperform in out-of-distribution situations. Building on these explanations, I aim to automatically generate training data that reflects diverse human behaviors and leverage transfer from human collaboration data.</p>
+<p>To steer data collection toward personalized policies that minimize physical and mental burden in shared tasks, I will build on my previous work in learning-based human-robot collaboration. Finally, I will develop provably safe RL methods that guide policy training toward high performance in safety-critical environments.</p>
+<h2>Path to Deployment</h2>
+<p>These developments will significantly enhance data coverage and enable the initial deployment of policies on robots working alongside humans. I am currently collaborating with the start-up scaledrive.ai on a robot for inspection tasks in construction environments and with the Stanford Robotics Center on a demonstrator for sorting tasks in production lines typical of small and medium enterprises.</p>
+<p>In the longer term, large-scale deployment of these systems will create a rapidly growing stream of real-world data, paving the way for truly generalized robot policies. My long-term vision is to deploy autonomous robot fleets in hospitals and geriatric care facilities to reduce the mental and physical workload of human staff and assist with activities of daily living, including hygiene, feeding, dressing, and mobility support.</p>
 
-    <!-- Personalized AI -->
-    <div class="flex flex-col md:flex-row gap-12 items-center">
-      <div class="w-full md:w-1/2 overflow-hidden rounded-xl">
-        <img src="/assets/img/personalizedAI.png" alt="Personalized AI" class="w-full h-72 object-cover"/>
-      </div>
-      <div class="w-full md:w-1/2">
-        <h2 class="font-headline text-4xl font-light text-on-surface tracking-tight mb-2">Personalized AI</h2>
-        <p class="font-headline italic text-xl text-primary mb-4">How can we rapidly adapt autonomous behavior to best support individual users?</p>
-        <p class="font-body text-on-surface-variant leading-relaxed mb-4">
-          [Placeholder: one sentence summarizing efforts in personalized AI.]
-        </p>
-        <div class="font-body text-on-surface-variant leading-relaxed flex items-center gap-2 flex-wrap">
-          <a href="/posts/personalized-ai/" class="text-primary no-underline hover:opacity-70 transition-opacity">Research Vision</a>
-          <span>/</span>
-          <a href="/posts/text2interaction/" class="text-primary no-underline hover:opacity-70 transition-opacity">Text2Interaction</a>
-        </div>
-      </div>
-    </div>
+  </article>
 
+  <div class="mt-20 pt-8 border-t border-outline-variant/30">
+    <a href="javascript:history.back()" class="font-label text-sm uppercase tracking-widest text-outline hover:text-primary-container transition-colors">← Back</a>
   </div>
 
 </main>
