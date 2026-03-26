@@ -45,11 +45,13 @@ layout: base
         <div id="bio-web" class="prose prose-lg max-w-none font-headline">
           {{ content }}
         </div>
-        <div id="bio-speaker" class="hidden font-headline text-xl md:text-2xl leading-relaxed text-on-surface-variant italic">
-          Speaker bio placeholder — a concise version suitable for conference introductions.
+        <div id="bio-speaker" class="hidden prose prose-lg max-w-none font-headline">
+          <p class="mb-6">I'm a postdoctoral scholar at Stanford University in the <a href="https://stanfordasl.github.io/" target="_blank" rel="noopener" class="text-primary hover:opacity-70 transition-opacity">Autonomous Systems Lab</a> under supervision of <a href="https://profiles.stanford.edu/marco-pavone" target="_blank" rel="noopener" class="text-primary hover:opacity-70 transition-opacity">Marco Pavone</a>. Prior to joining Stanford, I earned my Ph.D. in Computer Engineering from the Technical University of Munich, where I was supervised by <a href="https://www.ce.cit.tum.de/en/cps/members/prof-dr-ing-matthias-althoff/" target="_blank" rel="noopener" class="text-primary hover:opacity-70 transition-opacity">Matthias Althoff</a>.</p>
+          <p class="mb-6">My research enables robots to work together with humans in a safe, efficient, and enjoyable manner. These robots will support human workers in sectors such as manufacturing, health care, and geriatric care to fulfill tedious, strenuous, and dangerous tasks. To achieve this, I develop safe, embodied, and personalized AI agents that are specialized for human environments.</p>
+          <p>Outside the lab, I am a passionate runner and volunteer at <a href="https://www.sutrostewards.org/" target="_blank" rel="noopener" class="text-primary hover:opacity-70 transition-opacity">Sutro Stewards</a>, where I maintain hiking trails in the heart of San Francisco.</p>
         </div>
-        <div id="bio-short" class="hidden font-headline text-xl md:text-2xl leading-relaxed text-on-surface-variant italic">
-          Short bio placeholder — 2–3 sentences for paper author profiles.
+        <div id="bio-short" class="hidden prose prose-lg max-w-none font-headline">
+          <p class="mb-6">I'm a postdoctoral scholar at Stanford University in the <a href="https://stanfordasl.github.io/" target="_blank" rel="noopener" class="text-primary hover:opacity-70 transition-opacity">Autonomous Systems Lab</a> under supervision of <a href="https://profiles.stanford.edu/marco-pavone" target="_blank" rel="noopener" class="text-primary hover:opacity-70 transition-opacity">Marco Pavone</a>. Prior to joining Stanford, I earned my Ph.D. in Computer Engineering from the Technical University of Munich, where I was supervised by <a href="https://www.ce.cit.tum.de/en/cps/members/prof-dr-ing-matthias-althoff/" target="_blank" rel="noopener" class="text-primary hover:opacity-70 transition-opacity">Matthias Althoff</a>.</p>
         </div>
       </div>
     </div>
@@ -75,27 +77,72 @@ layout: base
     }
   </script>
 
-  <!-- Recent Posts -->
-  <section class="max-w-7xl mx-auto px-8 pb-32">
-    <div class="flex items-baseline justify-between mb-12 border-b border-outline-variant/30 pb-6">
-      <h2 class="font-headline text-3xl font-light">Recent Posts</h2>
-      <a href="/blog/" class="font-label text-sm text-outline uppercase tracking-widest hover:text-primary-container transition-colors">All Posts →</a>
+  <!-- Vitae Section -->
+  <section class="max-w-7xl mx-auto px-8 py-32 bg-surface-container-low rounded-[2rem]">
+    <div class="text-center mb-20">
+      <h2 class="font-label text-xs uppercase tracking-[0.2em] text-primary-container font-bold mb-4">Academic Career</h2>
     </div>
-    <div class="space-y-1">
-      {% for post in collections.post limit:3 %}
-      <div class="group py-10 px-4 hover:bg-surface-container-lowest transition-all duration-500 flex flex-col md:flex-row gap-8 items-start border-b border-outline-variant/20">
-        <div class="font-label text-outline text-sm w-40 shrink-0 pt-1">{{ post.date | dateDisplay }}</div>
-        <div class="flex-grow">
-          <h3 class="font-headline text-2xl font-medium mb-2 group-hover:text-primary transition-colors">
-            <a href="{{ post.url }}">{{ post.data.title }}</a>
-          </h3>
-          <p class="font-body text-on-surface-variant leading-relaxed">{{ post.content | truncate: 180 }}</p>
+    <div class="relative max-w-5xl mx-auto">
+      <!-- Timeline Vertical Line -->
+      <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-px bg-outline-variant/30 hidden md:block"></div>
+      <div class="space-y-24">
+
+        <!-- Stanford Postdoc -->
+        <div class="relative flex flex-col md:flex-row items-center gap-8">
+          <div class="md:w-1/2 md:text-right">
+            <div class="font-label text-sm text-primary-container font-bold mb-2">Aug 2025 — present</div>
+            <h3 class="font-headline text-3xl mb-1">Postdoctoral Scholar</h3>
+            <p class="font-body text-on-surface-variant">Stanford University, Autonomous Systems Lab</p>
+          </div>
+          <div class="z-10 w-4 h-4 rounded-full bg-primary ring-8 ring-surface-container-low shrink-0"></div>
+          <div class="md:w-1/2"></div>
         </div>
-        <div class="hidden md:block opacity-0 group-hover:opacity-100 transition-opacity pt-1">
-          <span class="material-symbols-outlined text-primary text-3xl">north_east</span>
+
+        <!-- TUM PhD -->
+        <div class="relative flex flex-col md:flex-row-reverse items-center gap-8">
+          <div class="md:w-1/2 md:text-left">
+            <div class="font-label text-sm text-primary-container font-bold mb-2">Feb 2021 — Feb 2025</div>
+            <h3 class="font-headline text-3xl mb-1">Ph.D. Informatics</h3>
+            <p class="font-body text-on-surface-variant">Technical University of Munich, Cyber-Physical Systems Lab</p>
+          </div>
+          <div class="z-10 w-4 h-4 rounded-full bg-primary ring-8 ring-surface-container-low shrink-0"></div>
+          <div class="md:w-1/2"></div>
         </div>
+
+        <!-- Stanford Visiting -->
+        <div class="relative flex flex-col md:flex-row items-center gap-8">
+          <div class="md:w-1/2 md:text-right">
+            <div class="font-label text-sm text-primary-container font-bold mb-2">Oct 2023 — Mar 2024</div>
+            <h3 class="font-headline text-3xl mb-1">Visiting Student Researcher</h3>
+            <p class="font-body text-on-surface-variant">Stanford University, Autonomous Systems Lab</p>
+          </div>
+          <div class="z-10 w-4 h-4 rounded-full bg-primary-container ring-8 ring-surface-container-low shrink-0"></div>
+          <div class="md:w-1/2"></div>
+        </div>
+
+        <!-- KIT MSc -->
+        <div class="relative flex flex-col md:flex-row-reverse items-center gap-8">
+          <div class="md:w-1/2 md:text-left">
+            <div class="font-label text-sm text-primary-container font-bold mb-2">Apr 2017 — Oct 2020</div>
+            <h3 class="font-headline text-3xl mb-1">M.Sc. Mechatronics</h3>
+            <p class="font-body text-on-surface-variant">Karlsruhe Institute of Technology</p>
+          </div>
+          <div class="z-10 w-4 h-4 rounded-full bg-primary ring-8 ring-surface-container-low shrink-0"></div>
+          <div class="md:w-1/2"></div>
+        </div>
+
+        <!-- KIT BSc -->
+        <div class="relative flex flex-col md:flex-row items-center gap-8">
+          <div class="md:w-1/2 md:text-right">
+            <div class="font-label text-sm text-primary-container font-bold mb-2">Oct 2013 — Mar 2017</div>
+            <h3 class="font-headline text-3xl mb-1">B.Sc. Mechatronics</h3>
+            <p class="font-body text-on-surface-variant">Karlsruhe Institute of Technology</p>
+          </div>
+          <div class="z-10 w-4 h-4 rounded-full bg-primary ring-8 ring-surface-container-low shrink-0"></div>
+          <div class="md:w-1/2"></div>
+        </div>
+
       </div>
-      {% endfor %}
     </div>
   </section>
 

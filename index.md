@@ -20,8 +20,6 @@ Realizing this potential requires deploying autonomous robots in environments tr
  - **Safe AI**: How can we certifiably verify the safety of autonomous agents?
  - **Personalized AI**: How can we rapidly adapt autonomous behavior to best support individual users?
 
-<img src="/assets/img/general_overview_figure.png" alt="Research overview" style="max-width:900px;width:100%;display:block;margin:2rem auto;"/>
-
 To answer these questions, I develop methods that combine the rigor of formal techniques, such as set-based reachability analysis, with the flexibility of learning-based approaches for creating generalized robot policies.
 Concretely, I developed a [safety shield for provably safe collaboration](/posts/safety-shield/), enabling close contact and high-performance interaction.
 In the area of safe reinforcement learning (RL), I formulated the [theoretical framework for integrating formal safety guarantees into RL training](/posts/provably-safe-rl/), showing that safety guarantees can substantially improve the policy performance.
@@ -29,3 +27,4 @@ Furthermore, I introduced a [method for preference alignment from a single user 
 Across these works, my methods have been successfully deployed on multiple robot platforms in international collaborations with academic and industrial partners.
 My vision is to deploy autonomous robots to support humans in everyday tasks including industrial applications, household, and geriatric care.
 
+<!-- <img src="/assets/img/general_overview_figure.png" alt="Research overview" style="max-width:900px;width:100%;display:block;margin:2rem auto;"/> -->

@@ -14,12 +14,10 @@ In my recent work, I propose the Text2Interaction framework to integrate user pr
 
 ## Research Vision
 
-To align learning-based models with user preferences, my research group will develop methods that enable rapid adaptation of robot behavior to new users and situations, facilitate diverse communication, and establish continuous personalization.
-
-To achieve preference alignment of foundation models for robotics, I will explore preference-clustering techniques in the embedding space and few-shot learning approaches for vision-language-action models. For more intuitive, inclusive, and natural human-robot communication, I will investigate how insights from human-to-human collaboration can be transferred to robots, enabling them to recognize and respond to subtle social cues such as gestures and facial expressions. I will further study how tasks can be fairly distributed between a fleet of robots and human workers to maximize efficiency and minimize mental and physical strain.
+To align learning-based models with user preferences, I develop methods that enable rapid adaptation of robot behavior to new users and situations, facilitate diverse communication, and establish continuous personalization.
+To achieve preference alignment of foundation models for robotics, I explore preference-clustering techniques in the embedding space and few-shot learning approaches for vision-language-action models. For more intuitive, inclusive, and natural human-robot communication, I investigate how insights from human-to-human collaboration can be transferred to robots, enabling them to recognize and respond to subtle social cues such as gestures and facial expressions. I further study how tasks can be fairly distributed between a fleet of robots and human workers to maximize efficiency and minimize mental and physical strain.
 
 ## Path to Deployment
 
-I will evaluate the developed methods through real-world user studies, which have provided me with valuable insights in the past. In this context, I am organizing a study that involves visitors of the Stanford Robotics Center to observe how robots adapt to diverse users in real settings. Insights from these studies will guide the implementation of preference alignment techniques in everyday assistive scenarios.
-
+I evaluate the developed methods through real-world user studies, which have provided me with valuable insights in the past. In this context, I am organizing a study that involves visitors of the Stanford Robotics Center to observe how robots adapt to diverse users in real settings. Insights from these studies guide the implementation of preference alignment techniques in everyday assistive scenarios.
 Over time, I aim to apply these methods to create highly personalized and socially responsive robots that become trusted companions and caregivers, supporting people throughout all stages of life. By continuously studying the user acceptance and satisfaction of our robots, I aim to ensure that autonomous systems remain genuinely beneficial to the people they serve.

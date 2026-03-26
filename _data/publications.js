@@ -7,6 +7,7 @@ module.exports = [
     year: 2026,
     tag: "safe-ai",
     url: "http://arxiv.org/abs/2412.10180",
+    img: "/assets/img/general_overview_figure_thumbnail.jpg",
   },
   {
     title: "From Demonstrations to Safe Deployment: Path-Consistent Safety Filtering for Diffusion Policies",
@@ -16,6 +17,7 @@ module.exports = [
     year: 2026,
     tag: "embodied-ai",
     url: "http://arxiv.org/abs/2511.06385",
+    img: "/assets/img/embodiedAI_thumbnail.jpg",
   },
   {
     title: "Multi-Objective Causal Bayesian Optimization",
@@ -25,6 +27,7 @@ module.exports = [
     year: 2025,
     tag: "other",
     url: "https://openreview.net/forum?id=sDGafRLNQa",
+    img: "/assets/img/mo_cbo_thumbnail.jpg",
   },
   {
     title: "Excluding the Irrelevant: Focusing Reinforcement Learning through Continuous Action Masking",
@@ -34,6 +37,7 @@ module.exports = [
     year: 2024,
     tag: "embodied-ai",
     url: "https://openreview.net/forum?id=yVzWlFhpRW",
+    img: "/assets/img/action_masking_results_thumbnail.jpg",
   },
   {
     title: "Text2Interaction: Establishing Safe and Preferable Human-Robot Interaction",
@@ -43,6 +47,8 @@ module.exports = [
     year: 2024,
     tag: "personalized-ai",
     url: "https://openreview.net/forum?id=s0VNSnPeoA",
+    website: "https://sites.google.com/view/text2interaction",
+    img: "/assets/img/personalizedAI_thumbnail.jpg",
   },
   {
     title: "Human-Robot Gym: Benchmarking Reinforcement Learning in Human-Robot Collaboration",
@@ -51,6 +57,8 @@ module.exports = [
     type: "Conference",
     year: 2024,
     tag: "embodied-ai",
+    url: "https://ieeexplore.ieee.org/abstract/document/10610705/",
+    img: "/assets/img/hrgym_thumbnail.jpg",
   },
   {
     title: "Provably Safe Reinforcement Learning: Conceptual Analysis, Survey, and Benchmarking",
@@ -60,6 +68,7 @@ module.exports = [
     year: 2023,
     tag: "embodied-ai",
     url: "https://openreview.net/forum?id=mcN0ezbnzO",
+    img: "/assets/img/provably_safe_rl_structure_thumbnail.jpg",
   },
   {
     title: "Reducing Safety Interventions in Provably Safe Reinforcement Learning",
@@ -68,6 +77,8 @@ module.exports = [
     type: "Conference",
     year: 2023,
     tag: "embodied-ai",
+    url: "https://ieeexplore.ieee.org/abstract/document/10342464/",
+    img: "/assets/img/reducing_failsafe_robot_thumbnail.jpg",
   },
   {
     title: "Approximate First-Passage Time Distributions for Gaussian Motion and Transportation Models",
@@ -77,6 +88,7 @@ module.exports = [
     year: 2023,
     tag: "other",
     url: "https://ieeexplore.ieee.org/abstract/document/10224164",
+    img: "/assets/img/first_passage_time_thumbnail.jpg",
   },
   {
     title: "SaRA: A Tool for Safe Human–Robot Coexistence and Collaboration through Reachability Analysis",
@@ -85,6 +97,8 @@ module.exports = [
     type: "Conference",
     year: 2022,
     tag: "safe-ai",
+    url: "https://ieeexplore.ieee.org/abstract/document/9811952",
+    img: "/assets/img/SARA_thumbnail.jpg",
   },
   {
     title: "Provably Safe Deep Reinforcement Learning for Robotic Manipulation in Human Environments",
@@ -94,6 +108,7 @@ module.exports = [
     year: 2022,
     tag: "safe-ai",
     doi: "10.1109/ICRA46639.2022.9811698",
+    img: "/assets/img/hri_dark_thumbnail.jpg",
   },
   {
     title: "Mixture of Experts of Neural Networks and Kalman Filters for Optical Belt Sorting",
@@ -103,6 +118,7 @@ module.exports = [
     year: 2022,
     tag: "other",
     doi: "10.1109/TII.2021.3114282",
+    img: "/assets/img/optical_belt_sorter_thumbnail.jpg",
   },
   {
     title: "A Novel Approach to Label Road Defects in Video Data: Semi-Automated Video Analysis",
@@ -111,6 +127,8 @@ module.exports = [
     type: "Journal",
     year: 2020,
     tag: "other",
+    url: "https://reference-global.com/article/10.21307/ijssis-2020-007",
+    img: "/assets/img/mercedes_pothole_thumbnail.jpg",
   },
   {
     title: "Characterization of Road Condition with Data Mining Based on Measured Kinematic Vehicle Parameters",
@@ -120,6 +138,7 @@ module.exports = [
     year: 2018,
     tag: "other",
     doi: "10.1155/2018/8647607",
+    img: "/assets/img/damage_events_thumbnail.jpg",
   },
   {
     title: "Multiple Vehicle Fusion for a Robust Road Condition Estimation Based on Vehicle Sensors and Data Mining",
@@ -129,6 +148,7 @@ module.exports = [
     year: 2018,
     tag: "other",
     doi: "10.1080/23311916.2018.1449428",
+    img: "/assets/img/road_condition_thumbnail.jpg",
   },
   {
     title: "Learning from the Crowd: Road Infrastructure Monitoring System",
@@ -138,6 +158,7 @@ module.exports = [
     year: 2017,
     tag: "other",
     doi: "10.1016/j.jtte.2017.06.003",
+    img: "/assets/img/road_condition_thumbnail.jpg",
   },
   {
     title: "Parking Events Derived From Trip Data from MiD2008",
@@ -147,5 +168,6 @@ module.exports = [
     year: 2019,
     tag: "other",
     doi: "10.5445/IR/1000098024",
+    img: "/assets/img/parking_events_thumbnail.jpg",
   },
 ];

@@ -126,11 +126,11 @@
 
   <header class="mb-16">
     <h1 class="font-headline text-5xl md:text-7xl font-light tracking-tight text-on-surface mb-8">
-      Selected <span class="italic text-primary">Publications</span>
+      <span class="italic text-primary">Publications</span>
     </h1>
-    <p class="font-body text-xl text-on-surface-variant leading-relaxed max-w-2xl">
-      Peer-reviewed research on safe robotics, human-robot interaction, and embodied AI.
-    </p>
+    <!--<p class="font-body text-xl text-on-surface-variant leading-relaxed max-w-2xl">
+      My publications on safe robotics, human-robot interaction, and embodied AI.
+    </p>-->
   </header>
 
   <!-- Filter tabs -->
@@ -160,9 +160,11 @@
            data-tag="safe-ai">
 
         <!-- Thumbnail -->
-        <div class="w-full md:w-40 shrink-0 overflow-hidden rounded-lg">
-          <img src="/assets/img/hri_dark.png" alt="A General Safety Framework for Autonomous Manipulation in Human Environments"
-               class="w-full h-28 md:h-full object-cover"/>
+        <div class="w-full md:w-56 shrink-0 overflow-hidden rounded-lg">
+          <div class="aspect-video w-full overflow-hidden rounded-lg bg-white">
+            <img src="/assets/img/general_overview_figure_thumbnail.jpg" alt="A General Safety Framework for Autonomous Manipulation in Human Environments"
+                 class="w-full h-full object-contain"/>
+          </div>
         </div>
 
         <!-- Content -->
@@ -191,6 +193,7 @@
             </a>
             
             
+            
           </div>
         </div>
 
@@ -200,9 +203,11 @@
            data-tag="embodied-ai">
 
         <!-- Thumbnail -->
-        <div class="w-full md:w-40 shrink-0 overflow-hidden rounded-lg">
-          <img src="/assets/img/hri_dark.png" alt="From Demonstrations to Safe Deployment: Path-Consistent Safety Filtering for Diffusion Policies"
-               class="w-full h-28 md:h-full object-cover"/>
+        <div class="w-full md:w-56 shrink-0 overflow-hidden rounded-lg">
+          <div class="aspect-video w-full overflow-hidden rounded-lg bg-white">
+            <img src="/assets/img/embodiedAI_thumbnail.jpg" alt="From Demonstrations to Safe Deployment: Path-Consistent Safety Filtering for Diffusion Policies"
+                 class="w-full h-full object-contain"/>
+          </div>
         </div>
 
         <!-- Content -->
@@ -231,6 +236,7 @@
             </a>
             
             
+            
           </div>
         </div>
 
@@ -249,9 +255,11 @@
            data-tag="other">
 
         <!-- Thumbnail -->
-        <div class="w-full md:w-40 shrink-0 overflow-hidden rounded-lg">
-          <img src="/assets/img/hri_dark.png" alt="Multi-Objective Causal Bayesian Optimization"
-               class="w-full h-28 md:h-full object-cover"/>
+        <div class="w-full md:w-56 shrink-0 overflow-hidden rounded-lg">
+          <div class="aspect-video w-full overflow-hidden rounded-lg bg-white">
+            <img src="/assets/img/mo_cbo_thumbnail.jpg" alt="Multi-Objective Causal Bayesian Optimization"
+                 class="w-full h-full object-contain"/>
+          </div>
         </div>
 
         <!-- Content -->
@@ -280,6 +288,7 @@
             </a>
             
             
+            
           </div>
         </div>
 
@@ -298,9 +307,11 @@
            data-tag="embodied-ai">
 
         <!-- Thumbnail -->
-        <div class="w-full md:w-40 shrink-0 overflow-hidden rounded-lg">
-          <img src="/assets/img/hri_dark.png" alt="Excluding the Irrelevant: Focusing Reinforcement Learning through Continuous Action Masking"
-               class="w-full h-28 md:h-full object-cover"/>
+        <div class="w-full md:w-56 shrink-0 overflow-hidden rounded-lg">
+          <div class="aspect-video w-full overflow-hidden rounded-lg bg-white">
+            <img src="/assets/img/action_masking_results_thumbnail.jpg" alt="Excluding the Irrelevant: Focusing Reinforcement Learning through Continuous Action Masking"
+                 class="w-full h-full object-contain"/>
+          </div>
         </div>
 
         <!-- Content -->
@@ -329,6 +340,7 @@
             </a>
             
             
+            
           </div>
         </div>
 
@@ -338,9 +350,11 @@
            data-tag="personalized-ai">
 
         <!-- Thumbnail -->
-        <div class="w-full md:w-40 shrink-0 overflow-hidden rounded-lg">
-          <img src="/assets/img/hri_dark.png" alt="Text2Interaction: Establishing Safe and Preferable Human-Robot Interaction"
-               class="w-full h-28 md:h-full object-cover"/>
+        <div class="w-full md:w-56 shrink-0 overflow-hidden rounded-lg">
+          <div class="aspect-video w-full overflow-hidden rounded-lg bg-white">
+            <img src="/assets/img/personalizedAI_thumbnail.jpg" alt="Text2Interaction: Establishing Safe and Preferable Human-Robot Interaction"
+                 class="w-full h-full object-contain"/>
+          </div>
         </div>
 
         <!-- Content -->
@@ -369,6 +383,12 @@
             </a>
             
             
+            
+            <a href="https://sites.google.com/view/text2interaction" target="_blank" rel="noopener"
+               class="font-label text-xs uppercase tracking-wider text-primary no-underline hover:opacity-70 transition-opacity flex items-center gap-1">
+              <span class="material-symbols-outlined text-base" style="font-size:1rem;">language</span> Website
+            </a>
+            
           </div>
         </div>
 
@@ -378,9 +398,11 @@
            data-tag="embodied-ai">
 
         <!-- Thumbnail -->
-        <div class="w-full md:w-40 shrink-0 overflow-hidden rounded-lg">
-          <img src="/assets/img/hri_dark.png" alt="Human-Robot Gym: Benchmarking Reinforcement Learning in Human-Robot Collaboration"
-               class="w-full h-28 md:h-full object-cover"/>
+        <div class="w-full md:w-56 shrink-0 overflow-hidden rounded-lg">
+          <div class="aspect-video w-full overflow-hidden rounded-lg bg-white">
+            <img src="/assets/img/hrgym_thumbnail.jpg" alt="Human-Robot Gym: Benchmarking Reinforcement Learning in Human-Robot Collaboration"
+                 class="w-full h-full object-contain"/>
+          </div>
         </div>
 
         <!-- Content -->
@@ -394,13 +416,20 @@
           </div>
 
           <h3 class="font-headline text-xl font-medium text-on-surface mb-2 leading-snug group-hover:text-primary transition-colors">
-            Human-Robot Gym: Benchmarking Reinforcement Learning in Human-Robot Collaboration
+            <a href="https://ieeexplore.ieee.org/abstract/document/10610705/" target="_blank" rel="noopener" class="no-underline hover:no-underline">Human-Robot Gym: Benchmarking Reinforcement Learning in Human-Robot Collaboration</a>
+            
           </h3>
 
           <p class="font-body text-sm text-on-surface-variant mb-3 leading-relaxed">J. Thumm, F. Trost, M. Althoff</p>
 
           <!-- Links -->
           <div class="flex items-center gap-4 flex-wrap">
+            
+            <a href="https://ieeexplore.ieee.org/abstract/document/10610705/" target="_blank" rel="noopener"
+               class="font-label text-xs uppercase tracking-wider text-primary no-underline hover:opacity-70 transition-opacity flex items-center gap-1">
+              <span class="material-symbols-outlined text-base" style="font-size:1rem;">article</span> Paper
+            </a>
+            
             
             
           </div>
@@ -421,9 +450,11 @@
            data-tag="embodied-ai">
 
         <!-- Thumbnail -->
-        <div class="w-full md:w-40 shrink-0 overflow-hidden rounded-lg">
-          <img src="/assets/img/hri_dark.png" alt="Provably Safe Reinforcement Learning: Conceptual Analysis, Survey, and Benchmarking"
-               class="w-full h-28 md:h-full object-cover"/>
+        <div class="w-full md:w-56 shrink-0 overflow-hidden rounded-lg">
+          <div class="aspect-video w-full overflow-hidden rounded-lg bg-white">
+            <img src="/assets/img/provably_safe_rl_structure_thumbnail.jpg" alt="Provably Safe Reinforcement Learning: Conceptual Analysis, Survey, and Benchmarking"
+                 class="w-full h-full object-contain"/>
+          </div>
         </div>
 
         <!-- Content -->
@@ -452,6 +483,7 @@
             </a>
             
             
+            
           </div>
         </div>
 
@@ -461,9 +493,11 @@
            data-tag="embodied-ai">
 
         <!-- Thumbnail -->
-        <div class="w-full md:w-40 shrink-0 overflow-hidden rounded-lg">
-          <img src="/assets/img/hri_dark.png" alt="Reducing Safety Interventions in Provably Safe Reinforcement Learning"
-               class="w-full h-28 md:h-full object-cover"/>
+        <div class="w-full md:w-56 shrink-0 overflow-hidden rounded-lg">
+          <div class="aspect-video w-full overflow-hidden rounded-lg bg-white">
+            <img src="/assets/img/reducing_failsafe_robot_thumbnail.jpg" alt="Reducing Safety Interventions in Provably Safe Reinforcement Learning"
+                 class="w-full h-full object-contain"/>
+          </div>
         </div>
 
         <!-- Content -->
@@ -477,13 +511,20 @@
           </div>
 
           <h3 class="font-headline text-xl font-medium text-on-surface mb-2 leading-snug group-hover:text-primary transition-colors">
-            Reducing Safety Interventions in Provably Safe Reinforcement Learning
+            <a href="https://ieeexplore.ieee.org/abstract/document/10342464/" target="_blank" rel="noopener" class="no-underline hover:no-underline">Reducing Safety Interventions in Provably Safe Reinforcement Learning</a>
+            
           </h3>
 
           <p class="font-body text-sm text-on-surface-variant mb-3 leading-relaxed">J. Thumm, G. Pelat, M. Althoff</p>
 
           <!-- Links -->
           <div class="flex items-center gap-4 flex-wrap">
+            
+            <a href="https://ieeexplore.ieee.org/abstract/document/10342464/" target="_blank" rel="noopener"
+               class="font-label text-xs uppercase tracking-wider text-primary no-underline hover:opacity-70 transition-opacity flex items-center gap-1">
+              <span class="material-symbols-outlined text-base" style="font-size:1rem;">article</span> Paper
+            </a>
+            
             
             
           </div>
@@ -495,9 +536,11 @@
            data-tag="other">
 
         <!-- Thumbnail -->
-        <div class="w-full md:w-40 shrink-0 overflow-hidden rounded-lg">
-          <img src="/assets/img/hri_dark.png" alt="Approximate First-Passage Time Distributions for Gaussian Motion and Transportation Models"
-               class="w-full h-28 md:h-full object-cover"/>
+        <div class="w-full md:w-56 shrink-0 overflow-hidden rounded-lg">
+          <div class="aspect-video w-full overflow-hidden rounded-lg bg-white">
+            <img src="/assets/img/first_passage_time_thumbnail.jpg" alt="Approximate First-Passage Time Distributions for Gaussian Motion and Transportation Models"
+                 class="w-full h-full object-contain"/>
+          </div>
         </div>
 
         <!-- Content -->
@@ -526,6 +569,7 @@
             </a>
             
             
+            
           </div>
         </div>
 
@@ -544,9 +588,11 @@
            data-tag="safe-ai">
 
         <!-- Thumbnail -->
-        <div class="w-full md:w-40 shrink-0 overflow-hidden rounded-lg">
-          <img src="/assets/img/hri_dark.png" alt="SaRA: A Tool for Safe Human–Robot Coexistence and Collaboration through Reachability Analysis"
-               class="w-full h-28 md:h-full object-cover"/>
+        <div class="w-full md:w-56 shrink-0 overflow-hidden rounded-lg">
+          <div class="aspect-video w-full overflow-hidden rounded-lg bg-white">
+            <img src="/assets/img/SARA_thumbnail.jpg" alt="SaRA: A Tool for Safe Human–Robot Coexistence and Collaboration through Reachability Analysis"
+                 class="w-full h-full object-contain"/>
+          </div>
         </div>
 
         <!-- Content -->
@@ -560,13 +606,20 @@
           </div>
 
           <h3 class="font-headline text-xl font-medium text-on-surface mb-2 leading-snug group-hover:text-primary transition-colors">
-            SaRA: A Tool for Safe Human–Robot Coexistence and Collaboration through Reachability Analysis
+            <a href="https://ieeexplore.ieee.org/abstract/document/9811952" target="_blank" rel="noopener" class="no-underline hover:no-underline">SaRA: A Tool for Safe Human–Robot Coexistence and Collaboration through Reachability Analysis</a>
+            
           </h3>
 
           <p class="font-body text-sm text-on-surface-variant mb-3 leading-relaxed">S. Schepp, J. Thumm, S. B. Liu, M. Althoff</p>
 
           <!-- Links -->
           <div class="flex items-center gap-4 flex-wrap">
+            
+            <a href="https://ieeexplore.ieee.org/abstract/document/9811952" target="_blank" rel="noopener"
+               class="font-label text-xs uppercase tracking-wider text-primary no-underline hover:opacity-70 transition-opacity flex items-center gap-1">
+              <span class="material-symbols-outlined text-base" style="font-size:1rem;">article</span> Paper
+            </a>
+            
             
             
           </div>
@@ -578,9 +631,11 @@
            data-tag="safe-ai">
 
         <!-- Thumbnail -->
-        <div class="w-full md:w-40 shrink-0 overflow-hidden rounded-lg">
-          <img src="/assets/img/hri_dark.png" alt="Provably Safe Deep Reinforcement Learning for Robotic Manipulation in Human Environments"
-               class="w-full h-28 md:h-full object-cover"/>
+        <div class="w-full md:w-56 shrink-0 overflow-hidden rounded-lg">
+          <div class="aspect-video w-full overflow-hidden rounded-lg bg-white">
+            <img src="/assets/img/hri_dark_thumbnail.jpg" alt="Provably Safe Deep Reinforcement Learning for Robotic Manipulation in Human Environments"
+                 class="w-full h-full object-contain"/>
+          </div>
         </div>
 
         <!-- Content -->
@@ -606,8 +661,9 @@
             
             <a href="https://doi.org/10.1109/ICRA46639.2022.9811698" target="_blank" rel="noopener"
                class="font-label text-xs uppercase tracking-wider text-primary no-underline hover:opacity-70 transition-opacity flex items-center gap-1">
-              <span class="material-symbols-outlined text-base" style="font-size:1rem;">link</span> DOI
+              <span class="material-symbols-outlined text-base" style="font-size:1rem;">article</span> Paper
             </a>
+            
             
           </div>
         </div>
@@ -618,9 +674,11 @@
            data-tag="other">
 
         <!-- Thumbnail -->
-        <div class="w-full md:w-40 shrink-0 overflow-hidden rounded-lg">
-          <img src="/assets/img/hri_dark.png" alt="Mixture of Experts of Neural Networks and Kalman Filters for Optical Belt Sorting"
-               class="w-full h-28 md:h-full object-cover"/>
+        <div class="w-full md:w-56 shrink-0 overflow-hidden rounded-lg">
+          <div class="aspect-video w-full overflow-hidden rounded-lg bg-white">
+            <img src="/assets/img/optical_belt_sorter_thumbnail.jpg" alt="Mixture of Experts of Neural Networks and Kalman Filters for Optical Belt Sorting"
+                 class="w-full h-full object-contain"/>
+          </div>
         </div>
 
         <!-- Content -->
@@ -646,8 +704,9 @@
             
             <a href="https://doi.org/10.1109/TII.2021.3114282" target="_blank" rel="noopener"
                class="font-label text-xs uppercase tracking-wider text-primary no-underline hover:opacity-70 transition-opacity flex items-center gap-1">
-              <span class="material-symbols-outlined text-base" style="font-size:1rem;">link</span> DOI
+              <span class="material-symbols-outlined text-base" style="font-size:1rem;">article</span> Paper
             </a>
+            
             
           </div>
         </div>
@@ -667,9 +726,11 @@
            data-tag="other">
 
         <!-- Thumbnail -->
-        <div class="w-full md:w-40 shrink-0 overflow-hidden rounded-lg">
-          <img src="/assets/img/hri_dark.png" alt="A Novel Approach to Label Road Defects in Video Data: Semi-Automated Video Analysis"
-               class="w-full h-28 md:h-full object-cover"/>
+        <div class="w-full md:w-56 shrink-0 overflow-hidden rounded-lg">
+          <div class="aspect-video w-full overflow-hidden rounded-lg bg-white">
+            <img src="/assets/img/mercedes_pothole_thumbnail.jpg" alt="A Novel Approach to Label Road Defects in Video Data: Semi-Automated Video Analysis"
+                 class="w-full h-full object-contain"/>
+          </div>
         </div>
 
         <!-- Content -->
@@ -683,13 +744,20 @@
           </div>
 
           <h3 class="font-headline text-xl font-medium text-on-surface mb-2 leading-snug group-hover:text-primary transition-colors">
-            A Novel Approach to Label Road Defects in Video Data: Semi-Automated Video Analysis
+            <a href="https://reference-global.com/article/10.21307/ijssis-2020-007" target="_blank" rel="noopener" class="no-underline hover:no-underline">A Novel Approach to Label Road Defects in Video Data: Semi-Automated Video Analysis</a>
+            
           </h3>
 
           <p class="font-body text-sm text-on-surface-variant mb-3 leading-relaxed">J. Thumm, J. Masino, M. Knoche, F. Gauterin, M. Reischl</p>
 
           <!-- Links -->
           <div class="flex items-center gap-4 flex-wrap">
+            
+            <a href="https://reference-global.com/article/10.21307/ijssis-2020-007" target="_blank" rel="noopener"
+               class="font-label text-xs uppercase tracking-wider text-primary no-underline hover:opacity-70 transition-opacity flex items-center gap-1">
+              <span class="material-symbols-outlined text-base" style="font-size:1rem;">article</span> Paper
+            </a>
+            
             
             
           </div>
@@ -710,9 +778,11 @@
            data-tag="other">
 
         <!-- Thumbnail -->
-        <div class="w-full md:w-40 shrink-0 overflow-hidden rounded-lg">
-          <img src="/assets/img/hri_dark.png" alt="Parking Events Derived From Trip Data from MiD2008"
-               class="w-full h-28 md:h-full object-cover"/>
+        <div class="w-full md:w-56 shrink-0 overflow-hidden rounded-lg">
+          <div class="aspect-video w-full overflow-hidden rounded-lg bg-white">
+            <img src="/assets/img/parking_events_thumbnail.jpg" alt="Parking Events Derived From Trip Data from MiD2008"
+                 class="w-full h-full object-contain"/>
+          </div>
         </div>
 
         <!-- Content -->
@@ -738,8 +808,9 @@
             
             <a href="https://doi.org/10.5445/IR/1000098024" target="_blank" rel="noopener"
                class="font-label text-xs uppercase tracking-wider text-primary no-underline hover:opacity-70 transition-opacity flex items-center gap-1">
-              <span class="material-symbols-outlined text-base" style="font-size:1rem;">link</span> DOI
+              <span class="material-symbols-outlined text-base" style="font-size:1rem;">article</span> Paper
             </a>
+            
             
           </div>
         </div>
@@ -759,9 +830,11 @@
            data-tag="other">
 
         <!-- Thumbnail -->
-        <div class="w-full md:w-40 shrink-0 overflow-hidden rounded-lg">
-          <img src="/assets/img/hri_dark.png" alt="Characterization of Road Condition with Data Mining Based on Measured Kinematic Vehicle Parameters"
-               class="w-full h-28 md:h-full object-cover"/>
+        <div class="w-full md:w-56 shrink-0 overflow-hidden rounded-lg">
+          <div class="aspect-video w-full overflow-hidden rounded-lg bg-white">
+            <img src="/assets/img/damage_events_thumbnail.jpg" alt="Characterization of Road Condition with Data Mining Based on Measured Kinematic Vehicle Parameters"
+                 class="w-full h-full object-contain"/>
+          </div>
         </div>
 
         <!-- Content -->
@@ -787,8 +860,9 @@
             
             <a href="https://doi.org/10.1155/2018/8647607" target="_blank" rel="noopener"
                class="font-label text-xs uppercase tracking-wider text-primary no-underline hover:opacity-70 transition-opacity flex items-center gap-1">
-              <span class="material-symbols-outlined text-base" style="font-size:1rem;">link</span> DOI
+              <span class="material-symbols-outlined text-base" style="font-size:1rem;">article</span> Paper
             </a>
+            
             
           </div>
         </div>
@@ -799,9 +873,11 @@
            data-tag="other">
 
         <!-- Thumbnail -->
-        <div class="w-full md:w-40 shrink-0 overflow-hidden rounded-lg">
-          <img src="/assets/img/hri_dark.png" alt="Multiple Vehicle Fusion for a Robust Road Condition Estimation Based on Vehicle Sensors and Data Mining"
-               class="w-full h-28 md:h-full object-cover"/>
+        <div class="w-full md:w-56 shrink-0 overflow-hidden rounded-lg">
+          <div class="aspect-video w-full overflow-hidden rounded-lg bg-white">
+            <img src="/assets/img/road_condition_thumbnail.jpg" alt="Multiple Vehicle Fusion for a Robust Road Condition Estimation Based on Vehicle Sensors and Data Mining"
+                 class="w-full h-full object-contain"/>
+          </div>
         </div>
 
         <!-- Content -->
@@ -827,8 +903,9 @@
             
             <a href="https://doi.org/10.1080/23311916.2018.1449428" target="_blank" rel="noopener"
                class="font-label text-xs uppercase tracking-wider text-primary no-underline hover:opacity-70 transition-opacity flex items-center gap-1">
-              <span class="material-symbols-outlined text-base" style="font-size:1rem;">link</span> DOI
+              <span class="material-symbols-outlined text-base" style="font-size:1rem;">article</span> Paper
             </a>
+            
             
           </div>
         </div>
@@ -848,9 +925,11 @@
            data-tag="other">
 
         <!-- Thumbnail -->
-        <div class="w-full md:w-40 shrink-0 overflow-hidden rounded-lg">
-          <img src="/assets/img/hri_dark.png" alt="Learning from the Crowd: Road Infrastructure Monitoring System"
-               class="w-full h-28 md:h-full object-cover"/>
+        <div class="w-full md:w-56 shrink-0 overflow-hidden rounded-lg">
+          <div class="aspect-video w-full overflow-hidden rounded-lg bg-white">
+            <img src="/assets/img/road_condition_thumbnail.jpg" alt="Learning from the Crowd: Road Infrastructure Monitoring System"
+                 class="w-full h-full object-contain"/>
+          </div>
         </div>
 
         <!-- Content -->
@@ -876,8 +955,9 @@
             
             <a href="https://doi.org/10.1016/j.jtte.2017.06.003" target="_blank" rel="noopener"
                class="font-label text-xs uppercase tracking-wider text-primary no-underline hover:opacity-70 transition-opacity flex items-center gap-1">
-              <span class="material-symbols-outlined text-base" style="font-size:1rem;">link</span> DOI
+              <span class="material-symbols-outlined text-base" style="font-size:1rem;">article</span> Paper
             </a>
+            
             
           </div>
         </div>

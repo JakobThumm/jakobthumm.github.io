@@ -6,11 +6,11 @@ layout: base
 
   <header class="mb-16">
     <h1 class="font-headline text-5xl md:text-7xl font-light tracking-tight text-on-surface mb-8">
-      Selected <span class="italic text-primary">Publications</span>
+      <span class="italic text-primary">Publications</span>
     </h1>
-    <p class="font-body text-xl text-on-surface-variant leading-relaxed max-w-2xl">
-      Peer-reviewed research on safe robotics, human-robot interaction, and embodied AI.
-    </p>
+    <!--<p class="font-body text-xl text-on-surface-variant leading-relaxed max-w-2xl">
+      My publications on safe robotics, human-robot interaction, and embodied AI.
+    </p>-->
   </header>
 
   <!-- Filter tabs -->
@@ -40,9 +40,11 @@ layout: base
            data-tag="{{ pub.tag }}">
 
         <!-- Thumbnail -->
-        <div class="w-full md:w-40 shrink-0 overflow-hidden rounded-lg">
-          <img src="/assets/img/hri_dark.png" alt="{{ pub.title }}"
-               class="w-full h-28 md:h-full object-cover"/>
+        <div class="w-full md:w-56 shrink-0 overflow-hidden rounded-lg">
+          <div class="aspect-video w-full overflow-hidden rounded-lg bg-white">
+            <img src="{{ pub.img | default: '/assets/img/hri_dark.png' }}" alt="{{ pub.title }}"
+                 class="w-full h-full object-contain"/>
+          </div>
         </div>
 
         <!-- Content -->
@@ -74,7 +76,13 @@ layout: base
             {% if pub.doi %}
             <a href="https://doi.org/{{ pub.doi }}" target="_blank" rel="noopener"
                class="font-label text-xs uppercase tracking-wider text-primary no-underline hover:opacity-70 transition-opacity flex items-center gap-1">
-              <span class="material-symbols-outlined text-base" style="font-size:1rem;">link</span> DOI
+              <span class="material-symbols-outlined text-base" style="font-size:1rem;">article</span> Paper
+            </a>
+            {% endif %}
+            {% if pub.website %}
+            <a href="{{ pub.website }}" target="_blank" rel="noopener"
+               class="font-label text-xs uppercase tracking-wider text-primary no-underline hover:opacity-70 transition-opacity flex items-center gap-1">
+              <span class="material-symbols-outlined text-base" style="font-size:1rem;">language</span> Website
             </a>
             {% endif %}
           </div>
