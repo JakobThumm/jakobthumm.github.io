@@ -1,2 +1,5 @@
 vendor/
 .bundle/
+_site_11ty/
+_site/
+node_modules/
