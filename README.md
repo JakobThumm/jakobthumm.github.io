@@ -1,14 +1,12 @@
-# Minimal mistakes 
-[Demo and Guides](https://mmistakes.github.io/minimal-mistakes/)
-[Github](https://github.com/mmistakes/minimal-mistakes)
+# Created Using Google Stitch
 
 # Run locally
 ```
-bundle install
-bundle exec jekyll serve
+npx @11ty/eleventy --serve --port 4001 --input=. --output=_site_11ty
 ```
-Will display at `http://127.0.0.1:4000/`.
+Will display at `http://127.0.0.1:4001/`.
 Run `git add *`, `git commit`, and `git push` for online update.
+
 # Useful stuff
 Link to one of your own posts:
 ```

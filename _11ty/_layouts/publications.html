@@ -5,16 +5,118 @@ layout: base
 <main class="pt-32 pb-24 px-8 max-w-7xl mx-auto">
 
   <header class="mb-16">
-    <h1 class="font-headline text-5xl md:text-7xl font-bold tracking-tight text-primary mb-6">
-      Selected Publications
+    <h1 class="font-headline text-5xl md:text-7xl font-light tracking-tight text-on-surface mb-8">
+      Selected <span class="italic text-primary">Publications</span>
     </h1>
     <p class="font-body text-xl text-on-surface-variant leading-relaxed max-w-2xl">
       Peer-reviewed research on safe robotics, human-robot interaction, and embodied AI.
     </p>
   </header>
 
-  <div class="prose prose-lg max-w-none">
-    {{ content }}
+  <!-- Filter tabs -->
+  <div class="flex items-center gap-6 font-headline text-lg mb-16 flex-wrap">
+    <button onclick="filterPubs('all')" id="filter-all"
+            class="pub-filter pub-filter-active pb-1 transition-colors">All</button>
+    <button onclick="filterPubs('embodied-ai')" id="filter-embodied-ai"
+            class="pub-filter pub-filter-inactive pb-1 transition-colors">Embodied AI</button>
+    <button onclick="filterPubs('safe-ai')" id="filter-safe-ai"
+            class="pub-filter pub-filter-inactive pb-1 transition-colors">Safe AI</button>
+    <button onclick="filterPubs('personalized-ai')" id="filter-personalized-ai"
+            class="pub-filter pub-filter-inactive pb-1 transition-colors">Personalized AI</button>
+    <button onclick="filterPubs('other')" id="filter-other"
+            class="pub-filter pub-filter-inactive pb-1 transition-colors">Other</button>
   </div>
 
+  <!-- Publications grouped by year -->
+  {% assign years = publications | map: "year" | uniq | sort | reverse %}
+  {% for year in years %}
+  {% assign year_int = year | plus: 0 %}
+  <div class="pub-year-group mb-20" data-year="{{ year }}">
+    <h2 class="font-label text-sm uppercase tracking-[0.3em] text-outline mb-8">{{ year }}</h2>
+    <div class="space-y-6">
+      {% assign year_pubs = publications | where: "year", year_int %}
+      {% for pub in year_pubs %}
+      <div class="pub-entry group flex flex-col md:flex-row gap-6 p-6 rounded-xl hover:bg-surface-container-lowest transition-all duration-300"
+           data-tag="{{ pub.tag }}">
+
+        <!-- Thumbnail -->
+        <div class="w-full md:w-40 shrink-0 overflow-hidden rounded-lg">
+          <img src="/assets/img/hri_dark.png" alt="{{ pub.title }}"
+               class="w-full h-28 md:h-full object-cover"/>
+        </div>
+
+        <!-- Content -->
+        <div class="flex-grow min-w-0">
+          <div class="flex items-center gap-3 mb-2 flex-wrap">
+            <span class="font-label text-xs uppercase tracking-wider px-2 py-0.5 rounded
+              {% if pub.type == 'Journal' %}bg-tertiary-container text-on-tertiary{% elsif pub.type == 'Conference' %}bg-surface-container-high text-on-surface-variant{% else %}bg-surface-container text-on-surface-variant{% endif %}">
+              {{ pub.type }}
+            </span>
+            <span class="font-label text-xs text-outline">{{ pub.venue }}</span>
+          </div>
+
+          <h3 class="font-headline text-xl font-medium text-on-surface mb-2 leading-snug group-hover:text-primary transition-colors">
+            {% if pub.url %}<a href="{{ pub.url }}" target="_blank" rel="noopener" class="no-underline hover:no-underline">{{ pub.title }}</a>
+            {% elsif pub.doi %}<a href="https://doi.org/{{ pub.doi }}" target="_blank" rel="noopener" class="no-underline hover:no-underline">{{ pub.title }}</a>
+            {% else %}{{ pub.title }}{% endif %}
+          </h3>
+
+          <p class="font-body text-sm text-on-surface-variant mb-3 leading-relaxed">{{ pub.authors }}</p>
+
+          <!-- Links -->
+          <div class="flex items-center gap-4 flex-wrap">
+            {% if pub.url %}
+            <a href="{{ pub.url }}" target="_blank" rel="noopener"
+               class="font-label text-xs uppercase tracking-wider text-primary no-underline hover:opacity-70 transition-opacity flex items-center gap-1">
+              <span class="material-symbols-outlined text-base" style="font-size:1rem;">article</span> Paper
+            </a>
+            {% endif %}
+            {% if pub.doi %}
+            <a href="https://doi.org/{{ pub.doi }}" target="_blank" rel="noopener"
+               class="font-label text-xs uppercase tracking-wider text-primary no-underline hover:opacity-70 transition-opacity flex items-center gap-1">
+              <span class="material-symbols-outlined text-base" style="font-size:1rem;">link</span> DOI
+            </a>
+            {% endif %}
+          </div>
+        </div>
+
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  {% endfor %}
+
 </main>
+
+<style>
+  .pub-filter-active  { color: #8c1515; border-bottom: 2px solid #8c1515; }
+  .pub-filter-inactive { color: #59413e99; border-bottom: 2px solid transparent; }
+  .pub-filter-inactive:hover { color: #8c1515; }
+</style>
+
+<script>
+  function filterPubs(tag) {
+    // Update filter buttons
+    document.querySelectorAll('.pub-filter').forEach(function(btn) {
+      btn.classList.remove('pub-filter-active');
+      btn.classList.add('pub-filter-inactive');
+    });
+    document.getElementById('filter-' + tag).classList.remove('pub-filter-inactive');
+    document.getElementById('filter-' + tag).classList.add('pub-filter-active');
+
+    // Show/hide entries
+    document.querySelectorAll('.pub-entry').forEach(function(entry) {
+      if (tag === 'all' || entry.dataset.tag === tag) {
+        entry.style.display = '';
+      } else {
+        entry.style.display = 'none';
+      }
+    });
+
+    // Hide year groups that have no visible entries
+    document.querySelectorAll('.pub-year-group').forEach(function(group) {
+      var visible = group.querySelectorAll('.pub-entry:not([style*="display: none"])').length;
+      group.style.display = visible ? '' : 'none';
+    });
+  }
+</script>

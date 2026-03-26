@@ -125,19 +125,803 @@
 <main class="pt-32 pb-24 px-8 max-w-7xl mx-auto">
 
   <header class="mb-16">
-    <h1 class="font-headline text-5xl md:text-7xl font-bold tracking-tight text-primary mb-6">
-      Selected Publications
+    <h1 class="font-headline text-5xl md:text-7xl font-light tracking-tight text-on-surface mb-8">
+      Selected <span class="italic text-primary">Publications</span>
     </h1>
     <p class="font-body text-xl text-on-surface-variant leading-relaxed max-w-2xl">
       Peer-reviewed research on safe robotics, human-robot interaction, and embodied AI.
     </p>
   </header>
 
-  <div class="prose prose-lg max-w-none">
-    
+  <!-- Filter tabs -->
+  <div class="flex items-center gap-6 font-headline text-lg mb-16 flex-wrap">
+    <button onclick="filterPubs('all')" id="filter-all"
+            class="pub-filter pub-filter-active pb-1 transition-colors">All</button>
+    <button onclick="filterPubs('embodied-ai')" id="filter-embodied-ai"
+            class="pub-filter pub-filter-inactive pb-1 transition-colors">Embodied AI</button>
+    <button onclick="filterPubs('safe-ai')" id="filter-safe-ai"
+            class="pub-filter pub-filter-inactive pb-1 transition-colors">Safe AI</button>
+    <button onclick="filterPubs('personalized-ai')" id="filter-personalized-ai"
+            class="pub-filter pub-filter-inactive pb-1 transition-colors">Personalized AI</button>
+    <button onclick="filterPubs('other')" id="filter-other"
+            class="pub-filter pub-filter-inactive pb-1 transition-colors">Other</button>
   </div>
 
+  <!-- Publications grouped by year -->
+  
+  
+  
+  <div class="pub-year-group mb-20" data-year="2026">
+    <h2 class="font-label text-sm uppercase tracking-[0.3em] text-outline mb-8">2026</h2>
+    <div class="space-y-6">
+      
+      
+      <div class="pub-entry group flex flex-col md:flex-row gap-6 p-6 rounded-xl hover:bg-surface-container-lowest transition-all duration-300"
+           data-tag="safe-ai">
+
+        <!-- Thumbnail -->
+        <div class="w-full md:w-40 shrink-0 overflow-hidden rounded-lg">
+          <img src="/assets/img/hri_dark.png" alt="A General Safety Framework for Autonomous Manipulation in Human Environments"
+               class="w-full h-28 md:h-full object-cover"/>
+        </div>
+
+        <!-- Content -->
+        <div class="flex-grow min-w-0">
+          <div class="flex items-center gap-3 mb-2 flex-wrap">
+            <span class="font-label text-xs uppercase tracking-wider px-2 py-0.5 rounded
+              bg-tertiary-container text-on-tertiary">
+              Journal
+            </span>
+            <span class="font-label text-xs text-outline">IEEE Transactions on Robotics</span>
+          </div>
+
+          <h3 class="font-headline text-xl font-medium text-on-surface mb-2 leading-snug group-hover:text-primary transition-colors">
+            <a href="http://arxiv.org/abs/2412.10180" target="_blank" rel="noopener" class="no-underline hover:no-underline">A General Safety Framework for Autonomous Manipulation in Human Environments</a>
+            
+          </h3>
+
+          <p class="font-body text-sm text-on-surface-variant mb-3 leading-relaxed">J. Thumm, J. Balletshofer, L. Maglanoc, L. Muschal, M. Althoff</p>
+
+          <!-- Links -->
+          <div class="flex items-center gap-4 flex-wrap">
+            
+            <a href="http://arxiv.org/abs/2412.10180" target="_blank" rel="noopener"
+               class="font-label text-xs uppercase tracking-wider text-primary no-underline hover:opacity-70 transition-opacity flex items-center gap-1">
+              <span class="material-symbols-outlined text-base" style="font-size:1rem;">article</span> Paper
+            </a>
+            
+            
+          </div>
+        </div>
+
+      </div>
+      
+      <div class="pub-entry group flex flex-col md:flex-row gap-6 p-6 rounded-xl hover:bg-surface-container-lowest transition-all duration-300"
+           data-tag="embodied-ai">
+
+        <!-- Thumbnail -->
+        <div class="w-full md:w-40 shrink-0 overflow-hidden rounded-lg">
+          <img src="/assets/img/hri_dark.png" alt="From Demonstrations to Safe Deployment: Path-Consistent Safety Filtering for Diffusion Policies"
+               class="w-full h-28 md:h-full object-cover"/>
+        </div>
+
+        <!-- Content -->
+        <div class="flex-grow min-w-0">
+          <div class="flex items-center gap-3 mb-2 flex-wrap">
+            <span class="font-label text-xs uppercase tracking-wider px-2 py-0.5 rounded
+              bg-surface-container-high text-on-surface-variant">
+              Conference
+            </span>
+            <span class="font-label text-xs text-outline">IEEE Int. Conf. on Robotics and Automation (ICRA)</span>
+          </div>
+
+          <h3 class="font-headline text-xl font-medium text-on-surface mb-2 leading-snug group-hover:text-primary transition-colors">
+            <a href="http://arxiv.org/abs/2511.06385" target="_blank" rel="noopener" class="no-underline hover:no-underline">From Demonstrations to Safe Deployment: Path-Consistent Safety Filtering for Diffusion Policies</a>
+            
+          </h3>
+
+          <p class="font-body text-sm text-on-surface-variant mb-3 leading-relaxed">R. Römer, J. Balletshofer, J. Thumm, M. Pavone, A. P. Schoellig, M. Althoff</p>
+
+          <!-- Links -->
+          <div class="flex items-center gap-4 flex-wrap">
+            
+            <a href="http://arxiv.org/abs/2511.06385" target="_blank" rel="noopener"
+               class="font-label text-xs uppercase tracking-wider text-primary no-underline hover:opacity-70 transition-opacity flex items-center gap-1">
+              <span class="material-symbols-outlined text-base" style="font-size:1rem;">article</span> Paper
+            </a>
+            
+            
+          </div>
+        </div>
+
+      </div>
+      
+    </div>
+  </div>
+  
+  
+  <div class="pub-year-group mb-20" data-year="2025">
+    <h2 class="font-label text-sm uppercase tracking-[0.3em] text-outline mb-8">2025</h2>
+    <div class="space-y-6">
+      
+      
+      <div class="pub-entry group flex flex-col md:flex-row gap-6 p-6 rounded-xl hover:bg-surface-container-lowest transition-all duration-300"
+           data-tag="other">
+
+        <!-- Thumbnail -->
+        <div class="w-full md:w-40 shrink-0 overflow-hidden rounded-lg">
+          <img src="/assets/img/hri_dark.png" alt="Multi-Objective Causal Bayesian Optimization"
+               class="w-full h-28 md:h-full object-cover"/>
+        </div>
+
+        <!-- Content -->
+        <div class="flex-grow min-w-0">
+          <div class="flex items-center gap-3 mb-2 flex-wrap">
+            <span class="font-label text-xs uppercase tracking-wider px-2 py-0.5 rounded
+              bg-surface-container-high text-on-surface-variant">
+              Conference
+            </span>
+            <span class="font-label text-xs text-outline">Int. Conf. on Machine Learning (ICML)</span>
+          </div>
+
+          <h3 class="font-headline text-xl font-medium text-on-surface mb-2 leading-snug group-hover:text-primary transition-colors">
+            <a href="https://openreview.net/forum?id=sDGafRLNQa" target="_blank" rel="noopener" class="no-underline hover:no-underline">Multi-Objective Causal Bayesian Optimization</a>
+            
+          </h3>
+
+          <p class="font-body text-sm text-on-surface-variant mb-3 leading-relaxed">S. Bhatija, P.-D. Zuercher, J. Thumm, T. Bohné</p>
+
+          <!-- Links -->
+          <div class="flex items-center gap-4 flex-wrap">
+            
+            <a href="https://openreview.net/forum?id=sDGafRLNQa" target="_blank" rel="noopener"
+               class="font-label text-xs uppercase tracking-wider text-primary no-underline hover:opacity-70 transition-opacity flex items-center gap-1">
+              <span class="material-symbols-outlined text-base" style="font-size:1rem;">article</span> Paper
+            </a>
+            
+            
+          </div>
+        </div>
+
+      </div>
+      
+    </div>
+  </div>
+  
+  
+  <div class="pub-year-group mb-20" data-year="2024">
+    <h2 class="font-label text-sm uppercase tracking-[0.3em] text-outline mb-8">2024</h2>
+    <div class="space-y-6">
+      
+      
+      <div class="pub-entry group flex flex-col md:flex-row gap-6 p-6 rounded-xl hover:bg-surface-container-lowest transition-all duration-300"
+           data-tag="embodied-ai">
+
+        <!-- Thumbnail -->
+        <div class="w-full md:w-40 shrink-0 overflow-hidden rounded-lg">
+          <img src="/assets/img/hri_dark.png" alt="Excluding the Irrelevant: Focusing Reinforcement Learning through Continuous Action Masking"
+               class="w-full h-28 md:h-full object-cover"/>
+        </div>
+
+        <!-- Content -->
+        <div class="flex-grow min-w-0">
+          <div class="flex items-center gap-3 mb-2 flex-wrap">
+            <span class="font-label text-xs uppercase tracking-wider px-2 py-0.5 rounded
+              bg-surface-container-high text-on-surface-variant">
+              Conference
+            </span>
+            <span class="font-label text-xs text-outline">Conf. on Neural Information Processing Systems (NeurIPS)</span>
+          </div>
+
+          <h3 class="font-headline text-xl font-medium text-on-surface mb-2 leading-snug group-hover:text-primary transition-colors">
+            <a href="https://openreview.net/forum?id=yVzWlFhpRW" target="_blank" rel="noopener" class="no-underline hover:no-underline">Excluding the Irrelevant: Focusing Reinforcement Learning through Continuous Action Masking</a>
+            
+          </h3>
+
+          <p class="font-body text-sm text-on-surface-variant mb-3 leading-relaxed">R. Stolz, H. Krasowski, J. Thumm, M. Eichelbeck, P. Gassert, M. Althoff</p>
+
+          <!-- Links -->
+          <div class="flex items-center gap-4 flex-wrap">
+            
+            <a href="https://openreview.net/forum?id=yVzWlFhpRW" target="_blank" rel="noopener"
+               class="font-label text-xs uppercase tracking-wider text-primary no-underline hover:opacity-70 transition-opacity flex items-center gap-1">
+              <span class="material-symbols-outlined text-base" style="font-size:1rem;">article</span> Paper
+            </a>
+            
+            
+          </div>
+        </div>
+
+      </div>
+      
+      <div class="pub-entry group flex flex-col md:flex-row gap-6 p-6 rounded-xl hover:bg-surface-container-lowest transition-all duration-300"
+           data-tag="personalized-ai">
+
+        <!-- Thumbnail -->
+        <div class="w-full md:w-40 shrink-0 overflow-hidden rounded-lg">
+          <img src="/assets/img/hri_dark.png" alt="Text2Interaction: Establishing Safe and Preferable Human-Robot Interaction"
+               class="w-full h-28 md:h-full object-cover"/>
+        </div>
+
+        <!-- Content -->
+        <div class="flex-grow min-w-0">
+          <div class="flex items-center gap-3 mb-2 flex-wrap">
+            <span class="font-label text-xs uppercase tracking-wider px-2 py-0.5 rounded
+              bg-surface-container-high text-on-surface-variant">
+              Conference
+            </span>
+            <span class="font-label text-xs text-outline">Annual Conf. on Robot Learning (CoRL)</span>
+          </div>
+
+          <h3 class="font-headline text-xl font-medium text-on-surface mb-2 leading-snug group-hover:text-primary transition-colors">
+            <a href="https://openreview.net/forum?id=s0VNSnPeoA" target="_blank" rel="noopener" class="no-underline hover:no-underline">Text2Interaction: Establishing Safe and Preferable Human-Robot Interaction</a>
+            
+          </h3>
+
+          <p class="font-body text-sm text-on-surface-variant mb-3 leading-relaxed">J. Thumm, C. Agia, M. Pavone, M. Althoff</p>
+
+          <!-- Links -->
+          <div class="flex items-center gap-4 flex-wrap">
+            
+            <a href="https://openreview.net/forum?id=s0VNSnPeoA" target="_blank" rel="noopener"
+               class="font-label text-xs uppercase tracking-wider text-primary no-underline hover:opacity-70 transition-opacity flex items-center gap-1">
+              <span class="material-symbols-outlined text-base" style="font-size:1rem;">article</span> Paper
+            </a>
+            
+            
+          </div>
+        </div>
+
+      </div>
+      
+      <div class="pub-entry group flex flex-col md:flex-row gap-6 p-6 rounded-xl hover:bg-surface-container-lowest transition-all duration-300"
+           data-tag="embodied-ai">
+
+        <!-- Thumbnail -->
+        <div class="w-full md:w-40 shrink-0 overflow-hidden rounded-lg">
+          <img src="/assets/img/hri_dark.png" alt="Human-Robot Gym: Benchmarking Reinforcement Learning in Human-Robot Collaboration"
+               class="w-full h-28 md:h-full object-cover"/>
+        </div>
+
+        <!-- Content -->
+        <div class="flex-grow min-w-0">
+          <div class="flex items-center gap-3 mb-2 flex-wrap">
+            <span class="font-label text-xs uppercase tracking-wider px-2 py-0.5 rounded
+              bg-surface-container-high text-on-surface-variant">
+              Conference
+            </span>
+            <span class="font-label text-xs text-outline">IEEE Int. Conf. on Robotics and Automation (ICRA)</span>
+          </div>
+
+          <h3 class="font-headline text-xl font-medium text-on-surface mb-2 leading-snug group-hover:text-primary transition-colors">
+            Human-Robot Gym: Benchmarking Reinforcement Learning in Human-Robot Collaboration
+          </h3>
+
+          <p class="font-body text-sm text-on-surface-variant mb-3 leading-relaxed">J. Thumm, F. Trost, M. Althoff</p>
+
+          <!-- Links -->
+          <div class="flex items-center gap-4 flex-wrap">
+            
+            
+          </div>
+        </div>
+
+      </div>
+      
+    </div>
+  </div>
+  
+  
+  <div class="pub-year-group mb-20" data-year="2023">
+    <h2 class="font-label text-sm uppercase tracking-[0.3em] text-outline mb-8">2023</h2>
+    <div class="space-y-6">
+      
+      
+      <div class="pub-entry group flex flex-col md:flex-row gap-6 p-6 rounded-xl hover:bg-surface-container-lowest transition-all duration-300"
+           data-tag="embodied-ai">
+
+        <!-- Thumbnail -->
+        <div class="w-full md:w-40 shrink-0 overflow-hidden rounded-lg">
+          <img src="/assets/img/hri_dark.png" alt="Provably Safe Reinforcement Learning: Conceptual Analysis, Survey, and Benchmarking"
+               class="w-full h-28 md:h-full object-cover"/>
+        </div>
+
+        <!-- Content -->
+        <div class="flex-grow min-w-0">
+          <div class="flex items-center gap-3 mb-2 flex-wrap">
+            <span class="font-label text-xs uppercase tracking-wider px-2 py-0.5 rounded
+              bg-tertiary-container text-on-tertiary">
+              Journal
+            </span>
+            <span class="font-label text-xs text-outline">Transactions on Machine Learning Research (TMLR)</span>
+          </div>
+
+          <h3 class="font-headline text-xl font-medium text-on-surface mb-2 leading-snug group-hover:text-primary transition-colors">
+            <a href="https://openreview.net/forum?id=mcN0ezbnzO" target="_blank" rel="noopener" class="no-underline hover:no-underline">Provably Safe Reinforcement Learning: Conceptual Analysis, Survey, and Benchmarking</a>
+            
+          </h3>
+
+          <p class="font-body text-sm text-on-surface-variant mb-3 leading-relaxed">H. Krasowski, J. Thumm, M. Müller, L. Schäfer, X. Wang, M. Althoff</p>
+
+          <!-- Links -->
+          <div class="flex items-center gap-4 flex-wrap">
+            
+            <a href="https://openreview.net/forum?id=mcN0ezbnzO" target="_blank" rel="noopener"
+               class="font-label text-xs uppercase tracking-wider text-primary no-underline hover:opacity-70 transition-opacity flex items-center gap-1">
+              <span class="material-symbols-outlined text-base" style="font-size:1rem;">article</span> Paper
+            </a>
+            
+            
+          </div>
+        </div>
+
+      </div>
+      
+      <div class="pub-entry group flex flex-col md:flex-row gap-6 p-6 rounded-xl hover:bg-surface-container-lowest transition-all duration-300"
+           data-tag="embodied-ai">
+
+        <!-- Thumbnail -->
+        <div class="w-full md:w-40 shrink-0 overflow-hidden rounded-lg">
+          <img src="/assets/img/hri_dark.png" alt="Reducing Safety Interventions in Provably Safe Reinforcement Learning"
+               class="w-full h-28 md:h-full object-cover"/>
+        </div>
+
+        <!-- Content -->
+        <div class="flex-grow min-w-0">
+          <div class="flex items-center gap-3 mb-2 flex-wrap">
+            <span class="font-label text-xs uppercase tracking-wider px-2 py-0.5 rounded
+              bg-surface-container-high text-on-surface-variant">
+              Conference
+            </span>
+            <span class="font-label text-xs text-outline">IEEE/RSJ Int. Conf. on Intelligent Robots and Systems (IROS)</span>
+          </div>
+
+          <h3 class="font-headline text-xl font-medium text-on-surface mb-2 leading-snug group-hover:text-primary transition-colors">
+            Reducing Safety Interventions in Provably Safe Reinforcement Learning
+          </h3>
+
+          <p class="font-body text-sm text-on-surface-variant mb-3 leading-relaxed">J. Thumm, G. Pelat, M. Althoff</p>
+
+          <!-- Links -->
+          <div class="flex items-center gap-4 flex-wrap">
+            
+            
+          </div>
+        </div>
+
+      </div>
+      
+      <div class="pub-entry group flex flex-col md:flex-row gap-6 p-6 rounded-xl hover:bg-surface-container-lowest transition-all duration-300"
+           data-tag="other">
+
+        <!-- Thumbnail -->
+        <div class="w-full md:w-40 shrink-0 overflow-hidden rounded-lg">
+          <img src="/assets/img/hri_dark.png" alt="Approximate First-Passage Time Distributions for Gaussian Motion and Transportation Models"
+               class="w-full h-28 md:h-full object-cover"/>
+        </div>
+
+        <!-- Content -->
+        <div class="flex-grow min-w-0">
+          <div class="flex items-center gap-3 mb-2 flex-wrap">
+            <span class="font-label text-xs uppercase tracking-wider px-2 py-0.5 rounded
+              bg-surface-container-high text-on-surface-variant">
+              Conference
+            </span>
+            <span class="font-label text-xs text-outline">Int. Conf. on Information Fusion (FUSION)</span>
+          </div>
+
+          <h3 class="font-headline text-xl font-medium text-on-surface mb-2 leading-snug group-hover:text-primary transition-colors">
+            <a href="https://ieeexplore.ieee.org/abstract/document/10224164" target="_blank" rel="noopener" class="no-underline hover:no-underline">Approximate First-Passage Time Distributions for Gaussian Motion and Transportation Models</a>
+            
+          </h3>
+
+          <p class="font-body text-sm text-on-surface-variant mb-3 leading-relaxed">M. Reith-Braun, F. Pfaff, J. Thumm, U. D. Hanebeck</p>
+
+          <!-- Links -->
+          <div class="flex items-center gap-4 flex-wrap">
+            
+            <a href="https://ieeexplore.ieee.org/abstract/document/10224164" target="_blank" rel="noopener"
+               class="font-label text-xs uppercase tracking-wider text-primary no-underline hover:opacity-70 transition-opacity flex items-center gap-1">
+              <span class="material-symbols-outlined text-base" style="font-size:1rem;">article</span> Paper
+            </a>
+            
+            
+          </div>
+        </div>
+
+      </div>
+      
+    </div>
+  </div>
+  
+  
+  <div class="pub-year-group mb-20" data-year="2022">
+    <h2 class="font-label text-sm uppercase tracking-[0.3em] text-outline mb-8">2022</h2>
+    <div class="space-y-6">
+      
+      
+      <div class="pub-entry group flex flex-col md:flex-row gap-6 p-6 rounded-xl hover:bg-surface-container-lowest transition-all duration-300"
+           data-tag="safe-ai">
+
+        <!-- Thumbnail -->
+        <div class="w-full md:w-40 shrink-0 overflow-hidden rounded-lg">
+          <img src="/assets/img/hri_dark.png" alt="SaRA: A Tool for Safe Human–Robot Coexistence and Collaboration through Reachability Analysis"
+               class="w-full h-28 md:h-full object-cover"/>
+        </div>
+
+        <!-- Content -->
+        <div class="flex-grow min-w-0">
+          <div class="flex items-center gap-3 mb-2 flex-wrap">
+            <span class="font-label text-xs uppercase tracking-wider px-2 py-0.5 rounded
+              bg-surface-container-high text-on-surface-variant">
+              Conference
+            </span>
+            <span class="font-label text-xs text-outline">IEEE Int. Conf. on Robotics and Automation (ICRA)</span>
+          </div>
+
+          <h3 class="font-headline text-xl font-medium text-on-surface mb-2 leading-snug group-hover:text-primary transition-colors">
+            SaRA: A Tool for Safe Human–Robot Coexistence and Collaboration through Reachability Analysis
+          </h3>
+
+          <p class="font-body text-sm text-on-surface-variant mb-3 leading-relaxed">S. Schepp, J. Thumm, S. B. Liu, M. Althoff</p>
+
+          <!-- Links -->
+          <div class="flex items-center gap-4 flex-wrap">
+            
+            
+          </div>
+        </div>
+
+      </div>
+      
+      <div class="pub-entry group flex flex-col md:flex-row gap-6 p-6 rounded-xl hover:bg-surface-container-lowest transition-all duration-300"
+           data-tag="safe-ai">
+
+        <!-- Thumbnail -->
+        <div class="w-full md:w-40 shrink-0 overflow-hidden rounded-lg">
+          <img src="/assets/img/hri_dark.png" alt="Provably Safe Deep Reinforcement Learning for Robotic Manipulation in Human Environments"
+               class="w-full h-28 md:h-full object-cover"/>
+        </div>
+
+        <!-- Content -->
+        <div class="flex-grow min-w-0">
+          <div class="flex items-center gap-3 mb-2 flex-wrap">
+            <span class="font-label text-xs uppercase tracking-wider px-2 py-0.5 rounded
+              bg-surface-container-high text-on-surface-variant">
+              Conference
+            </span>
+            <span class="font-label text-xs text-outline">IEEE Int. Conf. on Robotics and Automation (ICRA)</span>
+          </div>
+
+          <h3 class="font-headline text-xl font-medium text-on-surface mb-2 leading-snug group-hover:text-primary transition-colors">
+            <a href="https://doi.org/10.1109/ICRA46639.2022.9811698" target="_blank" rel="noopener" class="no-underline hover:no-underline">Provably Safe Deep Reinforcement Learning for Robotic Manipulation in Human Environments</a>
+            
+          </h3>
+
+          <p class="font-body text-sm text-on-surface-variant mb-3 leading-relaxed">J. Thumm, M. Althoff</p>
+
+          <!-- Links -->
+          <div class="flex items-center gap-4 flex-wrap">
+            
+            
+            <a href="https://doi.org/10.1109/ICRA46639.2022.9811698" target="_blank" rel="noopener"
+               class="font-label text-xs uppercase tracking-wider text-primary no-underline hover:opacity-70 transition-opacity flex items-center gap-1">
+              <span class="material-symbols-outlined text-base" style="font-size:1rem;">link</span> DOI
+            </a>
+            
+          </div>
+        </div>
+
+      </div>
+      
+      <div class="pub-entry group flex flex-col md:flex-row gap-6 p-6 rounded-xl hover:bg-surface-container-lowest transition-all duration-300"
+           data-tag="other">
+
+        <!-- Thumbnail -->
+        <div class="w-full md:w-40 shrink-0 overflow-hidden rounded-lg">
+          <img src="/assets/img/hri_dark.png" alt="Mixture of Experts of Neural Networks and Kalman Filters for Optical Belt Sorting"
+               class="w-full h-28 md:h-full object-cover"/>
+        </div>
+
+        <!-- Content -->
+        <div class="flex-grow min-w-0">
+          <div class="flex items-center gap-3 mb-2 flex-wrap">
+            <span class="font-label text-xs uppercase tracking-wider px-2 py-0.5 rounded
+              bg-tertiary-container text-on-tertiary">
+              Journal
+            </span>
+            <span class="font-label text-xs text-outline">IEEE Transactions on Industrial Informatics</span>
+          </div>
+
+          <h3 class="font-headline text-xl font-medium text-on-surface mb-2 leading-snug group-hover:text-primary transition-colors">
+            <a href="https://doi.org/10.1109/TII.2021.3114282" target="_blank" rel="noopener" class="no-underline hover:no-underline">Mixture of Experts of Neural Networks and Kalman Filters for Optical Belt Sorting</a>
+            
+          </h3>
+
+          <p class="font-body text-sm text-on-surface-variant mb-3 leading-relaxed">J. Thumm, M. Reith-Braun, F. Pfaff, U. D. Hanebeck, M. Flitter, G. Maier, R. Gruna, T. Langle, A. Bauer, H. Kruggel-Emden</p>
+
+          <!-- Links -->
+          <div class="flex items-center gap-4 flex-wrap">
+            
+            
+            <a href="https://doi.org/10.1109/TII.2021.3114282" target="_blank" rel="noopener"
+               class="font-label text-xs uppercase tracking-wider text-primary no-underline hover:opacity-70 transition-opacity flex items-center gap-1">
+              <span class="material-symbols-outlined text-base" style="font-size:1rem;">link</span> DOI
+            </a>
+            
+          </div>
+        </div>
+
+      </div>
+      
+    </div>
+  </div>
+  
+  
+  <div class="pub-year-group mb-20" data-year="2020">
+    <h2 class="font-label text-sm uppercase tracking-[0.3em] text-outline mb-8">2020</h2>
+    <div class="space-y-6">
+      
+      
+      <div class="pub-entry group flex flex-col md:flex-row gap-6 p-6 rounded-xl hover:bg-surface-container-lowest transition-all duration-300"
+           data-tag="other">
+
+        <!-- Thumbnail -->
+        <div class="w-full md:w-40 shrink-0 overflow-hidden rounded-lg">
+          <img src="/assets/img/hri_dark.png" alt="A Novel Approach to Label Road Defects in Video Data: Semi-Automated Video Analysis"
+               class="w-full h-28 md:h-full object-cover"/>
+        </div>
+
+        <!-- Content -->
+        <div class="flex-grow min-w-0">
+          <div class="flex items-center gap-3 mb-2 flex-wrap">
+            <span class="font-label text-xs uppercase tracking-wider px-2 py-0.5 rounded
+              bg-tertiary-container text-on-tertiary">
+              Journal
+            </span>
+            <span class="font-label text-xs text-outline">International Journal on Smart Sensing and Intelligent Systems</span>
+          </div>
+
+          <h3 class="font-headline text-xl font-medium text-on-surface mb-2 leading-snug group-hover:text-primary transition-colors">
+            A Novel Approach to Label Road Defects in Video Data: Semi-Automated Video Analysis
+          </h3>
+
+          <p class="font-body text-sm text-on-surface-variant mb-3 leading-relaxed">J. Thumm, J. Masino, M. Knoche, F. Gauterin, M. Reischl</p>
+
+          <!-- Links -->
+          <div class="flex items-center gap-4 flex-wrap">
+            
+            
+          </div>
+        </div>
+
+      </div>
+      
+    </div>
+  </div>
+  
+  
+  <div class="pub-year-group mb-20" data-year="2019">
+    <h2 class="font-label text-sm uppercase tracking-[0.3em] text-outline mb-8">2019</h2>
+    <div class="space-y-6">
+      
+      
+      <div class="pub-entry group flex flex-col md:flex-row gap-6 p-6 rounded-xl hover:bg-surface-container-lowest transition-all duration-300"
+           data-tag="other">
+
+        <!-- Thumbnail -->
+        <div class="w-full md:w-40 shrink-0 overflow-hidden rounded-lg">
+          <img src="/assets/img/hri_dark.png" alt="Parking Events Derived From Trip Data from MiD2008"
+               class="w-full h-28 md:h-full object-cover"/>
+        </div>
+
+        <!-- Content -->
+        <div class="flex-grow min-w-0">
+          <div class="flex items-center gap-3 mb-2 flex-wrap">
+            <span class="font-label text-xs uppercase tracking-wider px-2 py-0.5 rounded
+              bg-surface-container text-on-surface-variant">
+              Dataset
+            </span>
+            <span class="font-label text-xs text-outline">Dataset</span>
+          </div>
+
+          <h3 class="font-headline text-xl font-medium text-on-surface mb-2 leading-snug group-hover:text-primary transition-colors">
+            <a href="https://doi.org/10.5445/IR/1000098024" target="_blank" rel="noopener" class="no-underline hover:no-underline">Parking Events Derived From Trip Data from MiD2008</a>
+            
+          </h3>
+
+          <p class="font-body text-sm text-on-surface-variant mb-3 leading-relaxed">J. Huber, J. Höffer, J. Thumm, C. Weinhardt</p>
+
+          <!-- Links -->
+          <div class="flex items-center gap-4 flex-wrap">
+            
+            
+            <a href="https://doi.org/10.5445/IR/1000098024" target="_blank" rel="noopener"
+               class="font-label text-xs uppercase tracking-wider text-primary no-underline hover:opacity-70 transition-opacity flex items-center gap-1">
+              <span class="material-symbols-outlined text-base" style="font-size:1rem;">link</span> DOI
+            </a>
+            
+          </div>
+        </div>
+
+      </div>
+      
+    </div>
+  </div>
+  
+  
+  <div class="pub-year-group mb-20" data-year="2018">
+    <h2 class="font-label text-sm uppercase tracking-[0.3em] text-outline mb-8">2018</h2>
+    <div class="space-y-6">
+      
+      
+      <div class="pub-entry group flex flex-col md:flex-row gap-6 p-6 rounded-xl hover:bg-surface-container-lowest transition-all duration-300"
+           data-tag="other">
+
+        <!-- Thumbnail -->
+        <div class="w-full md:w-40 shrink-0 overflow-hidden rounded-lg">
+          <img src="/assets/img/hri_dark.png" alt="Characterization of Road Condition with Data Mining Based on Measured Kinematic Vehicle Parameters"
+               class="w-full h-28 md:h-full object-cover"/>
+        </div>
+
+        <!-- Content -->
+        <div class="flex-grow min-w-0">
+          <div class="flex items-center gap-3 mb-2 flex-wrap">
+            <span class="font-label text-xs uppercase tracking-wider px-2 py-0.5 rounded
+              bg-tertiary-container text-on-tertiary">
+              Journal
+            </span>
+            <span class="font-label text-xs text-outline">Journal of Advanced Transportation</span>
+          </div>
+
+          <h3 class="font-headline text-xl font-medium text-on-surface mb-2 leading-snug group-hover:text-primary transition-colors">
+            <a href="https://doi.org/10.1155/2018/8647607" target="_blank" rel="noopener" class="no-underline hover:no-underline">Characterization of Road Condition with Data Mining Based on Measured Kinematic Vehicle Parameters</a>
+            
+          </h3>
+
+          <p class="font-body text-sm text-on-surface-variant mb-3 leading-relaxed">J. Masino, J. Thumm, G. Levasseur, M. Frey, F. Gauterin, R. Mikut, M. Reischl</p>
+
+          <!-- Links -->
+          <div class="flex items-center gap-4 flex-wrap">
+            
+            
+            <a href="https://doi.org/10.1155/2018/8647607" target="_blank" rel="noopener"
+               class="font-label text-xs uppercase tracking-wider text-primary no-underline hover:opacity-70 transition-opacity flex items-center gap-1">
+              <span class="material-symbols-outlined text-base" style="font-size:1rem;">link</span> DOI
+            </a>
+            
+          </div>
+        </div>
+
+      </div>
+      
+      <div class="pub-entry group flex flex-col md:flex-row gap-6 p-6 rounded-xl hover:bg-surface-container-lowest transition-all duration-300"
+           data-tag="other">
+
+        <!-- Thumbnail -->
+        <div class="w-full md:w-40 shrink-0 overflow-hidden rounded-lg">
+          <img src="/assets/img/hri_dark.png" alt="Multiple Vehicle Fusion for a Robust Road Condition Estimation Based on Vehicle Sensors and Data Mining"
+               class="w-full h-28 md:h-full object-cover"/>
+        </div>
+
+        <!-- Content -->
+        <div class="flex-grow min-w-0">
+          <div class="flex items-center gap-3 mb-2 flex-wrap">
+            <span class="font-label text-xs uppercase tracking-wider px-2 py-0.5 rounded
+              bg-tertiary-container text-on-tertiary">
+              Journal
+            </span>
+            <span class="font-label text-xs text-outline">Cogent Engineering</span>
+          </div>
+
+          <h3 class="font-headline text-xl font-medium text-on-surface mb-2 leading-snug group-hover:text-primary transition-colors">
+            <a href="https://doi.org/10.1080/23311916.2018.1449428" target="_blank" rel="noopener" class="no-underline hover:no-underline">Multiple Vehicle Fusion for a Robust Road Condition Estimation Based on Vehicle Sensors and Data Mining</a>
+            
+          </h3>
+
+          <p class="font-body text-sm text-on-surface-variant mb-3 leading-relaxed">J. Hofmockel, J. Masino, J. Thumm, E. Sax, F. Gauterin</p>
+
+          <!-- Links -->
+          <div class="flex items-center gap-4 flex-wrap">
+            
+            
+            <a href="https://doi.org/10.1080/23311916.2018.1449428" target="_blank" rel="noopener"
+               class="font-label text-xs uppercase tracking-wider text-primary no-underline hover:opacity-70 transition-opacity flex items-center gap-1">
+              <span class="material-symbols-outlined text-base" style="font-size:1rem;">link</span> DOI
+            </a>
+            
+          </div>
+        </div>
+
+      </div>
+      
+    </div>
+  </div>
+  
+  
+  <div class="pub-year-group mb-20" data-year="2017">
+    <h2 class="font-label text-sm uppercase tracking-[0.3em] text-outline mb-8">2017</h2>
+    <div class="space-y-6">
+      
+      
+      <div class="pub-entry group flex flex-col md:flex-row gap-6 p-6 rounded-xl hover:bg-surface-container-lowest transition-all duration-300"
+           data-tag="other">
+
+        <!-- Thumbnail -->
+        <div class="w-full md:w-40 shrink-0 overflow-hidden rounded-lg">
+          <img src="/assets/img/hri_dark.png" alt="Learning from the Crowd: Road Infrastructure Monitoring System"
+               class="w-full h-28 md:h-full object-cover"/>
+        </div>
+
+        <!-- Content -->
+        <div class="flex-grow min-w-0">
+          <div class="flex items-center gap-3 mb-2 flex-wrap">
+            <span class="font-label text-xs uppercase tracking-wider px-2 py-0.5 rounded
+              bg-tertiary-container text-on-tertiary">
+              Journal
+            </span>
+            <span class="font-label text-xs text-outline">Journal of Traffic and Transportation Engineering</span>
+          </div>
+
+          <h3 class="font-headline text-xl font-medium text-on-surface mb-2 leading-snug group-hover:text-primary transition-colors">
+            <a href="https://doi.org/10.1016/j.jtte.2017.06.003" target="_blank" rel="noopener" class="no-underline hover:no-underline">Learning from the Crowd: Road Infrastructure Monitoring System</a>
+            
+          </h3>
+
+          <p class="font-body text-sm text-on-surface-variant mb-3 leading-relaxed">J. Masino, J. Thumm, M. Frey, F. Gauterin</p>
+
+          <!-- Links -->
+          <div class="flex items-center gap-4 flex-wrap">
+            
+            
+            <a href="https://doi.org/10.1016/j.jtte.2017.06.003" target="_blank" rel="noopener"
+               class="font-label text-xs uppercase tracking-wider text-primary no-underline hover:opacity-70 transition-opacity flex items-center gap-1">
+              <span class="material-symbols-outlined text-base" style="font-size:1rem;">link</span> DOI
+            </a>
+            
+          </div>
+        </div>
+
+      </div>
+      
+    </div>
+  </div>
+  
+
 </main>
+
+<style>
+  .pub-filter-active  { color: #8c1515; border-bottom: 2px solid #8c1515; }
+  .pub-filter-inactive { color: #59413e99; border-bottom: 2px solid transparent; }
+  .pub-filter-inactive:hover { color: #8c1515; }
+</style>
+
+<script>
+  function filterPubs(tag) {
+    // Update filter buttons
+    document.querySelectorAll('.pub-filter').forEach(function(btn) {
+      btn.classList.remove('pub-filter-active');
+      btn.classList.add('pub-filter-inactive');
+    });
+    document.getElementById('filter-' + tag).classList.remove('pub-filter-inactive');
+    document.getElementById('filter-' + tag).classList.add('pub-filter-active');
+
+    // Show/hide entries
+    document.querySelectorAll('.pub-entry').forEach(function(entry) {
+      if (tag === 'all' || entry.dataset.tag === tag) {
+        entry.style.display = '';
+      } else {
+        entry.style.display = 'none';
+      }
+    });
+
+    // Hide year groups that have no visible entries
+    document.querySelectorAll('.pub-year-group').forEach(function(group) {
+      var visible = group.querySelectorAll('.pub-entry:not([style*="display: none"])').length;
+      group.style.display = visible ? '' : 'none';
+    });
+  }
+</script>
 
   <footer class="bg-slate-50 w-full py-12 px-8 border-t border-outline-variant/40">
   <div class="flex flex-col md:flex-row justify-between items-start gap-8 max-w-7xl mx-auto">
