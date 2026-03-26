@@ -7,7 +7,7 @@ module.exports = [
     year: 2026,
     tag: "safe-ai",
     url: "http://arxiv.org/abs/2412.10180",
-    img: "/assets/img/general_overview_figure_thumbnail.jpg",
+    img: "/assets/img/safety_framework_thumbnail.jpg",
   },
   {
     title: "From Demonstrations to Safe Deployment: Path-Consistent Safety Filtering for Diffusion Policies",
