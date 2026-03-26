@@ -1,0 +1,15 @@
+_site/
+_site_11ty/
+_sass/
+vendor/
+node_modules/
+Gemfile
+Gemfile.lock
+README.md
+_layouts/
+_includes/
+_pages/
+staticman.yml
+banner.js
+Rakefile
+404.html
