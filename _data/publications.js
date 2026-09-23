@@ -1,5 +1,16 @@
 module.exports = [
   {
+    title: "Vision-Based Safe Human-Robot Collaboration with Uncertainty Guarantees",
+    authors: "J. Thumm, M. Frei, T. Ni, M. Althoff, M. Pavone",
+    venue: "IEEE Int. Conf. on Robotics and Automation (ICRA)",
+    type: "Conference",
+    year: 2027,
+    tag: "safe-ai",
+    url: "https://arxiv.org/abs/2604.15221",
+    website: "https://jakob-thumm.com/conformal_human_motion_prediction/",
+    img: "/assets/img/vision_based_hrc_thumbnail.jpg",
+  },
+  {
     title: "A General Safety Framework for Autonomous Manipulation in Human Environments",
     authors: "J. Thumm, J. Balletshofer, L. Maglanoc, L. Muschal, M. Althoff",
     venue: "IEEE Transactions on Robotics",
@@ -7,6 +18,7 @@ module.exports = [
     year: 2026,
     tag: "safe-ai",
     url: "http://arxiv.org/abs/2412.10180",
+    website: "https://tumcps.github.io/sara-shield/",
     img: "/assets/img/safety_framework_thumbnail.jpg",
   },
   {

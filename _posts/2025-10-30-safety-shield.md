@@ -22,7 +22,7 @@ SARA shield comes in two modes: in the speed and separation monitoring (SSM), it
 Our safety shield is the first of its kind, providing provable safety for continuous action spaces in high-dimensional state-spaces and unpredictable dynamic environments. It can be applied to a variety of manipulation tasks and is highly effective in quickly reacting to highly dynamic human motion.
 
 Publications:
- - T-RO 2025: A General Safety Framework for Autonomous Manipulation in Human Environments [[Arxiv](https://arxiv.org/abs/2412.10180)]
+ - T-RO 2025: A General Safety Framework for Autonomous Manipulation in Human Environments [[Arxiv](https://arxiv.org/abs/2412.10180)] [[Website](https://tumcps.github.io/sara-shield/)]
  - ICRA 2022: Provably Safe Deep Reinforcement Learning for Robotic Manipulation in Human Environments [[IEEExplore](https://ieeexplore.ieee.org/document/9811698)] [[Arxiv](https://arxiv.org/abs/2205.06311)]
  - ICRA 2022: SaRA: A Tool for Safe Human-Robot Coexistence and Collaboration through Reachability Analysis [[IEEExplore](https://ieeexplore.ieee.org/document/9811952)]
 
